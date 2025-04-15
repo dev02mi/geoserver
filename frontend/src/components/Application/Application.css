@@ -1,0 +1,1581 @@
+.ApplicationText {
+  line-height: 2;
+  /* word-spacing: 7px;
+  letter-spacing: 4px; */
+  font-size: 20px;
+  margin: 20px 9px;
+}
+.cardFashion {
+  background: #80808047;
+  color: #064d70;
+  line-height: 2;
+  font-weight: 600;
+  text-align: center;
+
+  height: 350px;
+  -ms-flex: 1 1 auto;
+}
+.ApplicationCardText {
+  font-size: 41px;
+}
+.ApplicationText {
+  font-size: 16px;
+}
+.ApplicationTextTitle {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: blue;
+  /* margin-top: -17px; */
+  position: relative;
+  top: 60px;
+}
+
+.CardView {
+  position: relative;
+  top: 70px;
+  left: 65px;
+}
+
+.Application-main-content {
+  background-color: rgb(191, 255, 0);
+  height: 235px;
+  margin-top: -51px;
+}
+
+.Archival-logo {
+  width: 100px;
+  height: 60px;
+  margin-left: -204px;
+}
+
+.Archival-card-header {
+  background-color: rgb(28, 28, 100);
+}
+
+.Retrieval-card-header {
+  background-color: rgb(28, 28, 100);
+}
+
+.Search-card-header {
+  background-color: rgb(28, 28, 100);
+}
+
+.ArchivalCardText {
+  font-size: 41px;
+  margin-left: 50px;
+  margin-top: -58px;
+  color: white;
+}
+
+.Retrival-logo {
+  width: 100px;
+  height: 60px;
+  margin-left: -204px;
+}
+
+.RetrievalCardText {
+  font-size: 41px;
+  margin-left: 60px;
+  margin-top: -58px;
+  color: white;
+}
+
+.Search-logo {
+  width: 100px;
+  height: 60px;
+  margin-left: -204px;
+}
+
+.SearchCardText {
+  font-size: 41px;
+  margin-left: 20px;
+  margin-top: -58px;
+  color: white;
+}
+
+.Mainbody-of-application {
+  height: 86.5vh;
+  /* margin-bottom:  -2280px; */
+  /* height: 86vh; */
+}
+
+/* Agriculture */
+
+.AgricultureTextTitle {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: blue;
+  /* margin-top: -17px; */
+  position: relative;
+  top: 60px;
+}
+
+.Agriculture-main-content {
+  background-color: rgb(60, 255, 0);
+  height: 235px;
+  margin-top: 100px;
+}
+
+.NDVICardText {
+  font-size: 41px;
+  margin-left: 20px;
+  margin-top: -58px;
+  color: white;
+}
+
+.Card-header {
+  background-color: rgb(28, 28, 100);
+}
+
+.NDVICardText {
+  font-size: 41px;
+  margin-left: 4px;
+  color: white;
+  position: relative;
+  top: 28px;
+}
+
+.SAVICardText {
+  font-size: 41px;
+  margin-left: 60px;
+  color: white;
+  position: relative;
+  top: -24px;
+  height: 0px;
+}
+
+.StackCardText {
+  font-size: 41px;
+  margin-left: 20px;
+  color: white;
+  position: relative;
+  top: -22px;
+  height: 0px;
+}
+
+.ClassCardText {
+  font-size: 41px;
+  margin-left: 5px;
+  color: white;
+  position: relative;
+  top: -21px;
+  height: 0px;
+}
+
+.NDVIText {
+  word-spacing: 7px;
+  font-size: 13px;
+  margin: 20px 9px;
+}
+
+.SAVIText {
+  word-spacing: 7px;
+  font-size: 13px;
+  margin: 20px 9px;
+}
+
+.StackingText {
+  word-spacing: 7px;
+  font-size: 13px;
+  margin: 20px 9px;
+}
+
+.ClassificationText {
+  word-spacing: 7px;
+  font-size: 13px;
+  margin: 20px 9px;
+}
+.WaterApplication {
+  border-radius: 7px;
+  margin: 9px 1751px 6px 0px;
+  background-color: darkblue;
+  /* padding-bottom: 12px; */
+  padding: 4px;
+  color: white;
+}
+.layerstacking {
+  position: absolute;
+  /* top: 306px; */
+  left: 1076px;
+  top: 530px;
+  color: #fff;
+  background: #00000045;
+  font-size: 38px;
+  border-radius: 10px;
+}
+.AgricultureA {
+  border-radius: 7px;
+  margin: 9px 1672px 6px 0px;
+  background-color: darkblue;
+  /* padding-bottom: 12px; */
+  padding: 4px;
+  color: white;
+}
+.DefenceA {
+  border-radius: 7px;
+  margin: 9px 1715px 6px 0px;
+  background-color: darkblue;
+  /* padding-bottom: 12px; */
+  padding: 4px;
+  color: white;
+}
+.DimgA {
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+}
+.PTagOfA {
+  margin: -177px 122px;
+  font-size: 51px;
+  color: white;
+  background-color: transparent;
+}
+.Fourth {
+  /* font-size:px; */
+  color: rgb(85, 19, 19);
+  background-color: transparent;
+}
+/* .HeadingOfApplicationGis{
+  font-family: 'open sans', sans-serif;
+  position: sticky;
+  top: 20px;
+ 
+  color: #3aafb9!important;
+  font-size: min(4vw, 45px);
+} */
+.HeadingOfApplicationGis {
+  font-family: "open sans", sans-serif;
+  position: fixed;
+  top: 267px;
+  left: 49px;
+  /* font-family: 'Baskerville', serif; */
+  color: #3aafb9 !important;
+  font-size: min(20vw, 45px);
+}
+
+.BannerApplication {
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  object-fit: cover;
+  /* background-image: url("/public/b.jpg"); */
+  animation: rotateImage 5s linear infinite;
+}
+.ParaForApplication {
+  background-size: cover;
+  background: url(https://static.vecteezy.com/system/resources/previews/030/680/631/non_2x/white-texture-high-quality-free-photo.jpg);
+  margin: -50rem 10rem 15px 10rem;
+  padding: 12px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  /* color: #0a518e; */
+  font-variation-settings: "wdth" var(--text-axis);
+  line-height: revert;
+  border: 4px solid rgb(16 74 134);
+  /* border: 5px solid rgb(21 70 94 / 83%); */
+  border-radius: 20px 0px 20px 0px;
+  /* margin-top: -530px !important; */
+}
+.ApllicationOfAgri {
+  margin-top: 10px;
+  text-align: center;
+  color: green;
+  font-size: min(4vw, 45px);
+}
+.ImageOfApplication {
+  width: 100%;
+  /* height: 500px; */
+  border-radius: 5px;
+  border: 0.3px solid darkturquoise;
+}
+.ParaForAGri {
+  /* margin: 25px 0px; */
+  font-family: "open sans", sans-serif;
+  font-size: min(3vw, 18px);
+  color: black;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.ApllicationOfMilitary {
+  margin-top: 10px;
+  text-align: center;
+  color: darkcyan;
+  font-size: min(4vw, 45px);
+}
+.ApllicationOfMinning {
+  margin-top: 10px;
+  text-align: center;
+  color: chocolate;
+  font-size: min(4vw, 45px);
+}
+.ApllicationOfWater {
+  margin-top: 10px;
+  text-align: center;
+  color: teal;
+  font-size: min(4vw, 45px);
+}
+
+.ParagraphOfFooter {
+  font-size: min(3vw, 15px);
+}
+
+.fixedWrapper {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-height: 700px;
+  &:nth-child(odd) {
+    background-color: #c7c4bf;
+  }
+  &:first-child {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/cat1_(1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  &:nth-child(2) {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/cat2_(1).png");
+    background-size: 100%;
+  }
+  &:nth-child(3) {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/cat4_(1).png");
+    background-size: 100%;
+    height: 100%;
+    /* background-size:55%; */
+  }
+  &:nth-child(4) {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/cat3_(1).png");
+    background-size: 100%;
+    height: 100%;
+  }
+  &:nth-child(5) {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/cat5_(1).png");
+    background-size: 100%;
+    height: 100%;
+    /* background-position:left bottom; */
+    /* background-position:center; 
+    background-size:100%; */
+    /* height: fit-content; */
+  }
+  &:nth-child(6) {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/cat6_(1).png");
+    background-size: 100%;
+    height: 100%;
+    /* background-size:100%; */
+  }
+  &:nth-child(7) {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/cat-last_(1).png");
+    background-size: 100%;
+    height: 100%;
+    /* background-size:100%; */
+    /* background-position:right bottom;
+		background-size:35%; */
+  }
+  &:nth-child(8) {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/39377/cat-last_(1).png");
+    background-size: 100%;
+    height: 100%;
+    /* background-size:100%; */
+    /* background-position:right bottom;
+		background-size:35%; */
+  }
+}
+.contentA {
+  /* background:rgba(255,255,255,0.5)!important; */
+  /* background-color: white; */
+  background-color: #ffffffad;
+  font-family: serif;
+  color: #0c0000;
+  /* font-size:20px; */
+  font-style: italic;
+  margin: -125px auto 0;
+  padding: 14px;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  height: 250px;
+  width: 80%;
+  /* overflow: scroll; */
+  border-radius: 33px;
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: min(2.5vw, 18px);
+}
+@keyframes rotateImage {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 10% 10%; /* Adjust the values as needed */
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.contentB {
+  /* background:rgba(255,255,255,0.5)!important; */
+  /* background-color: white; */
+  /* background-color: #ffffff7d; */
+  color: #0c0000;
+  font-family: serif;
+  /* font-size:20px; */
+  font-style: italic;
+  margin: -125px auto 0;
+  padding: 36px;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  height: auto;
+  /* height:250px; */
+  width: 75%;
+  border-radius: 33px;
+  max-height: 240px;
+  font-size: min(1.5vw, 18px);
+}
+/* background-color: #ffffff7d;
+    font-family: serif;
+    color: #0c0000; */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.section {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+
+  > * {
+    width: 50%;
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+
+    &__inner {
+      height: 100vh;
+      position: fixed;
+      left: 10%;
+      width: 40%;
+      top: 0;
+      mix-blend-mode: multiply;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+  }
+
+  &__text {
+    padding: 0vw;
+  }
+}
+
+.section__img__inner {
+  filter: blur(30px);
+  opacity: 0;
+  background-position: 50% 40%;
+  transition: filter 0.6s ease, opacity 0.6s ease, background-position 0.8s ease;
+}
+
+.section.active .section__img__inner {
+  opacity: 1;
+  background-position: 50% 50%;
+  filter: blur(0);
+}
+
+/* h2 {
+  font-size: 3vw;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+} */
+.Agri {
+  position: relative;
+  /* top: 222px; */
+  top: -449px;
+  left: 86px;
+  color: white !important;
+  font-size: 50px;
+  color: darkslateblue;
+  text-shadow: 8px -8px rgba(71, 61, 139, 0.568);
+  font-size: min(10vw, 50px);
+  /* background-color: white; */
+}
+
+.App-button {
+  text-align: center;
+  position: relative;
+  background-color: #366a8ded;
+  padding: 4px;
+  border-radius: 20px;
+  top: -79rem;
+  color: white !important;
+  color: darkslateblue;
+  font-size: min(10vw, 25px);
+  width: 45vh;
+  margin: 40px 12rem 2px 12rem;
+}
+
+.App-Heading {
+  text-transform: uppercase;
+  /* text-align: center; */
+  position: relative;
+  width: 45rem;
+  margin: 17px 9rem 2px 9rem;
+  /* margin: 0 0 1rem; */
+  top: -78rem;
+  /* left: 86px; */
+  color: white !important;
+  font-size: 50px;
+  color: darkslateblue;
+  text-shadow: 8px -8px rgba(71, 61, 139, 0.568);
+  /* font-size: min(10vw, 45px); */
+  letter-spacing: 17.5px;
+}
+
+.mINNING:hover {
+  color: black;
+  cursor: pointer;
+  background-color: rebeccapurple;
+}
+
+.App-button:hover {
+  color: black;
+  cursor: pointer;
+  background-color: #2580be;
+}
+
+.mINNING {
+  text-align: center;
+  background-color: #44acf35e;
+  padding: 6px;
+  border-radius: 20px;
+  margin-right: 86%;
+  position: relative;
+  top: -449px;
+  left: 86px;
+  color: white !important;
+  font-size: 50px;
+  color: darkslateblue;
+  /* text-shadow: 8px -8px rgba(71, 61, 139, 0.568); */
+  font-size: min(10vw, 30px);
+}
+
+/* .Gisproduct{
+  margin: -20px;
+  font-size: min(10vw, 18px);
+} */
+
+.MoreContent {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.ApplicationDR {
+  /* font-size: 40px; */
+  font-size: min(25vw, 45px);
+  /* color: white; */
+  color: darkblue;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .App-Heading{
+    width: 24rem;
+    font-size: 20px;
+    letter-spacing: 10.5px;
+    top: -46rem;
+    margin: 1px 1rem 2px 4rem;
+
+  }
+  .App-button{
+    width: 26vh;
+    margin: 22px 1rem 2px 6rem;
+    font-size: 12px;
+    top: -46rem;
+
+  }
+  .BannerApplication {
+    /* width: 100%; */
+    height: 613px;
+  }
+  .ParaForApplication{
+    margin: -26rem 2rem 12px 2rem;
+    font-size: 12px;
+  }
+
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+  .App-Heading{
+    width: 33rem;
+    font-size: 29px;
+    margin: 3px 2rem 2px 8rem;
+    letter-spacing: 13.5px;
+
+  }
+  .App-button{
+    width: 29vh;
+    margin: 20px 4rem 1px 10rem;
+    font-size: 17px;
+    top: -46rem;
+
+  }
+  .ParaForApplication{
+    margin: -30rem 5rem 12px 5rem;
+    font-size: 14px;
+    /* margin-top: -30rem !important; */
+  }
+
+
+
+}
+
+
+@media ((min-width: 768px) and (max-width:1023px)) {
+  .App-Heading{
+    width: 37rem;
+    font-size: 30px;
+    margin: 2px 6rem 3px 5rem;
+    top: -66rem;
+
+  }
+  .App-button{
+    width: 30vh;
+    margin: 32px 6rem 2px 10rem;
+    font-size: 21px;
+    top: -66rem;
+  }
+
+  .ParaForApplication{
+    font-size: 16px;
+    margin: -39rem 7rem 12px 7rem;
+   
+    /* margin-top: -39rem !important; */
+  }
+
+}
+
+/* _____________ */
+
+
+
+/* Navigation bar / header styles */
+
+/* header {
+  font-family: "Antonio", sans-serif;
+  will-change: top;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  width: 100%;
+  color: black;
+  z-index: 100;
+  top: 0px;
+  transition: 0.5s ease;
+}
+
+header nav {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.1ch;
+  transition: 0.2s ease;
+}
+
+.middle {
+  flex-grow: 0;
+  flex: 3;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 3;
+}
+
+.left .searchbar {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  margin: 0px 40px;
+}
+
+.left .searchbar input {
+  color: white;
+  font-family: Arial;
+  font-size: 1rem;
+  padding-left: 10px;
+  flex: 1;
+  background-color: rgb(40, 40, 40);
+  border-left: 1px solid rgb(90, 90, 90);
+  border-top: 1px solid rgb(130, 130, 130);
+  border-bottom: 1px solid rgb(60, 60, 60);
+  border-right: 1px solid rgb(60, 60, 60);
+}
+
+.left .searchbar input:focus {
+  outline: none;
+  color: white;
+}
+
+.left .searchbar .right {
+  outline: none;
+  border-bottom: 1px solid rgb(60, 60, 60);
+  border-top: 1px solid rgb(100, 100, 100);
+  border-right: 1px solid grey;
+  flex: 0.2;
+  background-color: rgb(50, 50, 50);
+}
+ */
+
+/* Parallax Landing Page Styles */
+
+.container1 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container1 h1 {
+  position: absolute;
+  font-size: 5rem;
+  color: white;
+  font-family: Arial;
+  font-weight: 900;
+  top: 30vh;
+  left: 50%;
+  letter-spacing: -0.1ch;
+  transform: translate(-50%, -50%);
+  background: rgb(156, 46, 46);
+  background: linear-gradient(
+    14deg,
+    rgba(156, 46, 46, 1) 0%,
+    rgba(198, 0, 0, 1) 100%
+  );
+  border-radius: 0px 40px 40px 40px;
+  padding: 0px 15px 5px 15px;
+}
+
+.container1 h1 span {
+  font-size: 15px;
+}
+
+.container1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* .background {
+  filter: blur(15px);
+  animation: un-blur 5.5s ease forwards;
+}
+
+.mountain {
+  filter: blur(10px);
+  animation: un-blur 3s ease forwards;
+}
+
+.person {
+  filter: blur(4px);
+  animation: un-blur 3s ease forwards;
+} */
+
+.smoke1 {
+  opacity: 1;
+  width: 200%;
+}
+
+.smoke2 {
+  opacity: 0.5;
+  height: 150%;
+  width: 200%;
+}
+
+/* After parallax landing -> */
+
+.body {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://st3.depositphotos.com/1008648/19538/i/450/depositphotos_195386404-stock-photo-globe-network-hologram-with-america.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.body div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-family: "Arial";
+  /* padding: 100px 0px 0px 0px; */
+  padding: 30px 0px 0px 0px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.body-1 div {
+  min-width: 300px;
+  margin: 20px;
+  flex: 2;
+}
+
+.body-1 div h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(46 119 166);
+  /* color: rgb(40, 40, 40); */
+  margin-bottom: 15px;
+}
+
+.body-1 div h1::after {
+  position: absolute;
+  content: "";
+  width: 0.8ch;
+  height: 100%;
+  top: 0;
+  left: -1.5ch;
+  background: rgb(156, 46, 46);
+  background: linear-gradient(14deg, rgb(16 22 38) 0%, rgb(46 144 205) 100%);
+  z-index: 1;
+}
+
+.body-1 div p {
+  /* color: black; */
+  color:#e9ecefde;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-1 aside {
+  flex: 4;
+  padding: 20px;
+  position: relative;
+}
+
+.body-1 aside img {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.body-1 aside::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  top: -100%;
+  right: 0;
+  z-index: -1;
+  background: rgb(250, 250, 250);
+}
+
+.body-1 aside p {
+  /* font-family: "Antonio"; */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.body-1 aside a {
+  color:black;
+  text-decoration: none;
+}
+.Marsbg{
+  background-color: #b6d7ed!important;
+  box-shadow: 2px 2px 2px 0 rgba(120, 120, 120, 0.8)
+}
+
+.body-2 {
+}
+/* 2 */
+.body-2 div {
+  min-width: 300px;
+  margin: 20px;
+  flex: 2;
+}
+
+.body-2 div h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(177 194 59);
+  /* color: rgb(40, 40, 40); */
+  margin-bottom: 15px;
+  margin-left: 205px;
+}
+
+.body-2 div h1::after {
+  position: absolute;
+  content: "";
+  width: 0.8ch;
+  height: 100%;
+  top: 0;
+  left: 14.2ch;
+  background: rgb(156, 46, 46);
+  background: linear-gradient(14deg, rgb(59 95 55) 0%, rgb(132 152 72) 100%);
+  z-index: 1;
+}
+.AgriBgborder{
+  background-color: #b5c0ae;
+    box-shadow: 2px 2px 2px 0 rgba(120, 120, 120, 0.8);
+}
+.body-2 div p {
+  /* color: black; */
+  color:#e9ecefde;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: end;
+}
+
+.body-2 aside {
+  flex: 4;
+  padding: 20px;
+  position: relative;
+}
+
+.body-2 aside img {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.body-2 aside::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  top: -100%;
+  right: 0;
+  z-index: -1;
+  background: rgb(250, 250, 250);
+}
+
+.body-2 aside p {
+  font-family: "Antonio";
+}
+
+.body-2 aside a {
+  color: grey;
+  text-decoration: none;
+}
+/* 3rd */
+.body-3 div {
+  min-width: 300px;
+  margin: 20px;
+  flex: 2;
+}
+
+.body-3 div .water {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(135 126 85);
+  /* color: rgb(40, 40, 40); */
+  margin-bottom: 15px;
+  margin-left: 263px;
+  
+}
+
+.body-3 div h1::after {
+  position: absolute;
+  content: "";
+  width: 0.8ch;
+  height: 100%;
+  top: 0;
+  left: 10.2ch;
+  background: rgb(156, 46, 46);
+  background: linear-gradient(14deg, rgb(104 95 56) 0%, rgb(22 52 60) 100%);
+  z-index: 1;
+}
+.Waterbg{
+  background-color: #647c87;
+    box-shadow: 2px 2px 2px 0 rgba(120, 120, 120, 0.8);
+}
+.body-3 div p {
+  /* color: black; */
+  color:#e9ecefde;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: end;
+}
+
+.body-3 aside {
+  flex: 4;
+  padding: 20px;
+  position: relative;
+}
+
+.body-3 aside img {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.body-3 aside::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  top: -100%;
+  right: 0;
+  z-index: -1;
+  background: rgb(250, 250, 250);
+}
+
+.body-3 aside p {
+  font-family: "Antonio";
+}
+
+.body-3 aside a {
+  color: grey;
+  text-decoration: none;
+}
+
+
+/* end3rd */
+
+
+/* 4th start */
+.body-4 div {
+  min-width: 300px;
+  margin: 20px;
+  flex: 2;
+}
+
+.body-4 div .Minning {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(136 111 107);
+  /* color: rgb(40, 40, 40); */
+  margin-bottom: 15px;
+  /* margin-left: 263px; */
+}
+
+.body-4 div h1::after {
+  position: absolute;
+  content: "";
+  width: 0.8ch;
+  height: 100%;
+  top: 0;
+  left: 0ch;
+  background: rgb(156, 46, 46);
+  background: linear-gradient(14deg, rgb(237 221 210) 0%, rgb(145 123 114) 100%);
+  z-index: 1;
+}
+
+.body-4 div p {
+  /* color: black; */
+  color:#e9ecefde;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: start;
+}
+
+.body-4 aside {
+  flex: 4;
+  padding: 20px;
+  position: relative;
+}
+
+.body-4 aside img {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.body-4 aside::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  top: -100%;
+  right: 0;
+  z-index: -1;
+  background: rgb(250, 250, 250);
+}
+
+.body-4 aside p {
+  font-family: "Antonio";
+}
+
+.body-4 aside a {
+  color: grey;
+  text-decoration: none;
+}
+.MiningbgBorder{
+  background-color: #cecac8;
+  box-shadow: 2px 2px 2px 0 rgba(120, 120, 120, 0.8);
+}
+/*End of 4th  */
+
+/* 5th start */
+.body-5 div {
+  min-width: 300px;
+  margin: 20px;
+  flex: 2;
+}
+
+.body-5 div h1 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(69 143 177);
+  /* color: rgb(40, 40, 40); */
+  margin-bottom: 15px;
+  
+}
+
+.body-5 div h1::after {
+  position: absolute;
+  content: "";
+  width: 0.8ch;
+  height: 100%;
+  top: 0;
+  left: -1.5ch;
+  background: rgb(156, 46, 46);
+  background: linear-gradient(14deg, rgb(0 118 150) 0%, rgb(135 159 182) 100%);
+  z-index: 1;
+}
+
+.body-5 div p {
+  /* color: black; */
+  color:#e9ecefde;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.body-5 aside {
+  flex: 4;
+  padding: 20px;
+  position: relative;
+}
+
+.body-5 aside img {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.body-5 aside::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  top: -100%;
+  right: 0;
+  z-index: -1;
+  background: rgb(250, 250, 250);
+}
+
+.body-5 aside p {
+  font-family: "Antonio";
+}
+
+.body-5 aside a {
+  color: grey;
+  text-decoration: none;
+}
+.Defencebg{
+  background-color: #d3deef;
+  box-shadow: 2px 2px 2px 0 rgba(120, 120, 120, 0.8);
+}
+
+/* 5th End */
+
+/* Media Queries for scalability */
+
+@media only screen and (max-width: 800px) {
+  header .left .searchbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .middle {
+    flex: 0;
+  }
+  header nav a {
+    font-size: 1rem;
+    margin: 0px;
+  }
+  .container1 h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Animations */
+
+/* h1 fade in animation*/
+#slideshow {
+  display: flex;
+  /* margin-top: 25px; */
+  /* margin: 50px auto; */
+  width: 100%;
+  height: 100%;
+  /* width: 1200px; */
+  /* max-height: fit-content; */
+
+  /* height: 525px; */
+}
+
+#slides {
+  position: relative;
+  width: 83%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#gallery {
+  position: relative;
+  width: 17%;
+  overflow: hidden;
+}
+
+#slides img,
+#gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.custom-slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+
+.custom-slide.show {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.thumbnail {
+  height: 165px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-slide-btn {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 40px;
+  color: #000;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  z-index: 1000;
+}
+
+.custom-slide-btn:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.custom-slide .contentAp {
+  position: absolute;
+  left: 0;
+  bottom: -999px;
+  color: #fff;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: bottom 0.4s ease;
+}
+
+.custom-slide .title {
+  font-weight: bold;
+}
+
+/* .custom-slide:hover>.contentAp {
+  bottom: 0;
+} */
+/* Make .contentAp visible and positioned at the bottom by default */
+.custom-slide .contentAp {
+  bottom: 0;  /* Ensure .contentAp is positioned at the bottom of the slide */
+  opacity: 1; /* Make sure it's fully visible */
+  transition: opacity 0.5s ease, bottom 0.5s ease; /* Optional smooth transition */
+}
+
+/* Hover effect can adjust opacity or other properties */
+.custom-slide:hover .contentAp {
+  opacity: 0.8; /* Example of a slight fade on hover, but not hiding it completely */
+  bottom: 0; /* Keep it in place, if needed */
+}
+
+.thumbnail .title {
+  position: absolute;
+  top: 0;
+  left: -999px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  height: 30px;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.thumbnail .description {
+  position: absolute;
+  left: 0;
+  bottom: -999px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.thumbnail:hover .title {
+  left: 0;
+}
+
+.thumbnail:hover .description {
+  bottom: -12px;
+}
+.thumbnail{
+margin-bottom: 0px;
+padding: 0px;
+border:0px;
+border-radius: 0px;
+}
+@media screen and (max-width: 768px) {
+  .body-2 div h1 {
+    margin-left: 137px;
+}
+.body-1 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-1 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-2 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-2 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-3 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-3 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-4 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-4 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-5 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-5 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-3 div .water {
+  margin-left: 178px;
+}
+  #slides {
+      width: 100%;
+  }
+
+  #gallery {
+      display: none;
+  }
+  /* .body-1 aside {
+    order: 1;
+   
+}
+.body-2 div {
+ 
+  order: 1;
+}
+.body-2 aside {
+  order: 2;
+ 
+}
+.body-3 aside {
+  order: 3;
+ 
+} */
+}
+@media screen and (min-width: 769px) and (max-width: 1186px){
+  .body-2 div h1 {
+    margin-left: 137px;
+}
+.body-3 div .water {
+  margin-left: 178px;
+}
+body-1 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-1 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-2 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-2 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-3 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-3 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-4 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-4 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.body-5 div {
+  margin: 0 20px;
+  padding-top: 0;
+}
+.body-5 div p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+}
+@media screen and (max-width: 729px) {
+  .body-1 div {
+    order: 0;
+}
+  .body-1 aside {
+    order: 1;
+   
+}
+.body-2 div {
+ 
+  order: 1;
+}
+.body-2 aside {
+  order: 2;
+ 
+}
+.body-3 aside {
+  order: 3;
+ 
+}
+}
+.custom-slide {
+  display: block; /* Hide all slides by default */
+}
+
+.custom-slide.show {
+  display: block!important; /* Only show the active slide */
+  /* The contentAp inside will automatically be visible as part of the active slide */
+}
+.custom-slide:hover {
+  opacity: 1;
+}
+.custom-slide {
+  opacity: 0;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .body-5 aside img,.body-4 aside img, .body-3 aside img, .body-2 aside img, .body-1 aside img{
+    width: 100%;
+    min-width: 280px;
+  }
+}

@@ -1,0 +1,501 @@
+.your-div-class {
+  border: none;
+}
+
+.B-MainText {
+  position: relative;
+}
+
+.Main-text {
+  text-align: left;
+  font-weight: bold;
+  margin-top: -0.5vw;
+}
+
+.Main-LableName {
+  font-size: 18px;
+}
+
+.Label-Input {
+  margin-left: -272px;
+}
+
+/* Table RND Code */
+
+/* Table tags */
+
+/* .Table-Body{
+  margin-top: -55px;
+} 
+*/
+
+.SU-AU-Table {
+  /* table-layout: fixed; */
+  /* border-collapse: separate; */
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(131 119 76);
+}
+
+
+/* table {
+  table-layout: fixed;
+  width: 200px;
+  border: 1px solid rgb(131 119 76);
+} */
+
+.Create-AU-TD {
+  /* border: 1px solid #444; */
+  padding: 1px 1px 1px 1px;
+  white-space: nowrap;
+  font-size: 12px;
+  text-align: center;
+}
+
+.SR-Space {
+  padding: auto;
+  width: 82px;
+  /* position: relative; */
+  font-size: 14px;
+}
+
+.CR-Date {
+  /* padding: auto; */
+  /* width: 230px;*/
+  /* position: relative; */
+  font-size: 14px;
+}
+
+
+/* END */
+
+.Input-Text {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-image: none;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.CreateAdmin-Card-Body {
+  /* position: relative; */
+  width: 850px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* min-width: 63px; */
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  background-clip: border-box;
+  /* border: 0px solid rgba(0, 0, 0, .125); */
+  /* border-radius: 8px; */
+  /* width: 42%; */
+  /* margin-left: auto; */
+  /* box-shadow: 2px 3px 4px 3px #ddd; */
+  /* max-width: 800px; */
+  /* padding: 20px; */
+  /* align-items: center; */
+  margin-bottom: 20px;
+  /* margin: 12px auto !important; */
+  /* top: -25px; */
+}
+
+
+/* width: 100%;
+max-width: 1200px;
+height: 560px;
+margin: 12px auto !important;
+border-radius: 8px;
+background-color: #f2f2f2;
+padding: 20px;
+margin-left: auto; */
+
+
+.SubmitBtn {
+  /* position: relative;
+  top: 15px;
+  left: 50px; */
+}
+
+/*
+.CreateAdminBtn {
+  position: absolute;
+  top: 0px;
+  left: 288px;
+}*/
+
+.small-option {
+  font-size: 12px;
+  /* Adjust the font size as needed */
+  font: bold;
+}
+
+.Timer {
+  position: absolute;
+  top: 5px;
+  left: 470px;
+  color: rgb(81, 121, 6);
+}
+
+.Horizontal-Line {
+  /* width: 600px;
+  margin-left: 2px;
+  margin-top: -18px;
+  margin-bottom: 20px; */
+  /* border: 50px; */
+  border-top: 1px solid #ddd;
+}
+
+/* .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; 
+  overflow: scroll;
+  height: 87vh;
+   overflow-y: scroll;
+} */
+
+
+.create-admin {
+  height: 86vh;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://images5.alphacoders.com/135/1351769.png) no-repeat center center fixed;
+; */
+  /* background: url(https://images5.alphacoders.com/135/1351769.png) no-repeat center center fixed; */
+  background-size: cover;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  scrollbar-width: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .create-admin {
+    height: 82vh;
+    overflow-y: scroll;
+  }
+}
+
+
+.error-messageSU {
+  color: red;
+  padding-left: 5px;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.error-messageUsername {
+  color: red;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.AdminList {
+  color: rgb(8, 8, 8);
+  font-size: 18px;
+  font-weight: bold;
+  /* text-shadow: 2px 2px 2px black; */
+
+}
+
+.Country-Code-Dropdown-ADMIN {
+  font-size: 10px;
+  max-width: 56px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  /* margin-bottom: 8px; */
+  color: black;
+  height: 33px;
+  /* position: absolute; */
+  /* left: 77px;
+  top: 27px; */
+}
+
+.A-ProfileModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Closed-Button {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #e51313;
+}
+
+/* .Popup-Content-Profile{
+background-color: white;
+padding: 20px;
+border-radius: 8px;
+position: relative;
+width: auto; 
+left: 77rem;
+top: 5rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+overflow: hidden;
+}
+
+@media screen and (min-width: 290px) {
+.Popup-Content-Profile h5 {
+  white-space: initial;
+  overflow: initial;
+  text-overflow: initial;
+  word-wrap: break-word;
+}
+}
+
+.Popup-Content-Profile h5 {
+white-space: normal;
+overflow-wrap: anywhere;
+margin-bottom: 1px; 
+} */
+
+
+.Bold-text {
+  font-weight: bold;
+}
+
+
+/* 
+.Profile-Table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+}
+
+.Profile-Table td {
+border: 1px solid #ddd;
+padding: 5px;
+text-align: left;
+white-space: nowrap; 
+overflow-x: auto;
+font-size: 12px;   
+}
+
+.Profile-Table td:first-child {
+font-weight: bold;
+width: 11ch; 
+max-width: 10%; 
+overflow: hidden; 
+text-overflow: ellipsis; 
+}
+
+
+.Profile-Table td:nth-child(2) { 
+overflow-x: auto;
+white-space: nowrap;
+}
+
+.Profile-Table td b {
+font-weight: bold;
+font-size: 12px;
+}
+
+
+.Profile-Table td.Scrollable-Cell {
+max-width: 205px;
+overflow-x: auto;
+white-space: nowrap;
+}
+
+.Profile-Table td.Scrollable-Cell::-webkit-scrollbar {
+width: 0px; 
+height: 5px;
+}
+
+.Profile-Table td.Scrollable-Cell::-webkit-scrollbar-thumb {
+background-color: #888;
+}
+
+.Profile-Table td.Scrollable-Cell::-webkit-scrollbar-track {
+background-color: #f1f1f1; 
+} */
+
+
+.A-CancelBtn {
+  position: absolute;
+  left: 500px;
+}
+
+.admin-heading {
+  font-size: min(3vw, 20px);
+}
+
+.error-messageMaxlength-SU {
+  color: blue;
+  font-size: 11px;
+  font-style: italic;
+  margin-left: -5px;
+
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: none;
+}
+
+.mob-invalid {
+  border-color: #dc3545;
+  /* padding-right: calc(1.5em + 0.75rem); */
+  background-image: none;
+}
+
+.Cre-admin-Time {
+  /* position: absolute;
+  top: -17px;
+  left: 575px; */
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  /* color: black; */
+  color: #2b6e5b;
+  position: relative;
+  right: 5px;
+}
+
+.the-fieldsetAdmin {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  border: 2px solid #e0e0e0;
+  /* padding: 10px; */
+}
+
+.fontH {
+  font-size: 16px;
+}
+
+.fontAdminH {
+  font-size: 14px;
+}
+
+.AU-font {
+  font-size: 12px;
+}
+
+.AU-Table-Heading {
+  position: fixed;
+  bottom: 268px;
+}
+
+.Create-admin-button {
+  /* align-self: center; */
+  /* margin-top: 30px; */
+  /* margin-bottom: 7px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+}
+
+
+.btn_outline_primary {
+  outline: none;
+  /* background-color: #007bff; */
+  /* border-color: #007bff; */
+}
+
+
+.btn_outline_primary:focus {
+  outline: none !important;
+
+}
+
+
+
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .CreateAdmin-Card-Body {
+    width: 100%;
+  }
+  .fontAdminH {
+    font-size: 12px!important;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px){
+  .CreateAdmin-Card-Body {
+    width: 100%;
+  }
+  .fontAdminH {
+    font-size: 10px !important;
+}
+.the-legend {
+  padding: 0px 3px;
+  font-size: 12px;
+}
+.Header-textB {
+  font-size: 13px;
+}
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  .CreateAdmin-Card-Body {
+    width: 100%;
+  }
+  .Mobileviewhide{
+    margin-bottom: 6px;
+  }
+}
+
+/* Your styles here */
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .CreateAdmin-Card-Body {
+    width: 740px;
+  }
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your styles here */
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Your styles here */
+
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Your styles here */
+}

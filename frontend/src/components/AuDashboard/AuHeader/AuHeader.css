@@ -1,0 +1,762 @@
+.Au_Image {
+  /* display: flex;
+  align-self: center;
+  align-items: inherit; */
+  display: flex;
+  align-items: center;
+  background-color: #553988;
+  height: 55px;
+}
+
+
+
+.Au_Navtext {
+  /* font-size: large; */
+  padding-left: 15px;
+}
+
+.Au-nav {
+  background-color: #026d02 !important;
+  /* border-radius: "0px"; */
+}
+
+
+.navbar-dark .navbar-nav .nav-link .Au_Nav-Bg {
+  color: #ffff;
+  border-radius: 0;
+  min-height: 40px;
+  margin-top: 0px;
+
+}
+
+.icon {
+  color: white;
+}
+
+.log {
+  font-size: larger;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.logB {
+  width: 73px;
+  height: auto;
+  margin: inherit;
+  font-size: medium
+}
+
+.Au_Header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-top: -1px;
+}
+
+/* .mars {
+    font-weight: 700;
+    background: -webkit-linear-gradient(#ffffff, #ffffff);
+    font-family: "Comfortaa", cursive;
+  
+  } */
+
+/* .my-nav {
+    display: flex;
+    align-items: center;
+    background-color: #079ef5;
+    padding: 10px;
+  } */
+
+/* .nav-link {
+  text-decoration: none;
+  color: #fff;
+
+  align-items: center;
+  transition: color 0.3s;
+  margin-right: 17px ;
+  margin: 7px 7px 0px 6px;
+} */
+
+.icon {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.navbar {
+  position: relative;
+  /* min-height: 40px; */
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.btn btn-danger {
+  width: 75px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #4378d9fc;
+  border-right: none;
+  padding: 5px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #4378d9fc;
+}
+
+.searchButton {
+  width: 40px;
+  height: 30px;
+  border: 1px solid #4378d9fc;
+  background: #4378d9fc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap {
+  width: 13%;
+  position: absolute;
+  top: 47%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.nav-bg {
+  color: #ffff;
+  border-radius: 0;
+  min-height: 40px;
+  margin-top: -5.2px;
+}
+
+.nav-link:visited {
+  color: white;
+}
+
+
+
+
+
+.LogoOfMicronet {
+  position: absolute;
+  right: 9px;
+  top: 8px;
+}
+
+.lang {
+  position: absolute;
+  right: 16px;
+  top: 20px;
+}
+
+.welcome {
+  position: fixed;
+  right: 43px;
+  top: 63px;
+  padding-right: 0px;
+  padding-left: 5px;
+}
+
+
+
+.popup {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px;
+  /* border: 1px solid #d3e7b6; */
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 45px;
+  left: 659px;
+  color: black;
+  text-align: center;
+  height: 86px;
+  width: 141px;
+  font-size: 12px;
+}
+
+.login-user {
+  position: absolute;
+  right: 590px;
+  top: 5px;
+}
+
+
+.text-light {
+  position: absolute;
+  left: 48px;
+  top: -4px;
+  font-style: italic;
+}
+
+.text-mars {
+  position: absolute;
+  color: #ffffff;
+  left: 60px;
+  top: 35px;
+  font-size: 8px;
+  font-style: italic;
+}
+
+.h1,
+h1 {
+  font-size: 45px;
+  margin-top: -4px;
+  margin-left: 12px;
+  font-family: 'Glyphicons Halflings';
+}
+
+.disabled-link {
+  pointer-events: none;
+  /* Disable link interaction */
+  cursor: not-allowed;
+  /* Change cursor to not-allowed */
+}
+
+.disabled-link:hover:after {
+  content: "Please login to use this";
+  /* Display the message on hover */
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.navbar-nav {
+  position: static;
+  float: none;
+}
+
+.menu {
+  position: absolute;
+  left: 145px;
+  top: 37px;
+}
+
+/* Akshay Code */
+
+.overlay {
+  position: absolute;
+  left: 150px;
+  top: 10px;
+  background-color: rgb(213, 235, 152);
+  max-width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 80px;
+  z-index: 1000;
+  color: #0b0b0b;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+/* admin */
+.admin-item:hover+.sub-dropdown {
+  display: block;
+}
+
+.sub-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sub-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sub-dropdown li:hover {
+  background-color: #ddd;
+}
+
+.drop {
+  background-color: transparent;
+  margin-top: -7px;
+  font-size: 17px;
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+  position: fixed;
+  top: 71px;
+}
+
+.dropdown-menulist {
+  position: relative;
+}
+
+/* .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 60px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 12px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+} */
+
+.admin-list {
+  position: relative;
+  top: 36px;
+  left: 1px;
+  /* width: 100%; */
+}
+
+.submenulist {
+  position: relative;
+  top: 38px;
+  left: 81px;
+}
+
+.DropDownOfApplication {
+  position: absolute;
+  top: 3px;
+  left: 851px;
+}
+
+.DropDownDashboard {
+  position: absolute;
+  left: 1015px;
+}
+
+.PopupBoxForLogoImage {
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  /* Position the tooltip below the image */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.LogoOfMicronet.hovered {
+  background-color: #f0f0f0;
+}
+
+.LogoOfMicronet.open {
+  transform: scale(1.1);
+}
+
+.ActiveStatus {
+  background-color: #007bff !important;
+  color: #fff !important;
+}
+
+
+
+.card-content-au {
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: absolute;
+  border-radius: 14px;
+  text-align: justify;
+  right: 20px
+}
+
+.PopUpAboveMicronetLogo {
+  font-size: 11px;
+  color: darkorchid;
+  font-weight: 700;
+  font-family: system-ui;
+}
+
+.LogoPopUpCancelButton {
+  background-color: #ff0000 !important;
+  color: white !important;
+  border: none !important;
+  padding: 6px 12px !important;
+  margin-right: 10px !important;
+  border-radius: 5px;
+  cursor: pointer !important;
+}
+
+.LogoPopUpMoreButton {
+  background: green;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.dropdownmars,
+.dropdownagriculture,
+.dropdownwater {
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownmars {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 167px;
+  float: left;
+  min-width: 60px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 12px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dropdownagriculture {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 167px;
+  float: left;
+  min-width: 60px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 12px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dropdownwater {
+  display: none;
+  position: absolute;
+  top: 66px;
+  left: 167px;
+  float: left;
+  min-width: 60px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 12px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.marslinkdrop,
+.agrilinkdrop,
+.waterlinkdrop {
+  font-weight: bold;
+}
+
+.dropdown-item:hover {
+  /* background-color: rgb(8, 156, 242, 0.3); */
+}
+
+.marslinkdrop:hover .dropdownmars {
+  display: block;
+  opacity: 1;
+}
+
+.agrilinkdrop:hover .dropdownagriculture {
+  display: block;
+  opacity: 1;
+}
+
+.waterlinkdrop:hover .dropdownwater {
+  display: block;
+  opacity: 1;
+}
+
+.archivallink:hover,
+.reterivallink:hover,
+.searchlink:hover,
+.ndvilink:hover,
+.stacklink:hover,
+.classificationlink:hover,
+.ndwilink:hover,
+.floodlink:hover,
+.droughlink:hover {
+  border-left: 3px solid rgb(8, 156, 242, 0.3);
+  color: #333;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+
+
+.User-Profile {
+  position: absolute;
+  top: 47%;
+  left: 101%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.BackIcon {
+  font-size: 25px;
+  position: fixed;
+  color: #f9fbfd;
+  top: 60px;
+  left: 5px;
+}
+
+.UserIcon {
+  position: absolute;
+  top: 65px;
+  left: 1617px;
+}
+
+/* Au */
+
+.Au-Nav-Link {
+  text-decoration: none;
+  color: #fff;
+
+  align-items: center;
+  transition: color 0.3s;
+  /* margin: 7px 7px 0px 6px; */
+}
+
+.Au_Nav-Bg {
+  color: #ffff;
+  border-radius: 0;
+  min-height: 40px;
+  margin-top: 6.2px;
+}
+
+.Au-Active-Link {
+  background-color: #0b0b0b;
+  color: white;
+}
+
+
+.Au-Nav-Bg:visited {
+  color: white;
+}
+
+.Au-Nav-Bg:hover {
+  color: rgb(194, 194, 217);
+}
+
+.main_nav .Au_App_Menu {
+  color: white;
+  background-color: #131334c9;
+  /* padding: 2px 15px; */
+  border-radius: 21px;
+  text-decoration: none;
+  outline: none;
+  /* top: 9px; */
+}
+
+.main_nav .Au_nav_link {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #fff;
+  align-items: center;
+  transition: color 0.3s;
+  /* height: 40px; */
+  padding: 2px 10px;
+  text-decoration: none;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.main_nav .Au_nav_link:hover {
+  color: orange;
+}
+
+.main_nav .Au_App_Menu:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+
+
+.Menu-HomeS {
+  display: flex;
+  margin-top: 2px;
+  margin-left: 220px;
+}
+
+.A-Profile-Hr-Model {
+  display: flex;
+  /* position: relative; */
+  /* left: 185rem; */
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+@media (max-width: 500px) {
+  /* .GeopicsHeading {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 12px;
+    font-family: "Glyphicons Halflings";
+  } */
+
+  .LogoOfMicronet {
+    position: absolute;
+    right: 9px !important;
+    top: 8px !important;
+
+  }
+
+  .text-geopicx {
+    /* font-size: 5px; */
+    /* display: none; */
+    text-wrap: wrap;
+  }
+
+  
+    /* .formargin {
+      margin-left: 5rem!important; 
+    } */
+ 
+
+
+}
+
+@media (max-width: 767px) {
+
+
+  .A-Profile-Hr-Model {
+    display: flex;
+    /* position: relative; */
+    /* left: 185rem; */
+    align-content: center;
+    justify-content: center;
+    margin: auto !important;
+    padding: auto !important;
+    ;
+  }
+}
+.Profile-Hr-Model {
+  margin-top: -1px!important;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .main_nav .Au_nav_link {
+    font-size: 1rem;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main_nav .Au_nav_link {
+    font-size: 1.2rem;
+  }
+
+  .User_Profile {
+    font-size: 1rem;
+  }
+
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+
+
+ 
+}
+
+@media (min-width: 1300px) and (max-width: 1750px) {
+  /* .right-section {
+    flex-direction: column;
+    align-items: flex-end;
+  } */
+
+  .right-section .welcome {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+/* Responsive */

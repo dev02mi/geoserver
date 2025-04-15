@@ -1,0 +1,436 @@
+/* -----------GP Part -------------- */
+
+.gp-content-main-div {
+  height: 100%;
+  overflow: auto;
+  /* overflow-y: auto; */
+  /* scrollbar-width: thin; */
+  /* width: 380px; */
+}
+
+.gp-content-div-fix {
+  width: 379px;
+}
+
+/* Scroll Bar Design  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(184, 176, 176);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a38c8c;
+}
+
+.gp-info-heading {
+  display: flex;
+  background-color: #ceb3e78c;
+  font-size: 11px;
+  padding: 8px;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: .5rem;
+}
+
+#LayoutMap {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.Layout-mapbox .leaflet-control-zoom {
+  top: -6px;
+}
+
+/* Upload File (Select Drainage Layer) */
+.Select-Drainage-Div {
+  position: relative;
+  display: flex;
+}
+
+.Drainage-LayerFile-path {
+  max-width: 336px;
+  width: 100%;
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 6px;
+  color: #555;
+  background-image: none;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  /* margin-right: 12px; */
+}
+
+.Drainage-arrow-span {
+  position: relative;
+  right: 20px;
+  cursor: pointer;
+  padding-top: 2px;
+}
+
+.Drainage-ordering-div {
+  padding: 6px 2px;
+}
+
+.Drainage-custom-file-div {
+  margin-left: 4px;
+}
+
+.Drainage-custom-hidden-file-input {
+  display: none;
+}
+
+.Drainage-custom-file-upload {
+  margin-bottom: 0;
+  text-align: center;
+  height: 100%;
+  display: inline-block;
+  padding: 1px 8px;
+  cursor: pointer;
+  background-color: #fcba03;
+  color: #262626;
+  border-radius: 4px;
+  border-style: outset;
+  border-color: #fcba03;
+  border-width: 2px;
+}
+
+.Drainage-contents {
+  padding: 4px;
+  max-width: 380px;
+  width: 100%;
+}
+
+.Drainage-btnDIv {
+  padding: 6px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 5px;
+}
+
+.Drainage-draw-btn {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  background-color: #ceb3e78c;
+  color: #000;
+  padding: 0.1rem 1.2rem;
+  font-weight: 500;
+  border: 1.5px solid #868080;
+}
+
+.Drainage-read-btn {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  background-color: #ceb3e78c;
+  color: #000;
+  padding: 0.1rem 1.5rem;
+  font-weight: 500;
+  border: 1.5px solid #868080;
+}
+
+.Drainage-read-btn:disabled {
+  background-color: #cccccc;
+  border: 1px solid #3d3d3d;
+  color: #000000;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.Drainage-contents label {
+  font-weight: 400;
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+.pour-input {
+  width: 100%;
+  font-size: 10px;
+  padding: 4px 2px;
+  padding-left: 6px;
+  border: 1px dashed #a7a2a2;
+}
+
+.Pour-btnDIv {
+  padding: 6px 2px;
+  display: flex;
+  /* justify-content: center; */
+  gap: 6px;
+}
+
+.Multi-Point-btn ,
+.Single-Point-btn
+{
+  width: 40%;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  background-color: #ceb3e78c;
+  /* box-shadow: inset 1px 1px 2px #fffaed; */
+  color: #000;
+  padding: 0.1rem 1rem;
+  font-weight: 500;
+  border: 1.5px solid #868080;
+}
+
+.select-options-div {
+  display: flex;
+  align-items: center;
+}
+
+.selectOpt-btnDIv {
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.Strahler-Ordering,
+.Shreve-Ordering,
+
+.select-new,
+.select-append,
+.select-delete {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  background-color: #ceb3e78c;
+  /* box-shadow: inset 1px 1px 2px #fffaed; */
+  color: #000;
+  font-weight: 500;
+  border: 1.5px solid #868080;
+}
+
+.select-new {
+  padding: 0.1rem 2rem;
+}
+.select-append {
+  padding: 0.1rem 1rem;
+}
+.select-delete {
+  padding: 0.1rem 1.4rem;
+}
+.Strahler-Ordering{
+  padding: 0.1rem 2rem;
+}
+.Shreve-Ordering{
+  padding: 0.1rem 2rem;
+}
+
+
+.Drainage-ordering-btn {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  padding: 6px 2px;
+  gap: 6px;
+}
+
+.Drainage-fieldset {
+  border: 1.5px solid #868282e3;
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.Drainage-legend {
+  border-style: none;
+  border-width: 0;
+  margin-bottom: 0;
+  width: auto;
+  padding: 1px 6px;
+  /* border-radius: 5px; */
+  background-color: #e2e2e2;
+  border: 1px solid #82827a;
+  font-size: min(2vw, 10px);
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  /* box-shadow: 4px 5px 3px #262626; */
+}
+
+/* .Drainage-Console-box {
+  border: 1px solid #d3caca;
+  height: 100px;
+} */
+
+.console-textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.quit-ref-btnDIv {
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+
+/* .Layout-main-div .dock-panel[data-dockid="panel2"] .dock-top .dock-bar {
+  border-bottom: 2px solid #a8a7a7;
+} */
+
+/* .dock-panel [data-dockid="panel2"] {
+    border-bottom: 4px solid #a8a7a7;
+  } */
+
+/* .dock-layout .dock-box[data-dockid="+1"] .dock-divider{
+    display: none;
+  } */
+.dock-tab {
+  color: #a8a7a7;
+}
+
+.dock-tab-active {
+  color: #af8ad0;
+}
+
+/* .dock-tab-title {
+    display: inline-block; 
+    max-width: 150px; 
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    vertical-align: middle; 
+  } */
+
+/*hide More Button on tab header*/
+.dock-nav-more {
+  display: none;
+}
+
+.dock-nav-wrap {
+  display: block;
+}
+
+.dock-tab-title,
+.map-middle-part .map-middle-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.dock-panel[data-dockid="panel2"] .dock-nav-list {
+  height: 100%;
+}
+
+/* .dock-tab{
+    display: none;
+  } */
+
+/* .dock-layout .dock-panel[data-dockid="panel1"] {
+  flex: 30 1e6 30px;
+} */
+
+.my-panel-extra-btn {
+  cursor: pointer;
+  font-family: Fredoka One;
+  color: red;
+  display: inline-block;
+  width: 18px;
+  height: 24px;
+  text-align: center;
+  opacity: 0.3;
+  transition: all 0.25s ease-in-out;
+  line-height: 30px;
+}
+
+.my-panel-extra-btn:hover {
+  opacity: 2;
+}
+
+.btn {
+  margin: 1px 5px;
+  padding: 1px 5px;
+}
+
+.GpAudralaloader {
+  width: 17px;
+  height: 17px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 255, 0.5) 30%, #0000 0 70%, rgba(0, 0, 255, 1) 0) 50%/8% 100%,
+    linear-gradient(90deg, rgba(0, 0, 255, 0.25) 30%, #0000 0 70%, rgba(0, 0, 255, 0.75) 0) 50%/100% 8%;
+
+  background-repeat: no-repeat;
+  animation: l23 1s infinite steps(12);
+}
+
+.GpAudralaloader::before,
+.GpAudralaloader::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+
+.GpAudralaloader::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+
+@keyframes l23 {
+  100% {
+    transform: rotate(1turn)
+  }
+}
+
+.Group-nuber-div{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px 2px;
+}
+
+.arrow-size{
+  font-size: large;
+  color: #0619c9;
+  border: #000;
+  cursor: pointer;
+}
+
+.group-number-dropdown{
+  width: 12rem;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.quit-ref-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.Img-icon-size img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+

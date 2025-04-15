@@ -1,0 +1,26 @@
+# from django.contrib.auth.backends import ModelBackend
+# # from django.contrib.auth import get_user_model
+# from django.core.exceptions import ValidationError
+# from ..models import User_login_Data
+
+# # User = get_user_model()
+
+# class AdminCheckAuthenticationBackend(ModelBackend):
+#     def authenticate(self, request, USERNAME=None, PASSWORD=None, **kwargs):
+#         print("Attempting to authenticate user:", USERNAME)
+        
+#         try:
+#             # Look up the user by USERNAME
+#             user = User_login_Data.objects.get(USERNAME=USERNAME)
+            
+#             # Check if the provided PASSWORD is correct
+#             if user.check_password(PASSWORD):
+#                 # Check admin status if the user is not a superuser
+#                 if user.USER_TYPE != 'SU':
+#                     if not user.admin_user.is_active:
+#                         raise ValidationError("Admin is not active. User cannot log in.")
+                
+#                 return user
+#         except User_login_Data.DoesNotExist:
+#             return None
+#         return None

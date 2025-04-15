@@ -1,0 +1,86 @@
+/* NdviComponent.css */
+
+
+
+input#inputEmail4::placeholder {
+    padding: 0px;
+}
+
+input#inputPassword4::placeholder {
+    padding: 0px;
+}
+
+input#inputCity::placeholder {
+    padding: 0px;
+}
+
+input#inputZip::placeholder {
+    padding: 0px;
+}
+
+input#inputAddress2::placeholder {
+    padding: 0px;
+}
+
+input#inputAddress::placeholder {
+    padding: 0px;
+}
+
+input#EmailId::placeholder {
+    padding: 0px;
+}
+
+input#Password::placeholder {
+    padding: 0px;
+}
+
+input#security-answer::placeholder {
+    padding: 0px;
+}
+
+
+.no-padding-left {
+    padding-left: 4px !important;
+    font-size: 13px !important;
+}
+
+input.placeHolder_Font_size::placeholder {
+    font-size: 13px !important;
+}
+
+
+input#inputCity {
+    font-size: 13px;
+}
+
+.authorizeregt_wraper {
+    box-shadow: 2px 3px 4px 3px #ddd;
+    width: 100%;
+    max-width: 1050px;
+    height: auto;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.authorizeregt_wraperA {
+    /* box-shadow: 2px 3px 4px 3px #ddd; */
+    width: 100%;
+    max-width: 1050px;
+    height: auto;
+    /* border-radius: 8px; */
+    /* background-color: #f2f2f2; */
+    /* padding: 20px; */
+}
+
+input.passwordInput.form-control.form-control-lg {
+    padding-right: 30px;
+}
+
+input.passwordInput.is-invalid.form-control.form-control-lg {
+    font-size: small;
+}
+
+textarea#exampleTextarea {
+    font-size: small;
+}

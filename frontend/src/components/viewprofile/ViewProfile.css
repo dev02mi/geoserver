@@ -1,0 +1,142 @@
+.View-ProfileModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+ /* justify-content: center; */
+  align-items: center;
+  cursor: pointer;
+}
+
+.View-Content-Profile {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  /* left: 60rem;
+  top: 5rem; */
+ /* display: flex; */
+  /* flex-direction: column; */
+  align-items: flex-start;
+  width: 20%;
+  /* overflow-x: auto; */
+}
+
+@media screen and (min-width: 290px) {
+  .View-Content-Profile h5 {
+    white-space: initial;
+    overflow: initial;
+    text-overflow: initial;
+    word-wrap: break-word;
+  }
+}
+
+.tbody{
+  /* width: 50%; */
+}
+
+
+/* .View-Content-Profile h5 {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  margin-bottom: 1px;
+} */
+
+.Closed-Button {
+  /* position: absolute; */
+  position: relative;  
+  top: 1px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #e51313;
+}
+
+.View-Table {
+  /* max-width: 50%;  */
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.View-Table td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+  white-space: nowrap;
+  /* overflow-x: auto; */
+  font-size: 10px;
+  word-wrap: break-word;
+}
+
+.View-Table td:first-child {
+  font-weight: bold;
+  max-width: 10%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.View-Table td:nth-child(2) {
+  max-width: 250px; 
+  white-space: normal;
+}
+
+.View-Table td:nth-child(2) b {
+  word-wrap: break-word; /* Add word wrap for bold text inside the cell */
+}
+
+.View-Table td b {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.Word{
+  word-wrap: break-word;
+}
+
+/* .View-Table td.Scrollable-Cell {
+  max-width: 205px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.View-Table td.Scrollable-Cell::-webkit-scrollbar {
+  width: 0px; 
+  height: 15px;
+}
+
+.View-Table td.Scrollable-Cell::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.View-Table td.Scrollable-Cell::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}  */
+
+
+table.View-Table {
+  width: 460px;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  table.View-Table {
+      width:  90%!important;
+      overflow-y: scroll;
+      overflow-x: hidden;
+  }
+  .View-ProfileModal{
+    left:13px;
+  }
+  .Header-textB{
+    font-size: 13px;
+  }
+}
+@media (max-width: 575.98px) {
+  table.View-Table {
+    width:  90%!important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+}

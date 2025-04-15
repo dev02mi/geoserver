@@ -1,0 +1,173 @@
+.TranscoBox .leaflet-bottom .leaflet-control-scale {
+    bottom: -84px;
+}
+
+.TranscoOpen-tools {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background: #1a0991;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+    /* box-shadow: 2px 3px 4px 3px #adacac; */
+}
+
+.TranscoChevron-collapse {
+    width: 35px;
+    height: 35px;
+    border: 2.4px solid white;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.ToolsOpen {
+    width: 35px;
+    height: 35px;
+    border: 2.4px solid white;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 7px;
+}
+
+.OpenTool {
+    z-index: 9999;
+    position: absolute;
+    top: 58px;
+    left: 6px;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: darkblue;
+    color: white;
+}
+
+.OpenToolModel {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.OpenToolModelContent {
+    background-color: #fefefe;
+    margin: 2.5% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 100px;
+}
+
+.OpenToolModelClosebox {
+    /* position: fixed;
+    right: 478px;
+    top: 117px; */
+    padding: 2px;
+}
+
+.OpenToolModelCloseBtn {
+    color: #aaa;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+.OpenToolModelCloseBtn:hover,
+.OpenToolModelCloseBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.OpenToolModelHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #90c7f7;
+    padding: 3px;
+}
+
+.OpenToolModelHeading {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.OpenToolModelBody {
+    display: flex;
+}
+
+.OpenToolModelBodyFirstBox {
+    width: 50%;
+}
+
+.OpenToolModelBodySecondBox {
+    width: 50%;
+}
+
+.OpenToolModelBodyFirstBox input[type="file"] {
+    z-index: 999;
+    line-height: 0;
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    top: 168px;
+    cursor: pointer;
+    background-color: beige;
+    width: 40px;
+    padding: 12px;
+    right: 99.5rem;
+}
+
+input::placeholder {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.TranscoPath {
+    width: 100%;
+    max-width: 404px;
+    height: 31px;
+    font-size: 12px;
+    padding: 7px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    margin-right: 12px;
+}
+
+.GdbFolderPath,
+.OutputFolderPath {
+    width: 90%;
+    margin-right: 10px;
+}
+
+.SubmitGDBForm {
+    color: #555;
+    border: 1px gray solid;
+    padding: 1px 10px;
+}
+
+.OpenToolModelBOX {
+    margin-top: 7px;
+}
+
+.output-folder-path {
+    font-size: 9px;
+    color: #007bff;
+    /* blue color */
+}

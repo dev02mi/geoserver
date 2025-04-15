@@ -1,0 +1,2 @@
+### Resizable Columns [Link1](https://codepen.io/validide/pen/aOKLNo), [Link2](https://dev.to/sohrabzia/building-a-resizable-and-sortable-html-table-with-ease-2a0e)
+### The HTML5 Drag and Drop API [link](https://web.dev/articles/drag-and-drop#:~:text=Create%20draggable%20content,-In%20most%20browsers&text=To%20make%20an%20object%20draggable,any%20markup%20on%20your%20page.&text=Here's%20the%20CSS%20for%20the,is%20the%20cursor%3A%20move%20property.)

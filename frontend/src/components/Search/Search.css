@@ -1,0 +1,5593 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+:root {
+  --font-family-roboto-condensed: "Roboto Condensed", sans-serif;
+}
+
+/* #marsSearch {
+  display: flex;
+  height: 86.2vh;
+} */
+
+/* #marsSearch {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 16px;
+} */
+
+.tools-wrapper {
+  max-width: 440px;
+  color: #868fa0;
+  background-color: #0089ba;
+  position: relative;
+  z-index: 500;
+  height: 821px;
+
+  /* @media screen and (max-width: 450px) {
+    height: calc(100% - 75px);
+    width: 100%;
+    position: absolute;
+  } */
+}
+
+.clicked-tools-wrapper {
+  max-width: 440px;
+  color: #868fa0;
+  background-color: #0089ba;
+  position: relative;
+  z-index: 500;
+  height: 100%;
+}
+
+.search-main-container-box {
+  /* width: 435px; */
+  flex-flow: column;
+
+  /* @media screen and (max-width: 450px) {
+    width: 100%;
+  } */
+}
+
+.open-tools {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 51px;
+  color: white;
+  background: #0a4393;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: all ease 0.4s;
+  box-shadow: 2px 3px 4px 3px #adacac;
+}
+
+.ToolsOepn {
+  margin: 5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  transition: all ease 0.4s;
+}
+
+#LogoHeader {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #86B6F6; */
+}
+
+.SearchHeaderLogo {
+  width: 100%;
+  height: 3.8vh;
+  margin-top: -10px;
+  /* margin-right: -1px; */
+  padding-left: -32px;
+}
+
+.SearchHeaderHeading {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 6px;
+}
+
+#LogoHeader,
+.Left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.toggle-settings {
+  display: inherit;
+  align-items: center;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.chevron-collapse {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.search-heading-box {
+  margin-bottom: 10px;
+}
+
+.SearchMapBox {
+  /* height: 86vh; */
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.formsearch {
+  height: 100%;
+}
+
+.searchmainheadingbox {
+  font-size: 25px;
+  margin-left: 5px;
+  font-family: "Glyphicons Halflings";
+  color: white;
+}
+
+.outer-frame-for-container {
+  height: 33%;
+  width: 100%;
+}
+
+.searchsubheading {
+  font-size: 14px;
+  font-weight: bold;
+  color: #eef5ff;
+  position: relative;
+  top: -9px;
+}
+
+.custom-hr-location {
+  position: relative;
+  top: -11px;
+}
+
+.search-sub-contanier-box {
+  background-color: rgb(3, 3, 3, 0.7);
+  height: 190px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  top: -11px;
+}
+
+.search-sub-contanier-box1 {
+  background-color: rgb(3, 3, 3, 0.7);
+  height: 183px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  top: -11px;
+}
+
+.search-buttons-boxs {
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 10px 3px 2px;
+}
+
+.search-toggle-button-box {
+  position: relative;
+  top: -15px;
+}
+
+/* Four'Buttons'for search by location */
+.selectaoi {
+  width: 100%;
+  max-width: 76px;
+  background-color: #fff;
+  color: black;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.xylocation {
+  width: 100%;
+  max-width: 76px;
+  background-color: #fff;
+  color: black;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.bounds {
+  width: 100%;
+  max-width: 76px;
+  background-color: #fff;
+  color: black;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.SelectLocationonMap {
+  width: 100%;
+  max-width: 180px;
+  background-color: #fff;
+  color: black;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Input selection for 'SELECT AOI' */
+.input-container-box {
+  position: relative;
+  top: -27px;
+}
+
+.SearchFilePath {
+  width: 60%;
+  max-width: 349px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.selectAOIasshapefile_label {
+  font-size: 11px;
+  color: #fff;
+}
+
+.file-input input[type="file"] {
+  z-index: 999;
+  line-height: 0;
+  font-size: 50px;
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: beige;
+  width: 15%;
+  padding: 7px 83px 12px 0px;
+  cursor: pointer;
+}
+
+#uploadbtn {
+  width: 100%;
+  max-width: 72px;
+  background-color: #fff;
+  border: 2px gray solid;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.view-map1 {
+  font-size: 10px;
+  z-index: 1000;
+  width: 23%;
+  background-color: cadetblue;
+  box-shadow: 0px 0px 0px 1px #adacac;
+  background: linear-gradient(135deg, #0c0c0cb3, #0c0c0cb3);
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Input selection for 'XY LOCATION' */
+/* .input-XY-location {
+  width: 96.6%;
+
+} */
+
+.input-XY-locationMainBox {
+  display: flex;
+  /* margin-bottom: 10px; */
+  position: relative;
+  /* top: -50px; */
+}
+
+.xy-input-div {
+  margin: 12px 0 0 0;
+}
+
+.first-input-X-box {
+  width: 100%;
+  max-width: 27rem;
+}
+
+.providexlongitudeindegreedecimal_label {
+  font-size: 10px;
+  font-weight: 400;
+  color: azure;
+  margin-bottom: 2px;
+}
+
+/* .inputxcoordinate {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  padding: 2px;
+  padding-left: 6px;
+} */
+
+.inputxcoordinate,
+.inputycoordinate {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  padding: 2px;
+  padding-left: 6px;
+  border: none;
+}
+
+.inputxcoordinate::placeholder,
+.inputycoordinate::placeholder,
+.SearchFilePath::placeholder {
+  font-size: 12px;
+}
+
+.Aoi-File-path::placeholder {
+  font-size: 12px;
+}
+
+.Buffer-dist-input {
+  width: 100%;
+  padding: 0;
+  background-color: #f1e8c1;
+  padding: 2px;
+  padding-left: 6px;
+  border: none;
+}
+
+.second-input-Y-box {
+  width: 100%;
+  max-width: 27rem;
+}
+
+.provideylatitudeindegreedecimal_label {
+  font-size: 10px;
+  font-weight: 400;
+  color: azure;
+  margin-bottom: 0;
+}
+
+/* .view-map2 {
+  font-size: 10px;
+  width: 32%;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  box-shadow: 0px 0px 0px 1px #2e6da4;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 600;
+} */
+
+.view-map2 {
+  position: relative;
+  /* overflow: hidden; */
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  background-color: #9c6515;
+  border: 3px outset #aa762926;
+  border-top: none;
+  border-left: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); */
+  /* box-shadow: 4px 3px 5px #262626; */
+  box-shadow: inset 1px 1px 2px #fffaed;
+  color: #ffffff;
+  padding: 0.5rem 4rem;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+/* Style For Input 'BOUNDS' */
+
+.ViewMap {
+  position: relative;
+  /* top: -10px; */
+  margin-left: 2px;
+}
+
+.Outer-border-bounds {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 3px;
+}
+
+.upper-right-XY-box {
+  display: flex;
+  justify-content: end;
+}
+
+.upper-right-X {
+  width: 187px;
+  height: 51px;
+}
+
+.upperright-xlongitudeindd_label {
+  color: #fff;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.upper-right-Y {
+  z-index: 9999;
+  width: 170px;
+  height: 51px;
+}
+
+.upperright-ylatitudeindd_label {
+  color: #fff;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.lower-left-XY-box {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  margin-bottom: 10px;
+  position: relative;
+  top: -6px;
+}
+
+.lower-left-X {
+  width: 40%;
+  height: 51px;
+}
+
+.ResoluationInputFiled::placeholder,
+.daInceAngleINputFiled::placeholder {
+  font-size: 12px;
+}
+
+.SearchFilePath::placeholder {
+  font-size: 12px;
+}
+
+.input-UpperRight-X-inDD::placeholder,
+.input-UpperRight-Y-inDD::placeholder,
+.input-LowerLeft-Y-inDD::placeholder,
+.input-LowerLeft-X-inDD::placeholder {
+  font-size: 12px;
+}
+
+.input-selectedx::placeholder,
+.input-selectedy::placeholder {
+  font-size: 12px;
+}
+
+.lower-left-xlongitudeindd_label {
+  color: #fff;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.lower-left-Y {
+  width: 43%;
+  height: 51px;
+}
+
+.lower-left-ylatitudeindd_label {
+  color: #fff;
+  border-radius: 10px;
+  font-size: 10px;
+  margin-left: 26px;
+}
+
+/* Input selection for "SELECT LOCATION ON MAP" */
+.input-select-location-on-map {
+  /* width: 96.6%; */
+  position: relative;
+}
+
+/* .click-map {
+  font-size: 10px;
+  width: 155%;
+ background-color: #337ab7;
+  border-color: #2e6da4;
+  box-shadow: 0px 0px 0px 1px #2e6da4;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  top: 100px;
+  left: -355px;
+} */
+
+.Selected-XY-on-map {
+  display: flex;
+  margin: 0;
+  padding: 2px 8px;
+  gap: 15px;
+}
+
+.first-input-X-on-map {
+  width: 100%;
+  display: grid;
+  padding-left: 0;
+  margin: 0;
+}
+
+.Draw-on-fileName-Input-div {
+  display: flex;
+}
+
+.selectedexlongitudeindegreedecimal_label {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 2px;
+  /* margin-left: 10px; */
+}
+
+.input-selectedx {
+  /* width: 107%; */
+  width: 170px;
+  font-size: 12px;
+}
+
+.second-input-Y-on-map {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-right: 0 !important;
+}
+
+.y-coordinates-input {
+  width: 100%;
+}
+
+.selectedylatitudeindegreedecimal_label {
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 10px;
+  margin-bottom: 2px;
+  /* margin-left: 10px; */
+}
+
+.input-selectedy {
+  /* width: 107%; */
+  width: 170px;
+  font-size: 12px;
+}
+
+/* search by attribute */
+
+::placeholder {
+  /* font-size: 13px; */
+  padding: 0;
+  margin: 0;
+  color: #777;
+}
+
+.searchByAttributeContainer {
+  padding: 4px;
+  margin: 0px 0px 8px 0px;
+  border-radius: 5px;
+  /* background: #404040; */
+  background: #454545;
+}
+
+/* .clicked-searchByAttributeContainer {
+  background-color: rgb(3, 3, 3, 0.7);
+  height: 60.5vh;
+  padding: 10px;
+  position: relative;
+  top: 55px;
+} */
+
+.searchByAttributeContainerheading {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(214, 255, 255);
+}
+
+.productSearcInputBox {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.Product-div {
+  padding: 4px;
+}
+
+.Period-search-container {
+  padding: 4px;
+}
+
+.periodSearchInputBox {
+  display: flex;
+  /* justify-content: left;
+  gap: 12px; */
+}
+
+.OtherParamSearcHInputBox {
+  display: flex;
+  justify-content: left;
+  gap: 12px;
+}
+
+.addiAttriSearchInputBox {
+  display: flex;
+  justify-content: left;
+  gap: 12px;
+}
+
+.productSearcHeading,
+.periodSearcHeading,
+.OtherParamSearcHeading,
+.addiAttriHeading {
+  color: rgb(180, 251, 251);
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.productsearchlable1,
+.productsearchlable,
+.periodSearchlable,
+.OtherParamSearcHlable,
+.addiAttriSearchlable,
+.aoisearchlable1 {
+  color: azure;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.aoisearchlable1 {
+  position: relative;
+  left: 5px;
+  top: -5px;
+}
+
+.periodStartlable {
+  color: azure;
+  font-size: 10px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.periodEndlable {
+  color: azure;
+  font-size: 10px;
+  margin-bottom: 0;
+  font-weight: 400;
+  /* margin-left: 10px; */
+}
+
+.productsearchlable,
+.addiAttriSearchlable {
+  margin-left: 10px;
+}
+
+.InpuSelectionOption {
+  /* height: 2.8vh; */
+  font-size: 12px;
+  width: 100%;
+  margin-left: 0px;
+  background-color: #f1e8c1;
+  padding: 2px;
+  border: none;
+}
+
+.InpuSelectionOption-DataType {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  border: none;
+  padding: 2px;
+}
+
+.InpuSelectionOption-Mission {
+  font-size: 12px;
+  background-color: #f1e8c1;
+}
+
+.firstProductSearchbox,
+.secondPeriodSearchbox,
+.thirdOtherParamSearchbox,
+.fourthAddiAttriSearchbox {
+  margin-bottom: 1rem;
+}
+
+.fourthAddiAttriSearchbox {
+  /* position: absolute; */
+  top: 280px;
+}
+
+.thirdOtherParamSearchbox {
+  /* position: absolute; */
+  top: 200px;
+}
+
+.secondPeriodSearchbox {
+  /* position: absolute; */
+  top: 120px;
+}
+
+.button-search {
+  display: flex;
+  padding: 8px;
+  gap: 4rem;
+}
+
+.Get-save-querybtn-div {
+  width: 35%;
+}
+
+.applyQuery-btn-div {
+  width: 65%;
+}
+
+.ResoluationInputFiled {
+  width: 50px;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  border: none;
+  padding: 2px;
+  padding-left: 6px;
+  /* height: 2.8vh; */
+}
+
+.ResoluationInputFiled::placeholder {
+  font-size: 10px;
+}
+
+input.CloudCoverINputFiled[type="range"] {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 8px;
+  /* accent-color: lightblue; */
+  accent-color: cyan;
+  background-color: white;
+}
+
+input.SnowCoverINputFiled[type="range"] {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 8px;
+  /* accent-color: lightblue; */
+  accent-color: cyan;
+  /* color: lightblue; */
+  /* position: absolute; */
+}
+
+.Dataprocesslable {
+  color: azure;
+  font-size: 10px;
+  margin-bottom: 2px;
+  /* margin-left: 1px;
+  margin-bottom: 0; */
+  font-weight: 400;
+}
+
+.dataProcessingTypeINputFiled {
+  width: 100%;
+  /* height: 2.8vh; */
+  border: none;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  padding: 2px;
+}
+
+.daInceAngleINputFiled {
+  width: 50px;
+  background-color: #f1e8c1;
+  border: none;
+  /* height: 2.8vh; */
+  /* height: 20.5px; */
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 6px;
+  /* margin-left: 10px; */
+}
+
+.daInceAngleINputFiled::placeholder {
+  font-size: 10px;
+}
+
+.SearchCloudCheckBox,
+.SearchSnowCheckBox {
+  margin-top: 4px;
+}
+
+.DispalyResposneResult {
+  overflow: auto;
+  height: 532px;
+}
+
+.DispalyResposneResult,
+.Table-Scroll-Search::-webkit-scrollbar {
+  width: 8px;
+}
+
+.DispalyResposneResult,
+.Table-Scroll-Search::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.tableStyle {
+  width: 100%;
+  /* height: 100%; */
+  /* margin-left: 4px; */
+  overflow-x: scroll;
+  overflow-y: scroll;
+  /* z-index: 100%; */
+  text-align-last: left;
+}
+
+.tableStyle tr {
+  cursor: pointer;
+}
+
+.Search-SRNO {
+  min-width: 10px;
+  max-width: 10px;
+  text-align-last: left;
+}
+
+.Search-TD {
+  /* min-width: 100px;
+  max-width: 100px; */
+  text-align-last: left;
+}
+
+.Search-TD-1 {
+  width: 23%;
+  /* max-width: 200px; */
+  text-align-last: left;
+}
+
+.Search-Action-TD {
+  max-width: 150%;
+}
+
+.Search-Close-button {
+  cursor: pointer;
+  float: right;
+  /* margin: 5px;  */
+  font-weight: bold;
+  font-size: 10px;
+  color: red;
+  position: relative;
+  left: 40px;
+}
+
+.col-map {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 78%;
+  max-width: 77.3%;
+}
+
+.close-search {
+  color: black;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  /* top: -4px; */
+  /* margin-top: -17px; */
+  /* margin-left: 0px; */
+  left: 3px;
+  position: relative;
+}
+
+.close-search:hover {
+  color: rgb(247, 15, 15);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search-table-font {
+  font-size: 10px;
+  font-weight: 700;
+  top: -2px;
+}
+
+.searchTableHeadingBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: #e6ba8d;
+  border: 1px solid #444;
+}
+
+.search-table-heading {
+  /* margin-left: 50%; */
+  /* margin-left: 50%; */
+  font-weight: bold;
+  color: #333;
+  /* padding-top: 0; */
+  /* margin-top: 0; */
+  font-size: min(4vw, 14px);
+  margin: 0;
+  padding-left: 5px;
+}
+
+.searchTableClaoseIcon {
+  padding: 4px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.SearchActionsButtons {
+  cursor: pointer;
+  display: flex;
+  /* align-items: center; */
+  color: #845ec2;
+  fill: #845ec2;
+  font-size: 13px;
+  /* margin-left: 10px; */
+}
+
+.Action-LayerToggle,
+.Action-ZoomIn,
+.Action-Popup,
+.Action-Download {
+  /* margin-left: 10px; */
+  padding: 1px 5px 1px 5px;
+}
+
+.file-info {
+  margin-bottom: 5px;
+}
+
+.remove-button {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Search-RemoveButton {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 0px 3px 0px 3px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-left: 8px;
+  /* size: 77px; */
+  font-size: 10px;
+}
+
+/* modal closedddd */
+
+.file-upload-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.file-upload-modal-dialog {
+  background-color: white;
+  border-radius: 5px;
+  width: 60%;
+  max-width: 600px;
+}
+
+.file-upload-modal-content {
+  padding: 20px;
+}
+
+.file-upload-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.file-upload-modal-header,
+.file-upload-modal-dialog,
+.file-upload-modal-content {
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.file-upload-modal-body {
+  padding: 20px 0;
+}
+
+.file-upload-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+.InpuSelectionOption-Mission-Drop {
+  width: 100%;
+  background-color: #f1e8c1;
+  font-size: 12px;
+  max-height: 58%;
+  height: 22px;
+  /* margin-left: 10px;
+  margin-top: 3px; */
+  scrollbar-width: thin;
+  scrollbar-color: black;
+  padding: 2px;
+  padding-left: 7px;
+}
+
+/* 
+.InpuSelectionOption-Mission-DropDown {
+  background-color: white;
+  font-size: 12px;
+  max-height: 45%;
+  width: 110px;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin-top: 1px;
+  scrollbar-width: thin;
+  scrollbar-color: black;
+} */
+
+.InpuSelectionOption-Mission-DropDown {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  background-color: #f1e8c1;
+  border: 1px solid #ccc;
+}
+
+.checkbox-label {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.checkbox-hover:hover {
+  color: white;
+  background-color: #1967d2;
+}
+
+.InpuSelectionOption-Mission-DropDown input[type="checkbox"] {
+  appearance: checkbox;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0;
+  margin-right: 5px;
+}
+
+/* Thin scrollbar styles for Webkit-based browsers */
+.InpuSelectionOption-Mission::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.InpuSelectionOption-Mission ::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.InpuSelectionOption-Mission::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.Upload-btn {
+  /* position: fixed; */
+  /* left: 12%; */
+  padding: 1rem 4px;
+  /* top: 22.9%; */
+}
+
+.Empty-file {
+  margin-top: -13.5%;
+}
+
+.unique-dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-height: 100px;
+  /* Adjust the max height as needed */
+  overflow-y: auto;
+}
+
+/* Show dropdown menu when files are uploaded */
+.unique-dropdown-menu.show {
+  display: block;
+}
+
+/* Unique empty file container class */
+.unique-empty-file {
+  padding: 8px;
+}
+
+/* Button style */
+.unique-btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Selected file style */
+
+/* Remove button style */
+.unique-search-remove-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Divider style */
+.unique-dropdown-divider {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #e9ecef;
+}
+
+.unique-dropdown-container {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0px;
+  bottom: 22%;
+  margin-top: -12%;
+  color: #b62323;
+}
+
+.unique-dropdown-item {
+  padding: 2px;
+  font-size: 12px;
+  color: #b62323;
+  background-color: white;
+  margin-left: 34px;
+  margin-top: 0%;
+}
+
+.dropdown-menu-file {
+  color: white;
+  margin-top: 9%;
+  position: relative;
+  left: 20%;
+}
+
+.clicked {
+  color: rgb(246, 251, 246);
+  background-color: #2aa72c;
+  padding: 0px 6px 0px px;
+  text-align: center;
+  padding: 1px 40px;
+}
+
+.dropBOX {
+  width: 22rem;
+  display: ruby-text;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 110%;
+  overflow-y: auto;
+  font-size: 11px;
+}
+
+.dropdowns-toggle::after {
+  display: none;
+}
+
+.Container_Table {
+  /* height: 160px; */
+  /* overflow-y: auto; */
+  width: 100%;
+}
+
+/* .MarsSearchPadMar {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.DropDown-List {
+  margin-top: -5.8%;
+  max-height: 70%;
+  overflow-x: auto;
+  width: 60%;
+  padding: 1px;
+}
+
+/* Add hover effect */
+
+/* Add clicked row color */
+.clicked-Row-Color {
+  background-color: #ffdead;
+  /* Change to whatever color you prefer */
+}
+
+.custom-tooltip {
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+}
+
+.info-closed {
+  color: #aaa;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+  /* left: 32%; */
+  position: absolute;
+  top: 105px;
+  right: 24%;
+}
+
+.collapse-icon {
+  position: absolute;
+  right: 1%;
+}
+
+.info-label {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  min-width: 140px;
+}
+
+.newpopup-info-content {
+  background-color: #fefefe;
+  margin: 2.5% auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 1000px;
+  margin-top: 100px;
+  /* height: 65%; */
+  height: auto;
+}
+
+.newpopup-info-content {
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.icon-footprints {
+  position: relative;
+  /* left: 40%; */
+  top: 1.2%;
+  cursor: pointer;
+}
+
+.export-layer {
+  position: relative;
+  left: 12px;
+  /* background-color: darkcyan; */
+  /* background-color: #ff5c5c; */
+  color: white;
+  /* border: none; */
+  padding: 0px 3px 0px 3px;
+  border-radius: 15px;
+  cursor: pointer;
+  /* margin-left: 6px; */
+  /* size: 77px; */
+  font-size: 12px;
+}
+
+.arrow-span {
+  position: relative;
+  right: 20px;
+  cursor: pointer;
+  padding-top: 2px;
+}
+
+.new-UploadFiles {
+  display: inline-block;
+  vertical-align: top;
+  /* margin-left: 0px; */
+  bottom: 22%;
+  position: absolute;
+  top: 30px;
+  left: 5px;
+}
+
+.new-hr {
+  position: relative;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  left: -25px;
+}
+
+.uploaded-file {
+  font-size: 13px;
+  width: 190px;
+  /* color: #ac650e;   */
+}
+
+.uploaded-file-list {
+  font-size: 13px;
+  width: 190px;
+  color: black;
+  cursor: pointer;
+}
+
+.selectAoi-File-Div {
+  position: relative;
+  display: flex;
+}
+
+.DropDown-List-UL {
+  width: 92.2%;
+  position: absolute;
+  top: 102.3%;
+  font-size: 13px;
+  left: 0;
+  background-color: white;
+  max-height: 93%;
+  overflow-y: auto;
+  padding-left: 2%;
+  color: black;
+  /* left: 30px; */
+  cursor: pointer;
+  z-index: 1;
+}
+
+#searchMap {
+  /* height: 78vh; */
+  /* height: 100%; */
+  width: 100%;
+  z-index: 1;
+}
+
+#searchMap1 {
+  /* height: 50vh; */
+  /* height: 100%; */
+  width: 100%;
+  z-index: 1;
+}
+
+.search-th-1 {
+  max-width: 5%;
+}
+
+.SearchDownloadAoiReportBtn {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  left: 210px;
+}
+
+.SearchDownloadAoiReportBtn .svg-inline--fa {
+  height: 1.6rem;
+}
+
+.Download-AOI-Icons {
+  /* position: absolute;
+  left: 109%;
+  top: 20%; */
+  padding: 1px 10px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.Download-report-Icon {
+  /* position: absolute;
+  left: 140%;
+  top: 23%; */
+  padding: 1px 10px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.Download-footsprint-Icon {
+  /* position: absolute;
+  left: 160%;
+  top: 24%; */
+  /* background-color: white; */
+  /* padding: 1px 10px; */
+  padding: 1px 10px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.Download-footsprint-Icondisabled,
+.Download-AOI-Iconsdisabled,
+.Download-report-Icondisabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  margin-right: 15px;
+  border-radius: 4px;
+  padding: 1px 10px;
+}
+
+.Table-Scroll-Search {
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 27.4vh;
+  scrollbar-width: thin;
+}
+
+.Search-mapbox .leaflet-control-zoom {
+  top: -20px;
+}
+
+.leaflet-bottom .leaflet-control-scale {
+  bottom: 5px;
+  /* padding: 2px 2px 2px 15px; */
+}
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+#SearchCoordinate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  color: black;
+  position: absolute;
+  bottom: 0.5%;
+  right: 0.9%;
+  z-index: 999;
+  font-size: 10px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #777;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 13%;
+  line-height: 0.9;
+  padding: 2px 1px;
+}
+
+#searchMap .leaflet-control-scale-line {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  color: black;
+  line-height: 70%;
+  padding: 2px 28px 2px 10px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: none;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  left: 5px;
+  margin-bottom: 5px;
+}
+
+#searchMap1 .leaflet-control-scale-line {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  color: black;
+  line-height: 70%;
+  padding: 2px 28px 2px 10px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: none;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  left: 5px;
+  margin-bottom: 5px;
+}
+
+/* .AcquisitionModeBox {
+  display: flex;
+  justify-content: left;
+  gap: 12px;
+} */
+
+.AcquisitionModelabel {
+  color: azure;
+  font-size: 10px;
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+
+.InpuSelectionOption-AcquisitionMode {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  margin-left: 0px;
+  border: none;
+  padding: 2px;
+}
+
+.iconfaChevronDown {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.mainTableDataRespo {
+  height: 20em;
+  overflow: auto;
+}
+
+.SearchProductTabs {
+  margin-top: 10px;
+}
+
+.SearchNewPopup {
+  display: none;
+  position: fixed;
+  z-index: 500;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.SearchNewfromheader {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0089ba;
+  color: azure;
+  padding: 3px;
+  height: 33px;
+}
+
+.SearchNewformheading {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 4px;
+}
+
+.SearchNewclosebox {
+  padding: 2px;
+}
+
+.SearchNewclose {
+  color: #aaa;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+/* .icon-footprints-disabled:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+} */
+
+/* ____________________________________________________________ */
+
+.Maincontainer-search {
+  width: 100%;
+  /* height: 504px; */
+  height: 100%;
+  /* display: flex; */
+  /* position: relative; */
+  /* padding: 10px; */
+}
+
+.Maincontainer-upper {
+  width: 100%;
+  /* height: 504px; */
+  /* height: 85.5vh; */
+  height: calc(100vh - 130px);
+  display: flex;
+  background-color: #313030;
+
+  /* position: relative; */
+  /* padding: 10px; */
+}
+
+.Search-box-1,
+.Search-box-2 {
+  /* box-shadow: 2px 3px 4px 3px #adacac; */
+  width: 100%;
+  /* border-radius: 8px; */
+  /* background: linear-gradient(135deg, #f9f9f9, #f0f7fe); */
+  height: auto;
+  /* padding: 10px; */
+  /* background: #000000; */
+  scrollbar-width: none;
+}
+
+.Search-box-1 {
+  max-width: 30%;
+  /* margin-right: 7.5px; */
+  overflow: auto;
+  scrollbar-width: none;
+  /* background: #000000; */
+}
+
+.Search-box-2 {
+  max-width: 70%;
+  /* padding-bottom: 0px; */
+  /* margin-right: 7.5px; */
+  overflow: auto;
+  border-left: 1px solid gray;
+  scrollbar-width: none;
+  /* background: #262626; */
+}
+
+.Search-map-mainDiv {
+  padding: 10px;
+  background: #494545;
+}
+
+.Map-Search-fieldset {
+  border: 1.5px solid #868282e3;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.Map-Search-legend {
+  border-style: none;
+  border-width: 0;
+  margin-bottom: 0;
+  width: auto;
+  padding: 1px 10px;
+  /* border-radius: 5px; */
+  background-color: #262626;
+  border: 1px solid #82827a;
+  font-size: min(4vw, 16px);
+  font-family: "open sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 4px 5px 3px #262626;
+}
+
+.spatialSearch-fieldset-DIV {
+  padding: 5px;
+  margin: 6px 0px 10px 0px;
+  /* background: #404040; */
+  border-radius: 5px;
+  background: #454545;
+}
+
+.Head-Search-fieldset {
+  border: 1.5px solid #868282e3;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.Head-Search-legend {
+  border-style: none;
+  border-width: 0;
+  margin-bottom: 0;
+  width: auto;
+  padding: 1px 10px;
+  /* border-radius: 5px; */
+  background-color: #262626;
+  border: 1px solid #82827a;
+  font-size: min(4vw, 16px);
+  font-family: "open sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 4px 5px 3px #262626;
+}
+
+.Head-Field-set {
+  padding: 8px;
+  /* background: #494545; */
+}
+
+.spatialSearch-fieldset {
+  border: 1.5px solid #868282e3;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.spatialSearch-legend {
+  border-style: none;
+  border-width: 0;
+  margin-bottom: 0;
+  width: auto;
+  padding: 1px 6px;
+  /* border-radius: 5px; */
+  background-color: #262626;
+  border: 1px solid #82827a;
+  font-size: min(4vw, 14px);
+  font-family: "open sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 4px 5px 3px #262626;
+}
+
+/* 
+.LAbelOfDrawmap {
+  font-weight: 100;
+  color: white;
+  font-size: 12px;
+}
+
+.Fontwindow{
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  color: #212529;
+  
+}
+
+.SearchAoifile{
+  height: 21px;
+  padding: 0px;
+  border-radius: 0px;
+  background-color: rgb(235, 222, 169);
+}
+
+.ButtonIcon{
+  background-color: rgb(252, 186, 3);
+  height: 22px;
+  border-radius: 0px;
+}
+
+.Fontwindow{
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  color: #212529;
+  
+} */
+
+/* .Aoi-File-div {
+  width: 100%;
+} */
+
+/* .Aoi-File-div {
+  width: 100%;
+  font-size: 12px;
+  padding: 2px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+ 
+} */
+
+.Aoi-custom-file-div {
+  margin-left: -2px;
+  /* margin-right: 2px; */
+}
+
+.Aoi-hidden-file-input {
+  display: none;
+}
+
+.Aoi-UploadIcon {
+  /* vertical-align: middle; */
+  font-size: 11px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.Aoi-custom-file-upload {
+  /* vertical-align: middle; */
+  margin-bottom: 0;
+  text-align: center;
+  height: 100%;
+  display: inline-block;
+  padding: 1px 8px;
+  cursor: pointer;
+  background-color: #fcba03;
+  color: #262626;
+  /* border: none; */
+  border-radius: 4px;
+  border-style: outset;
+  border-color: #fcba03;
+  border-width: 2px;
+
+  /* margin-left: 5px; */
+  &:hover {
+    background-color: #e7ad0c;
+  }
+}
+
+.Aoi-File-path {
+  width: 100%;
+  /* max-width: 584px;
+  height: 31px; */
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 6px;
+  color: #555;
+  /* background-color: #fff; */
+  background-color: #f1e8c1;
+  background-image: none;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  /* margin-right: 12px; */
+}
+
+.spatial-Aoi-label {
+  color: azure;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 0;
+  /* margin-left: 1rem; */
+}
+
+.View-on-map-btn {
+  position: relative;
+  /* overflow: hidden; */
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  /* width: 100%;
+  max-width: 99px; */
+  background-color: #9c6515;
+  border: 3px outset #aa762926;
+  border-top: none;
+  border-left: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); */
+  /* box-shadow: 4px 3px 5px #262626; */
+  box-shadow: inset 1px 1px 2px #fffaed;
+  color: #ffffff;
+  padding: 0.5rem 4rem;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+/* .View-on-map-btn:hover {
+  background-color: rgb(104, 67, 14);
+  border-color: rgb(104, 67, 14); 
+  cursor: pointer;
+} */
+
+.input-XY-location {
+  padding: 3px 3px 3px;
+}
+
+.Viewmap-btnDIv {
+  padding: 10px;
+  display: flex;
+  margin-top: 5px;
+  justify-content: start;
+}
+
+.None-btn {
+  margin-top: 10px;
+  padding: 10px 4px 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.No-spati-sele-label {
+  background-color: #c00000;
+  width: 100%;
+  border: 1px solid black;
+  padding: 2px;
+  font-size: 1.1rem;
+}
+
+.xyLocation-fieldset {
+  border: 1.5px solid #868282e3;
+  padding: 0 4px 8px;
+  margin-bottom: 1.5rem;
+  /* border-radius: 12px; */
+}
+
+.xyLocation-legend {
+  border-style: none;
+  border-width: 0;
+  margin-bottom: 0;
+  width: auto;
+  padding: 1px 4px;
+  margin-left: 4px;
+  /* border-radius: 5px; */
+  background-color: #ffc000;
+  /* border: 1px solid #ffff00; */
+  font-size: min(4vw, 12px);
+  font-family: "open sans", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  box-shadow: 4px 5px 3px #262626;
+}
+
+.xyLocation-fieldset-div {
+  /* padding: 4px 0 4px; */
+  margin-top: 20px;
+}
+
+.Buffer-div {
+  /* padding: 2px 5px 3px; */
+  padding: 0 3px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.buffer-type-col {
+  display: flex;
+  width: 50%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.Buffer-inner-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Label-buffer-type {
+  width: 40%;
+  float: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.LAbelOf-Buffer {
+  width: 100%;
+  /* text-align: center; */
+  font-weight: 400;
+  color: azure;
+  font-size: 11px;
+  padding: 0;
+  margin: 0;
+}
+
+.circle-box-btn {
+  display: flex;
+  width: 100%;
+  /* width: 33.33%; */
+  float: left;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.buffer-Dist-unit-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  /* padding-right: 15px;
+  padding-left: 15px; */
+}
+
+.Buff-dist-row {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  /* margin-right: -15px;
+  margin-left: -15px; */
+}
+
+.buff-unit-label,
+.buff-dist-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 40%;
+  padding: 0;
+  margin: 0;
+}
+
+.buff-dist-Input-div {
+  width: 100%;
+  font-size: 12px;
+  max-width: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.Buff-unit-row {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  margin-top: 1.5rem !important;
+  /* margin-right: -15px;
+  margin-left: -15px; */
+}
+
+.buff-unit-input {
+  width: 100%;
+  max-width: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+.OptionsSearch {
+  width: 100%;
+  font-size: 12px;
+  background-color: rgb(235, 222, 169) !important;
+  border-radius: 0px !important;
+  padding: 2px;
+  padding-left: 6px;
+  margin: 0;
+  border: 0;
+}
+
+/* Button CSS */
+.Buff-search-btn1 {
+  display: inline-block;
+  /* margin-left: 80px;  
+  margin-top: 20px;  
+  margin-right: 80px;   
+  margin-bottom: 20px; */
+  border: 1px solid rgb(0, 0, 0);
+  /* height: 30px; */
+  color: #000000;
+
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  /* font-size: 17px; */
+  text-align: center;
+  background-color: rgb(252, 186, 3);
+  box-shadow: 2px 2px 4px #000000, inset -3px -3px 5px 1px #a96b01,
+    inset 3px 3px 4px 1px #fdf3e2;
+
+  border-radius: 2px;
+  padding: 1px 10px 1px;
+  /* padding: 2px 12px 2px 12px; */
+  /* line-height: 30px; */
+  position: relative;
+}
+
+.Buff-search-btn2 {
+  display: inline-block;
+  /* margin-left: 80px;  
+  margin-top: 20px;  
+  margin-right: 80px;   
+  margin-bottom: 20px; */
+  border: 1px solid rgb(0, 0, 0);
+  /* height: 30px; */
+  color: #000000;
+
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  /* font-size: 17px; */
+  text-align: center;
+  background-color: rgb(252, 186, 3);
+  box-shadow: 2px 2px 4px #000000, inset -3px -3px 5px 1px #a96b01,
+    inset 3px 3px 4px 1px #fdf3e2;
+
+  border-radius: 2px;
+  padding: 1px 14px 1px;
+  /* padding: 2px 12px 2px 12px; */
+  /* line-height: 30px; */
+  position: relative;
+}
+
+.spec-search-btn {
+  /* padding: 0px 20px; */
+  padding: 2px 3px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: var(--font-family-roboto-condensed);
+}
+
+.spec-search-btn.active {
+  font-family: var(--font-family-roboto-condensed);
+  display: inline-block;
+  /* margin-left: 80px;  
+  margin-top: 20px;  
+  margin-right: 80px;   
+  margin-bottom: 20px; */
+  border: 1px solid rgb(0, 0, 0);
+  /* height: 30px; */
+  width: 100%;
+  color: #000000;
+
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  /* font-family: 'Trebuchet MS'; */
+  font-weight: bold;
+  /* font-size: 17px; */
+  /* text-align: center; */
+  background-color: rgb(244, 141, 5);
+  box-shadow: 2px 2px 4px #000000, inset 3px 3px 5px 2px #8f5a00,
+    inset -3px -3px 5px 1px #fed27b;
+
+  border-radius: 2px;
+  /* padding: 2px 19px 2px 19px; */
+  /* line-height: 30px; */
+  position: relative;
+}
+
+.spec-search-btn.inactive {
+  font-family: var(--font-family-roboto-condensed);
+  display: inline-block;
+  /* margin-left: 80px;  
+  margin-top: 20px;  
+  margin-right: 80px;   
+  margin-bottom: 20px; */
+  border: 1px solid rgb(0, 0, 0);
+  /* height: 30px; */
+  width: 100%;
+  color: #000000;
+
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  /* font-family: 'Trebuchet MS'; */
+  font-weight: bold;
+  /* font-size: 17px; */
+  /* text-align: center; */
+  background-color: rgb(252, 186, 3);
+  box-shadow: 2px 2px 4px #000000, inset -3px -3px 5px 1px #a96b01,
+    inset 3px 3px 4px 1px #fdf3e2;
+
+  border-radius: 2px;
+
+  /* padding: 2px 19px 2px 19px; */
+  /* line-height: 30px; */
+  position: relative;
+}
+
+.Leg-square-input {
+  /* color: white; */
+  margin-right: 8px;
+  /* margin-top: 0; */
+  box-shadow: 3px 3px 3px #262626;
+}
+
+.xyLocation-legend input {
+  margin: 0;
+}
+
+.drawOn-map-Para {
+  background-color: #c00000;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 1rem 0.5rem 0 0.5rem;
+  border: 4px solid #172c51;
+  border-radius: 8px;
+  font-weight: 500;
+  text-shadow: 1px 2px 2px #000000;
+}
+
+.second-input-Y-on-mapBuffer {
+  padding: 6px;
+}
+
+.drawOn-map-Para p {
+  font-size: 1.1rem;
+}
+
+.bullet-circle-icon {
+  font-size: 8px;
+  margin-right: 4px;
+  color: #ffe842;
+}
+
+.DrawOn-File-Name-Input {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  /* padding: 2px; */
+  color: #555;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  /* margin-right: 12px; */
+  padding: 1px;
+  padding-left: 6px;
+}
+
+.DrawOn-File-Name-Input::placeholder {
+  font-size: 12px;
+  margin-left: 0;
+}
+
+.DrawOn-File-custom-file-div {
+  height: 22px;
+  margin-left: 5px;
+}
+
+.DrawOnMap-UploadIcon {
+  /* vertical-align: middle; */
+  font-size: 10px;
+  padding-bottom: 3px;
+}
+
+.DrawOnMap-file-input {
+  display: none;
+}
+
+.Save-Geo-btn-div {
+  padding: 2rem 1rem;
+}
+
+.GEOMETRY-map-btn {
+  position: relative;
+  /* overflow: hidden; */
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  background-color: #548235;
+  border: 3px outset #66ca208c;
+  border-top: none;
+  border-left: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); */
+  /* box-shadow: 4px 3px 5px #262626; */
+  box-shadow: inset 0px 1px 3px #fffaed;
+  color: #ffffff;
+  padding: 0.5rem 4rem;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.DrawOnMap-custom-file-upload {
+  /* vertical-align: middle; */
+  margin-bottom: 0;
+  text-align: center;
+  height: 100%;
+  display: inline-block;
+  padding: 1px 5px;
+  cursor: pointer;
+  background-color: #fcba03;
+  color: #262626;
+  /* border: none; */
+  border-radius: 4px;
+  border-style: outset;
+  border-color: #fcba03;
+  border-width: 2px;
+
+  /* margin-left: 5px; */
+  &:hover {
+    background-color: #e7ad0c;
+  }
+}
+
+/* Attribute Search Section  */
+
+.Attribute-search-fieldset {
+  border: 1.5px solid #868282e3;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.Attribute-search-legend {
+  border-style: none;
+  border-width: 0;
+  margin-bottom: 0;
+  margin-left: 4px;
+  width: auto;
+  padding: 1px 6px;
+  margin-left: 12px;
+  /* border-radius: 5px; */
+  background-color: #262626;
+  border: 1px solid #82827a;
+  font-size: min(4vw, 14px);
+  font-family: "open sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 4px 5px 3px #262626;
+}
+
+/* .mission-selection-container {
+  position: relative;
+} */
+
+.dropdown-icon {
+  float: right;
+  margin: 0px 4px;
+}
+
+.Other-para-row {
+  display: flex;
+  padding: 4px;
+  gap: 8px;
+  /* justify-content: space-between; */
+}
+
+.Other-para-col {
+  padding: 0;
+  margin-right: 0;
+}
+
+.atrribute-search-col {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+}
+
+.Additional-attri-div {
+  display: flex;
+  padding: 4px;
+}
+
+.data-processing-div {
+  padding-left: 0;
+}
+
+/* _____ */
+/* 
+input.date{
+  border-radius:10px;
+  height:auto;
+  transition:all ease 400ms;
+}
+
+.quesadilla{
+  position:relative;
+}
+.quesadilla:after{
+  z-index:-1;
+  content:'📅';
+  display: block;
+  font-size:2rem;
+  color:STEELBLUE;
+  background: none;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:13px;
+  right:-7px;
+}
+
+.enchilada::-webkit-calendar-picker-indicator{
+  opacity:5;
+}
+.enchilada, .enchilada:focus{
+  background:rgba(0,0,0,0); 
+}
+
+::-webkit-datetime-edit {
+  padding: .2em;
+  font-size:2rem;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+  background: #f0eabd; 
+  border-radius:10px;
+  padding:7px;
+}
+::-webkit-datetime-edit-text {
+  color: silver; 
+  padding: 0 0.6em; 
+}
+::-webkit-datetime-edit-day-field {
+  color: DeepPink;
+}
+::-webkit-datetime-edit-month-field {
+  color: LimeGreen; 
+}
+
+::-webkit-datetime-edit-year-field {
+  color: MediumSlateBlue; 
+}
+::-webkit-inner-spin-button {
+  opacity:1; 
+  font-size:2rem;
+  margin-top:5px;
+}
+
+::-webkit-calendar-picker-indicator:hover{
+  transform:scale(1.2);
+  cursor:pointer;
+}
+ */
+
+#date {
+  width: 150px;
+  outline: none;
+  border: 1px solid #aaa;
+  padding: 6px 28px;
+  color: #aaa;
+}
+
+.date-container {
+  position: relative;
+  float: left;
+}
+
+.date-text {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  color: #aaa;
+}
+
+.date-icon {
+  position: absolute;
+  top: -2px;
+  right: 25px;
+  width: 24px;
+  object-fit: cover;
+  /* pointer-events: none; */
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* _____ */
+
+.ENDDateINputFiled,
+.startDateINputFiled {
+  width: 55%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  padding: 2px;
+  /* text-align: center; */
+  border: none;
+  /* content: url('../../asset/GNCalander_128.png'); */
+}
+
+/* .ENDDateINputFiled,
+.startDateINputFiled ::-webkit-calendar-picker-indicator{
+  opacity:0;
+} */
+
+.startDateINputFiled::placeholder,
+.ENDDateINputFiled::placeholder {
+  /* text-align: start; */
+  padding-left: 2px;
+  font-size: 12px;
+  /* Adjust the size as needed */
+  /* color: #999; */
+}
+
+.startDateperiodSearch,
+.endDateperiodSearch {
+  padding: 0 0;
+  max-width: none;
+  margin-right: 10px;
+}
+
+.search-btn-col {
+  padding: 0;
+  margin: 0;
+}
+
+/* ____________________ Bounds ====================== */
+
+.the-fieldset-Bounds {
+  border: 2px dashed gray;
+  position: relative;
+  width: 100%;
+  /* Container width */
+  height: 15rem;
+  /* Container height */
+  box-sizing: border-box;
+}
+
+.the-fieldset-Bounds::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 2vw;
+  /* Width of the horizontal line */
+  height: 2vw;
+  /* Height of the vertical line */
+  border-top: 2px solid #f48d05;
+  /* Top border of the corner */
+  border-right: 2px solid #f48d05;
+  /* Right border of the corner */
+  border-left: 2px solid transparent;
+  /* Hide the left border */
+  border-bottom: 2px solid transparent;
+  /* Hide the bottom border */
+  z-index: 1;
+}
+
+.the-fieldset-Bounds::after {
+  content: "";
+  position: absolute;
+  bottom: 146px;
+  right: -11px;
+  width: 11px;
+  height: 11px;
+  border-bottom: 2px solid #f48d05;
+  border-left: 2px solid #f48d05;
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
+  z-index: 1;
+}
+
+.lower-x-label,
+.Lower-y-label,
+.upper-x-label,
+.upper-y-label {
+  position: absolute;
+  background-color: #161514;
+  border: 1px solid gray;
+  color: white;
+  padding: 2px;
+  /* Add some padding */
+  font-size: 9.5px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.upper-x-label {
+  top: -11px;
+  /* Position from the top */
+  right: 21rem;
+  /* Position from the left */
+  padding: 2px 3px;
+}
+
+.upper-x-Input {
+  width: 144px;
+  position: absolute;
+  top: 12px;
+  /* Position from the top */
+  /* right: 174px; */
+  right: 21rem;
+}
+
+.upper-y-Input {
+  width: 144px;
+  position: absolute;
+  top: 12px;
+  /* Position from the top */
+  right: 5rem;
+}
+
+.upper-y-label {
+  top: -11px;
+  right: 5rem;
+  padding: 2px 7px;
+}
+
+.lower-x-label {
+  bottom: -11px;
+  left: 5rem;
+  padding: 2px 6px;
+}
+
+.lower-x-label::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: -53px;
+  border-bottom: 2px solid #f48d05;
+  border-left: 2px solid #f48d05;
+  width: 2vw;
+  height: 2vw;
+  border-right: 2px solid transparent;
+}
+
+.lower-x-label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 193px;
+  border-top: 2px solid #f48d05;
+  border-right: 2px solid #f48d05;
+  width: 11px;
+  height: 11px;
+  border-left: 2px solid transparent;
+}
+
+.lower-x-Input {
+  width: 144px;
+  position: absolute;
+  bottom: 12px;
+  /* Position from the top */
+  /* right: 218px; */
+  left: 5rem;
+}
+
+.Lower-y-label {
+  bottom: -11px;
+  /* Position from the bottom */
+  left: 21rem;
+  padding: 2px 10px;
+}
+
+.Lower-y-Input {
+  width: 144px;
+  position: absolute;
+  bottom: 12px;
+  /* Position from the bottom */
+  /* right: 68px */
+  left: 21rem;
+}
+
+.input-UpperRight-X-inDD {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  padding: 2px;
+  padding-left: 6px;
+  border: none;
+}
+
+.input-UpperRight-Y-inDD {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  padding: 2px;
+  padding-left: 6px;
+  border: none;
+}
+
+.input-LowerLeft-X-inDD {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  padding: 2px;
+  padding-left: 6px;
+  border: none;
+}
+
+.input-LowerLeft-Y-inDD {
+  width: 100%;
+  font-size: 12px;
+  background-color: #f1e8c1;
+  padding: 2px;
+  padding-left: 6px;
+  border: none;
+}
+
+.input-Bounds {
+  width: 100%;
+  /* max-width: 96.9%; */
+  margin: 10px 0px;
+  padding: 5px;
+  position: relative;
+  /* top: -50px; */
+  /* outline: gray solid 1px; */
+}
+
+.ViewMap3 {
+  position: relative;
+  padding-top: 10px;
+}
+
+.view-map3 {
+  position: relative;
+  /* overflow: hidden; */
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  /* width: 100%;
+  max-width: 99px; */
+  background-color: #9c6515;
+  border: 3px outset #aa762926;
+  border-top: none;
+  border-left: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); */
+  /* box-shadow: 4px 3px 5px #262626; */
+  box-shadow: inset 1px 1px 2px #fffaed;
+  color: #ffffff;
+  padding: 0.5rem 4rem;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+/* ================================== */
+
+/* Buttons  Query*/
+
+.save-query-btn {
+  width: 100%;
+  border-radius: 14px;
+  background-color: #00b050;
+
+  border: 4px outset #e7d9d969;
+  box-shadow: 3px 3px 5px #262626;
+
+  color: #ffffff;
+  font-weight: 600;
+  padding: 4px;
+}
+
+.get-query-btn {
+  width: 100%;
+  border-radius: 14px;
+  background-color: #2e75b6;
+
+  border: 4px outset #dbe2e824;
+  box-shadow: 3px 3px 5px #262626;
+
+  color: #ffffff;
+  font-weight: 600;
+  padding: 4px;
+}
+
+.apply-query-btn {
+  width: 100%;
+  border-radius: 14px;
+  background-color: #548235;
+
+  border: 4px outset #b9c2b345;
+  box-shadow: 4px 3px 5px #262626;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 4px;
+}
+
+.rest-btn {
+  width: 100%;
+  border-radius: 14px;
+  background-color: #ff9933;
+
+  border: 4px outset #fffbf740;
+  box-shadow: 3px 3px 5px #262626;
+  font-weight: 600;
+
+  padding: 4px;
+}
+
+.quit-btn {
+  width: 100%;
+  border-radius: 14px;
+  background-color: #bfbfbf;
+
+  border: 4px outset #ffeded54;
+  box-shadow: 3px 3px 5px #262626;
+  font-weight: 600;
+
+  padding: 4px;
+}
+
+.resetbtn-div,
+.quitbtn-div {
+  margin: 0;
+}
+
+.resetbtn-div {
+  padding-left: 0;
+}
+
+.quitbtn-div {
+  padding-right: 0;
+}
+
+/* Media Query */
+
+/* 
+@media((min-width:1025px)and (max-width:1440px)) {
+
+  .spec-search-btn.inactive {
+    font-size: 10px;
+  }
+
+  .spec-search-btn.active {
+    font-size: 10px;
+  }
+
+  .View-on-map-btn {
+    padding: .3rem 3rem;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .Aoi-File-path::placeholder {
+    font-size: 12px;
+  }
+
+
+} */
+
+.leaflet-control-custom-zoom a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-fit: contain; */
+}
+
+#searchMap .leaflet-control-custom-zoom {
+  margin-bottom: 20px;
+  position: absolute;
+  top: 6rem;
+  z-index: 1;
+}
+
+#searchMap1 .leaflet-control-custom-zoom {
+  margin-bottom: 20px;
+  position: absolute;
+  top: 6rem;
+  z-index: 1;
+}
+
+#searchMap .leaflet-control-layers-toggle {
+  background-image: url("../../asset/SVG_ICONS_128/LYBase_Layers128.svg");
+  width: 4rem;
+  height: 3rem;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  box-shadow: 1px 1px 3px black, inset -1px -1px 3px #545454,
+    inset 1px 1px 3px #fff;
+}
+
+#searchMap1 .leaflet-control-layers-toggle {
+  background-image: url("../../asset/SVG_ICONS_128/LYBase_Layers128.svg");
+  width: 4rem;
+  height: 3rem;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  box-shadow: 1px 1px 3px black, inset -1px -1px 3px #545454,
+    inset 1px 1px 3px #fff;
+}
+
+#searchMap .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  background-image: url("../../asset/SVG_ICONS_128/LYBase_Layers128.svg");
+  /* display: none; */
+}
+
+#searchMap1 .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  background-image: url("../../asset/SVG_ICONS_128/LYBase_Layers128.svg");
+  display: none;
+}
+
+#searchMap1 .leaflet-control-layers-toggle {
+  background-image: url("../../asset/SVG_ICONS_128/LYBase_Layers128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-marker {
+  background-image: url("../../asset/SVG_ICONS_128/DWDraw_Point128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-marker {
+  background-image: url("../../asset/SVG_ICONS_128/DWDraw_Point128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-polyline {
+  background-image: url("../../asset/SVG_ICONS_128/DWDraw_Line128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-polyline {
+  background-image: url("../../asset/SVG_ICONS_128/DWDraw_Line128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-rectangle {
+  background-image: url("../../asset/SVG_ICONS_128/DWDraw_Box_Poly128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-rectangle {
+  background-image: url("../../asset/SVG_ICONS_128/DWDraw_Box_Poly128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-polygon {
+  background-image: url("../../asset/SVG_ICONS_128/DWDraw_Poly128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-polygon {
+  background-image: url("../../asset/SVG_ICONS_128/DWDraw_Poly128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-edit {
+  background-image: url("../../asset/SVG_ICONS_128/DWEdit_Move_Feature128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-edit {
+  background-image: url("../../asset/SVG_ICONS_128/DWEdit_Move_Feature128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-fullextent {
+  background-image: url("../../asset/SVG_ICONS_128/NAFull_Extent128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-fullextent {
+  background-image: url("../../asset/SVG_ICONS_128/NAFull_Extent128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-MapPan {
+  background-image: url("../../asset/SVG_ICONS_128/NAPan128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-MapPan {
+  background-image: url("../../asset/SVG_ICONS_128/NAPan128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-FixedZoomOut {
+  background-image: url("../../asset/SVG_ICONS_128/NAFixed_Zoom_Out128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-FixedZoomOut {
+  background-image: url("../../asset/SVG_ICONS_128/NAFixed_Zoom_Out128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-FixedZoomIn {
+  background-image: url("../../asset/SVG_ICONS_128/NAFixed_Zoom_In128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-FixedZoomIn {
+  background-image: url("../../asset/SVG_ICONS_128/NAFixed_Zoom_In128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-GoToPreviousExtent {
+  background-image: url("../../asset/SVG_ICONS_128/NAGo_To_Previous_Extent128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-GoToPreviousExtent {
+  background-image: url("../../asset/SVG_ICONS_128/NAGo_To_Previous_Extent128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-GoToNextExtent {
+  background-image: url("../../asset/SVG_ICONS_128/NAGo_To_Next_Extent128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-GoToNextExtent {
+  background-image: url("../../asset/SVG_ICONS_128/NAGo_To_Next_Extent128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-ZoomSelected {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_Select128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-ZoomSelected {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_Select128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-SelectedZoomIn {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_In128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-SelectedZoomIn {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_Out128.svg");
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-pm-icon-SelectedZoomOut {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_Out128.svg");
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-pm-icon-SelectedZoomOut {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_Out128.svg");
+}
+
+/*  */
+
+#searchMap .leaflet-control-custom-zoom .ZoomInIcon {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_In128.svg");
+}
+
+#searchMap1 .leaflet-control-custom-zoom .ZoomInIcon {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_In128.svg");
+}
+
+#searchMap .leaflet-control-custom-zoom .ZoomOutIcon {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_Out128.svg");
+}
+
+#searchMap1 .leaflet-control-custom-zoom .ZoomOutIcon {
+  background-image: url("../../asset/SVG_ICONS_128/NAZoom_Out128.svg");
+}
+
+#searchMap .leaflet-control-zoom-in {
+  border-top: 1px solid #ccc;
+  background-color: #ededed;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 5px black, inset -1px -1px 5px #545454,
+    inset 1px 1px 5px #fff;
+}
+
+#searchMap1 .leaflet-control-zoom-in {
+  border-top: 1px solid #ccc;
+  background-color: #ededed;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 5px black, inset -1px -1px 5px #545454,
+    inset 1px 1px 5px #fff;
+}
+
+#searchMap .leaflet-control-zoom-out {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+  background-color: #ededed;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 5px black, inset -1px -1px 5px #545454,
+    inset 1px 1px 5px #fff;
+}
+
+#searchMap1 .leaflet-control-zoom-out {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+  background-color: #ededed;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 5px black, inset -1px -1px 5px #545454,
+    inset 1px 1px 5px #fff;
+}
+
+#searchMap .leaflet-control-layers-expanded .leaflet-control-layers-list {
+  display: block;
+  position: relative;
+}
+
+#searchMap .leaflet-control-custom-zoom .control-icon {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#searchMap1 .leaflet-control-custom-zoom .control-icon {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#searchMap1 .leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  padding: 2px;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+#searchMap .OurTool {
+  top: 5.5rem;
+  position: absolute;
+}
+
+#searchMap1 .OurTool {
+  top: 5.5rem;
+  position: absolute;
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-buttons-control-button {
+  background-color: #ededed;
+  border-bottom: 1px solid #ccc;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 5px black, inset -1px -1px 5px #545454,
+    inset 1px 1px 5px #fff;
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-buttons-control-button {
+  background-color: #ededed;
+  border-bottom: 1px solid #ccc;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 5px black, inset -1px -1px 5px #545454,
+    inset 1px 1px 5px #fff;
+}
+
+#searchMap .leaflet-pm-actions-container a {
+  box-shadow: 1px 1px 5px black, inset -1px -1px 5px #545454,
+    inset 1px 1px 5px #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #691d1d;
+  line-height: 28px;
+  height: 27px;
+  letter-spacing: 0.3px;
+}
+
+#searchMap
+  .button-container
+  .leaflet-pm-actions-container.pos-right
+  a.leaflet-pm-action:first-child {
+  border-radius: 3px 0 0 20px;
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-buttons-control-button {
+  padding: 4px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-buttons-control-button {
+  padding: 4px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+
+.OurTool
+  .leaflet-pm-toolbar
+  .button-container
+  a.leaflet-buttons-control-button {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styling for the button when the container is active */
+#searchMap .leaflet-buttons-control-button.active-btn {
+  background-color: #ededed;
+  box-shadow: 2px 2px 4px #000000, inset 3px 3px 5px 2px #989898,
+    inset -3px -3px 5px 1px #c5c5c5;
+  border-bottom: 1px solid #ccc;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+#searchMap1 .leaflet-buttons-control-button.active-btn {
+  background-color: #ededed;
+  box-shadow: 2px 2px 4px #000000, inset 3px 3px 5px 2px #989898,
+    inset -3px -3px 5px 1px #c5c5c5;
+  border-bottom: 1px solid #ccc;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+#searchMap .leaflet-pm-toolbar .leaflet-buttons-control-button:active {
+  background-color: #ededed;
+  box-shadow: 1px 1px 5px black, inset 10px 10px 15px #545454;
+  border-bottom: 1px solid #ccc;
+  color: black;
+}
+
+#searchMap1 .leaflet-pm-toolbar .leaflet-buttons-control-button:active {
+  background-color: #ededed;
+  box-shadow: 1px 1px 5px black, inset 10px 10px 15px #545454;
+  border-bottom: 1px solid #ccc;
+  color: black;
+}
+
+.SearchSelectedZoomIn {
+  cursor: zoom-in;
+}
+
+.SearchSelectedZoomOut {
+  cursor: zoom-out;
+}
+
+.inputxcoordinate.is-invalid,
+.inputycoordinate.is-invalid {
+  border-color: #dc3545;
+  /* Bootstrap's red color for invalid inputs */
+}
+
+.invalid-feedback {
+  /* color: #dc3545; */
+  color: orange;
+  /* Bootstrap's red color for error messages */
+  font-size: 0.7em;
+  position: absolute;
+  display: block;
+}
+
+.invalid-feedbackbolefy {
+  /* color: #dc3545; */
+  color: orange;
+  /* Bootstrap's red color for error messages */
+  font-size: 0.7em;
+  /* position: absolute; */
+  display: block;
+}
+
+.invalid-feedbackbolefx {
+  /* color: #dc3545; */
+  color: orange;
+  font-size: 0.7em;
+  display: block;
+}
+
+.Buff-search-btn1.active {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  height: 30px;
+  /* width: 100%; */
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  /* font-size: 17px; */
+  /* text-align: center; */
+  background-color: rgb(244, 141, 5);
+  box-shadow: 2px 2px 4px #000000, inset 3px 3px 5px 2px #8f5a00,
+    inset -3px -3px 5px 1px #fed27b;
+  border-radius: 2px;
+  /* padding: 2px 19px 2px 19px; */
+  /* line-height: 30px; */
+  position: relative;
+}
+
+.Buff-search-btn2.active {
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  height: 30px;
+  /* width: 100%; */
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  /* font-size: 17px; */
+  /* text-align: center; */
+  background-color: rgb(244, 141, 5);
+  box-shadow: 2px 2px 4px #000000, inset 3px 3px 5px 2px #8f5a00,
+    inset -3px -3px 5px 1px #fed27b;
+  border-radius: 2px;
+  /* padding: 2px 19px 2px 19px; */
+  /* line-height: 30px; */
+  position: relative;
+}
+
+.xy-input-div {
+  display: flex;
+}
+
+.datapicker {
+  position: relative;
+  display: inline-block;
+}
+
+.hidden-date-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  /* Make the input non-interactive */
+  width: 100%;
+  height: 100%;
+}
+
+.calendar-icon {
+  cursor: pointer;
+  width: 30px;
+  /* Adjust size as needed */
+  height: 30px;
+  /* Adjust size as needed */
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+/* input[type="range"]::-webkit-slider-runnable-track {
+  background: #053a5f;
+  height: 0.5rem;
+} */
+
+/******** Firefox ********/
+/* input[type="range"]::-moz-range-track {
+  background: #053a5f;
+  height: 0.5rem;
+} */
+
+.MarsSearchPadMar input {
+  padding: 2px;
+  padding-left: 6px;
+  border: none;
+}
+
+/* #searchMap .leaflet-touch .leaflet-bar a {
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+} */
+
+.Att-search-fieldset-div {
+  padding: 4px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #SearchCoordinate {
+    font-size: 9px;
+    width: auto;
+    max-width: 30%;
+    padding: 2px 4px;
+  }
+
+  .Search-box-1 {
+    padding: 5px;
+  }
+
+  .Head-Field-set {
+    padding: 0;
+  }
+
+  .Head-Search-fieldset {
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  .Head-Search-legend {
+    padding: 1px 3px;
+    font-size: min(2vw, 12px);
+  }
+
+  .spatialSearch-fieldset-DIV {
+    padding: 4px;
+    margin: 4px 0px 8px 0px;
+  }
+
+  .spatialSearch-fieldset {
+    padding: 2px;
+  }
+
+  .spatialSearch-legend {
+    font-size: min(2vw, 10px);
+    padding: 0px 3px;
+    box-shadow: 3px 2px 2px #262626;
+  }
+
+  .search-buttons-boxs {
+    display: flex;
+    row-gap: 2px;
+    flex-direction: column;
+    padding: 0.5rem 3rem;
+  }
+
+  .spec-search-btn {
+    font-size: min(2vh, 12px);
+    /* padding: 2px; */
+    padding: 2px 12px 2px 12px;
+  }
+
+  .None-btn {
+    margin-top: 0;
+    padding: 4px 4px;
+  }
+
+  .spatial-Aoi-label {
+    font-size: 9px;
+    margin-left: 0;
+  }
+
+  .Aoi-custom-file-upload {
+    padding: 0 4px;
+  }
+
+  .Aoi-File-path {
+    font-size: min(2vh, 10px);
+    padding: 0;
+  }
+
+  .Aoi-custom-file-div {
+    margin-left: -5px;
+  }
+
+  .arrow-span {
+    padding-top: 0;
+  }
+
+  .iconfaChevronDown {
+    font-size: 10px;
+
+    font-weight: bold;
+  }
+
+  .View-on-map-btn {
+    font-size: min(2vh, 10px);
+    padding: 0.2rem 1rem;
+    border: 1px outset #aa762926;
+  }
+
+  .Upload-btn {
+    padding: 0.3rem;
+  }
+
+  .xy-input-div {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .provide-x-div {
+    padding-right: 0;
+  }
+
+  .provide-y-div {
+    padding-left: 0;
+  }
+
+  .inputxcoordinate,
+  .inputycoordinate {
+    font-size: 10px;
+    padding-left: 3;
+  }
+
+  .xyLocation-fieldset-div {
+    margin-top: 8px;
+  }
+
+  .xyLocation-legend input {
+    width: 10px;
+    height: 10px;
+  }
+
+  .xyLocation-legend {
+    font-size: min(2vw, 9px);
+    margin-left: 0;
+  }
+
+  .Leg-square-input {
+    box-shadow: 2px 2px 3px #262626;
+  }
+
+  .Viewmap-btnDIv {
+    padding: 7px 0 0;
+  }
+
+  .xyLocation-fieldset {
+    padding: 0 6px 8px;
+    margin-bottom: 0.6rem;
+  }
+
+  .buff-unit-input {
+    max-width: 60%;
+  }
+
+  .Buffer-div {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 8px;
+  }
+
+  .buffer-type-col {
+    width: 100%;
+  }
+
+  .Label-buffer-type {
+    width: 100%;
+    max-width: 39%;
+  }
+
+  .Buffer-inner-row {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+  }
+
+  .Buff-search-btn1,
+  .Buff-search-btn2 {
+    width: 100%;
+    height: fit-content;
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .Buff-search-btn1.active,
+  .Buff-search-btn2.active {
+    width: 100%;
+    font-size: 10px;
+    height: fit-content;
+  }
+
+  .buffer-Dist-unit-col {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .buff-dist-Input-div {
+    width: 100%;
+    max-width: 60%;
+    margin: 4px 0;
+  }
+
+  .Buffer-dist-input {
+    font-size: 10px;
+  }
+
+  .Buffer-dist-input::placeholder {
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .Buff-dist-row {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .Buff-unit-row {
+    justify-content: flex-start;
+    margin-top: 0.5rem !important;
+  }
+
+  .view-map2 {
+    font-size: min(2vh, 10px);
+    padding: 0.2rem 1rem;
+    border: 1px outset #aa762926;
+  }
+
+  .OptionsSearch {
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  .drawOn-map-Para {
+    padding: 0.3rem;
+    margin: 0rem 0.2rem 0 0.2rem;
+    border: 2px solid #172c51;
+    border-radius: 5px;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px #000000;
+  }
+
+  .drawOn-map-Para p {
+    font-size: 10px;
+  }
+
+  .bullet-circle-icon {
+    font-size: 5px;
+    margin-right: 0px;
+  }
+
+  .LAbelOf-Buffer {
+    font-size: 10px;
+  }
+
+  .second-input-Y-on-mapBuffer {
+    padding: 4px;
+    margin-top: 8px;
+  }
+
+  .Selected-XY-on-map {
+    flex-direction: column;
+    padding: 2px 4px;
+    gap: 4px;
+  }
+
+  .second-input-Y-on-map {
+    width: 100%;
+  }
+
+  .Attribute-search-fieldset {
+    padding: 2px;
+  }
+
+  .Attribute-search-legend {
+    padding: 1px 3px;
+    font-size: min(2vw, 10px);
+    margin-left: 10px;
+  }
+
+  .Att-search-fieldset-div {
+    /* padding: 4px; */
+    padding: 4px 4px 0;
+    margin-top: 4px;
+  }
+
+  .productSearcInputBox {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .InpuSelectionOption {
+    font-size: 10px;
+  }
+
+  .InpuSelectionOption-DataType {
+    font-size: 10px;
+  }
+
+  .InpuSelectionOption-Mission-Drop {
+    font-size: 10px;
+    height: 20px;
+    padding-left: 4px;
+  }
+
+  .InpuSelectionOption-AcquisitionMode {
+    font-size: 10px;
+  }
+
+  .periodSearchInputBox {
+    flex-direction: column;
+  }
+
+  .ENDDateINputFiled,
+  .startDateINputFiled {
+    font-size: 10px;
+  }
+
+  .Other-para-row {
+    flex-direction: column;
+  }
+
+  .ResoluationInputFiled {
+    font-size: 10px;
+  }
+
+  .Additional-attri-div {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .dataProcessingTypeINputFiled {
+    font-size: 10px;
+  }
+
+  .data-processing-div,
+  .data-incidence-div {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .daInceAngleINputFiled {
+    font-size: 10px;
+  }
+
+  .button-search {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .Get-save-querybtn-div {
+    width: 100%;
+  }
+
+  .applyQuery-btn-div {
+    width: 100%;
+  }
+
+  .save-query-btn {
+    font-size: 12px;
+    border: 2px outset #e7d9d969;
+  }
+
+  .get-query-btn {
+    font-size: 12px;
+    border: 2px outset #dbe2e824;
+  }
+
+  .apply-query-btn {
+    font-size: 12px;
+    border: 2px outset #b9c2b345;
+  }
+
+  .rest-btn {
+    font-size: 12px;
+    border: 2px outset #fffbf740;
+  }
+
+  .quit-btn {
+    font-size: 12px;
+    border: 2px outset #ffeded54;
+  }
+
+  .GEOMETRY-map-btn {
+    font-size: min(2vh, 10px);
+    padding: 0.2rem 1rem;
+    border: 1px outset #718f5c;
+  }
+
+  .Save-Geo-btn-div {
+    padding: 0.4rem 0.4rem;
+  }
+
+  .selectedexlongitudeindegreedecimal_label {
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  .selectedylatitudeindegreedecimal_label {
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  /* Bounds */
+  .view-map3 {
+    font-size: min(2vh, 10px);
+    padding: 0.2rem 1rem;
+    border: 1px outset #aa762926;
+  }
+
+  .the-fieldset-Bounds::before {
+    width: 1.5vw;
+    height: 1.5vw;
+    right: -2px;
+    top: -2px;
+  }
+
+  .the-fieldset-Bounds::after {
+    width: 7px;
+    height: 7px;
+    right: -7px;
+    bottom: 96px;
+  }
+
+  .upper-x-label {
+    width: 70px;
+    top: -16px;
+    right: 9rem;
+    font-size: 8px;
+    padding: 0px 1px;
+  }
+
+  .upper-x-Input {
+    width: 70px;
+    position: absolute;
+    top: 6px;
+    right: 9rem;
+  }
+
+  .input-UpperRight-X-inDD {
+    width: 100%;
+    font-size: 9px;
+  }
+
+  .lower-x-label::before {
+    width: 1.5vw;
+    height: 1.5vw;
+    bottom: 12px;
+    left: -13px;
+  }
+
+  .lower-x-label::after {
+    width: 7px;
+    height: 7px;
+    top: 11px;
+    left: -18px;
+  }
+
+  .lower-x-label {
+    width: 70px;
+    font-size: 8px;
+    bottom: -15px;
+    left: 1rem;
+    padding: 1px 1px;
+  }
+
+  .lower-x-Input {
+    width: 70px;
+    bottom: 13px;
+    left: 1rem;
+  }
+
+  .input-LowerLeft-X-inDD {
+    width: 100%;
+    font-size: 9px;
+  }
+
+  .Lower-y-label {
+    width: 70px;
+    font-size: 8px;
+    bottom: -15px;
+    left: 9rem;
+    padding: 1px 3px;
+  }
+
+  .Lower-y-Input {
+    width: 70px;
+    bottom: 13px;
+    left: 9rem;
+  }
+
+  .input-LowerLeft-Y-inDD {
+    width: 100%;
+    font-size: 9px;
+  }
+
+  .upper-y-label {
+    width: 70px;
+    top: -16px;
+    font-size: 8px;
+    right: 1rem;
+    padding: 0px 3px;
+  }
+
+  .upper-y-Input {
+    width: 70px;
+    top: 6px;
+    right: 1rem;
+  }
+
+  .input-UpperRight-Y-inDD {
+    width: 100%;
+    font-size: 9px;
+  }
+
+  .the-fieldset-Bounds {
+    height: 10rem;
+  }
+
+  .Product-div {
+    padding: 0 0px;
+  }
+
+  .Period-search-container {
+    padding: 0 0px;
+  }
+
+  .Other-para-row {
+    padding: 0;
+  }
+
+  .DrawOn-File-Name-Input::placeholder {
+    font-size: 10px;
+  }
+
+  .arrow-span {
+    right: 16px;
+  }
+
+  .dropdown-item label {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  .dropdown-item input[type="checkbox"] {
+    margin: 0;
+  }
+
+  .DrawOnMap-UploadIcon {
+    font-size: 8px;
+  }
+
+  .Draw-on-fileName-Input-div input {
+    padding-left: 2px;
+  }
+
+  .DropDown-List-UL {
+    width: 85.4%;
+  }
+
+  .uploaded-file-list {
+    font-size: 10px;
+  }
+
+  .Search-RemoveButton {
+    margin-top: 2px;
+    padding: 2px 3px 0px 3px;
+    border-radius: 15px;
+    font-size: 9px;
+  }
+
+  .buff-unit-label,
+  .buff-dist-l {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 39.666667%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .invalid-feedback {
+    position: relative;
+    font-size: 7px;
+    font-weight: 500;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.4px;
+  }
+
+  .invalid-feedbackbolefx,
+  .invalid-feedbackbolefy {
+    font-size: 7px;
+    font-weight: 500;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.4px;
+  }
+
+  .search-table-heading {
+    font-size: min(4vw, 13px);
+    font-weight: 400;
+  }
+
+  .search-table-font {
+    font-size: 10px;
+  }
+
+  #searchMap .leaflet-control-layers-toggle {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  #searchMap1 .leaflet-control-layers-toggle {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  #searchMap .leaflet-pm-toolbar .leaflet-buttons-control-button {
+    width: 35px;
+    height: 25px;
+  }
+
+  #searchMap1 .leaflet-pm-toolbar .leaflet-buttons-control-button {
+    width: 35px;
+    height: 25px;
+  }
+
+  .productsearchlable,
+  .addiAttriSearchlable {
+    margin-left: 0;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1299px) {
+  #SearchCoordinate {
+    font-size: 9px;
+    width: auto;
+    max-width: 30%;
+    padding: 2px 4px;
+  }
+
+  .Search-box-1 {
+    padding: 5px;
+  }
+
+  .Head-Field-set {
+    padding: 0;
+  }
+
+  .Head-Search-fieldset {
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  .Head-Search-legend {
+    padding: 1px 3px;
+    font-size: min(4vw, 13px);
+  }
+
+  .spatialSearch-fieldset-DIV {
+    padding: 4px;
+    margin: 4px 0px 8px 0px;
+  }
+
+  .spatialSearch-fieldset {
+    padding: 2px;
+  }
+
+  .spatialSearch-legend {
+    font-size: min(2vw, 11px);
+    padding: 0px 3px;
+    box-shadow: 3px 2px 2px #262626;
+  }
+
+  .search-buttons-boxs {
+    display: flex;
+    row-gap: 2px;
+    /* flex-direction: column;
+  padding: .5rem 3rem; */
+  }
+
+  .search-buttons-boxs {
+    padding: 4px 3px 2px;
+  }
+
+  .spec-search-btn {
+    font-size: min(2vh, 7px);
+    /* padding: 2px; */
+    padding: 4px 1px;
+  }
+
+  .None-btn {
+    margin-top: 0;
+    padding: 4px 4px;
+  }
+
+  .spatial-Aoi-label {
+    font-size: 9px;
+    margin-left: 0;
+  }
+
+  .Aoi-custom-file-upload {
+    padding: 0 4px;
+  }
+
+  .Aoi-File-path {
+    font-size: min(2vh, 10px);
+    padding: 0;
+  }
+
+  .Aoi-custom-file-div {
+    margin-left: -5px;
+  }
+
+  .arrow-span {
+    padding-top: 0;
+  }
+
+  .iconfaChevronDown {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .View-on-map-btn {
+    font-size: min(2vh, 10px);
+    padding: 0.2rem 1rem;
+    border: 1px outset #aa762926;
+  }
+
+  .Upload-btn {
+    padding: 0.3rem;
+  }
+
+  .xy-input-div {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 0px;
+  }
+
+  .provide-x-div {
+    padding-right: 0;
+  }
+
+  .provide-y-div {
+    padding-left: 0;
+  }
+
+  .inputxcoordinate,
+  .inputycoordinate {
+    font-size: 10px;
+    padding-left: 3px;
+  }
+
+  .xyLocation-fieldset-div {
+    margin-top: 2rem;
+  }
+
+  .xyLocation-legend input {
+    width: 10px;
+    height: 10px;
+  }
+
+  .xyLocation-legend {
+    font-size: min(2vw, 9px);
+    margin-left: 0;
+  }
+
+  .Leg-square-input {
+    box-shadow: 2px 2px 3px #262626;
+  }
+
+  .Viewmap-btnDIv {
+    padding: 7px 0 0;
+  }
+
+  .xyLocation-fieldset {
+    padding: 0 6px 8px;
+    margin-bottom: 0.6rem;
+  }
+
+  .Buffer-div {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 8px;
+  }
+
+  .buffer-type-col {
+    width: 100%;
+  }
+
+  .Label-buffer-type {
+    width: 100%;
+    max-width: 42%;
+  }
+
+  .Buffer-inner-row {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+  }
+
+  .Buff-search-btn1,
+  .Buff-search-btn2 {
+    width: 100%;
+    font-size: 10px;
+    height: fit-content;
+  }
+
+  .Buff-search-btn1.active,
+  .Buff-search-btn2.active {
+    width: 100%;
+    font-size: 10px;
+    height: fit-content;
+  }
+
+  .buffer-Dist-unit-col {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .buff-dist-Input-div {
+    width: 100%;
+    max-width: 58%;
+    margin: 4px 0;
+  }
+
+  .Buffer-dist-input {
+    font-size: 10px;
+  }
+
+  .Buffer-dist-input::placeholder {
+    font-size: 8px;
+  }
+
+  .Buff-dist-row {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .Buff-unit-row {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    margin-top: 0.5rem !important;
+  }
+
+  .view-map2 {
+    font-size: min(2vh, 10px);
+    padding: 0.2rem 1rem;
+    border: 1px outset #aa762926;
+  }
+
+  .OptionsSearch {
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  .drawOn-map-Para {
+    padding: 0.3rem;
+    margin: 0rem 0.2rem 0 0.2rem;
+    border: 2px solid #172c51;
+    border-radius: 5px;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px #000000;
+  }
+
+  .drawOn-map-Para p {
+    font-size: 10px;
+  }
+
+  .bullet-circle-icon {
+    font-size: 5px;
+    margin-right: 0px;
+  }
+
+  .LAbelOf-Buffer {
+    font-size: 10px;
+  }
+
+  .second-input-Y-on-mapBuffer {
+    padding: 4px;
+    margin-top: 8px;
+  }
+
+  .Selected-XY-on-map {
+    flex-direction: column;
+    padding: 2px 4px;
+    gap: 4px;
+  }
+
+  .second-input-Y-on-map {
+    width: 100%;
+  }
+
+  .Attribute-search-fieldset {
+    padding: 2px;
+  }
+
+  .Attribute-search-legend {
+    padding: 1px 3px;
+    font-size: min(2vw, 11px);
+    margin-left: 10px;
+  }
+
+  .Att-search-fieldset-div {
+    /* padding: 4px; */
+    padding: 4px 4px 0;
+    margin-top: 4px;
+  }
+
+  .productSearcInputBox {
+    /* flex-direction: column;
+    gap: 0; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: stretch;
+  }
+
+  .InpuSelectionOption {
+    font-size: 10px;
+  }
+
+  .InpuSelectionOption-DataType {
+    font-size: 10px;
+  }
+
+  .InpuSelectionOption-Mission-Drop {
+    font-size: 10px;
+    height: 20px;
+
+    padding-left: 4px;
+  }
+
+  .InpuSelectionOption-AcquisitionMode {
+    font-size: 10px;
+  }
+
+  .periodSearchInputBox {
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: stretch;
+    gap: 8px;
+  }
+
+  .ENDDateINputFiled,
+  .startDateINputFiled {
+    font-size: 10px;
+  }
+
+  .Other-para-row {
+    flex-direction: column;
+  }
+
+  .ResoluationInputFiled {
+    font-size: 10px;
+  }
+
+  .Additional-attri-div {
+    /* flex-direction: column;
+    padding: 0; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: stretch;
+    padding: 3px 0px;
+  }
+
+  .dataProcessingTypeINputFiled {
+    font-size: 10px;
+  }
+
+  .data-processing-div {
+    width: 100%;
+    max-width: 94%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .data-incidence-div {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .daInceAngleINputFiled {
+    font-size: 10px;
+  }
+
+  .button-search {
+    /* flex-direction: column; */
+    gap: 1rem;
+  }
+
+  .reset-quit-btn-div {
+    /* gap: 2px; */
+  }
+
+  .productsearchlable {
+    margin-bottom: 2px;
+    margin-left: 0;
+  }
+
+  .productsearchlable,
+  .addiAttriSearchlable {
+    margin-left: 0;
+  }
+
+  .resetbtn-div {
+    padding-left: 0;
+    padding-right: 2px;
+  }
+
+  .quitbtn-div {
+    padding-left: 2px;
+    padding-right: 0;
+  }
+
+  .Get-save-querybtn-div {
+    width: 55%;
+  }
+
+  .applyQuery-btn-div {
+    width: 100%;
+  }
+
+  .save-query-btn {
+    font-size: 12px;
+    border: 2px outset #e7d9d969;
+    padding: 2px;
+  }
+
+  .get-query-btn {
+    font-size: 12px;
+    border: 2px outset #dbe2e824;
+    padding: 2px;
+  }
+
+  .apply-query-btn {
+    font-size: 12px;
+    border: 2px outset #b9c2b345;
+    padding: 2px;
+  }
+
+  .rest-btn {
+    font-size: 12px;
+    border: 2px outset #fffbf740;
+    padding: 2px;
+  }
+
+  .quit-btn {
+    font-size: 12px;
+    border: 2px outset #ffeded54;
+    padding: 2px;
+  }
+
+  .GEOMETRY-map-btn {
+    font-size: min(2vh, 10px);
+    padding: 0.3rem 1rem;
+    border: 1px outset #718f5c;
+  }
+
+  .Save-Geo-btn-div {
+    padding: 0.4rem 0.4rem;
+  }
+
+  .selectedexlongitudeindegreedecimal_label {
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  .selectedylatitudeindegreedecimal_label {
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  /* Bounds */
+  .view-map3 {
+    font-size: min(2vh, 10px);
+    padding: 0.2rem 1rem;
+    border: 1px outset #aa762926;
+  }
+
+  .the-fieldset-Bounds::before {
+    width: 1.2vw;
+    height: 1.2vw;
+    right: -2px;
+    top: -2px;
+  }
+
+  .the-fieldset-Bounds::after {
+    width: 7px;
+    height: 7px;
+    right: -7px;
+    bottom: 96px;
+  }
+
+  .upper-x-label {
+    width: 70px;
+    top: -16px;
+    right: 9rem;
+    font-size: 8px;
+    padding: 0px 1px;
+  }
+
+  .upper-x-Input {
+    width: 70px;
+    position: absolute;
+    top: 7px;
+    right: 9rem;
+  }
+
+  .input-UpperRight-X-inDD {
+    width: 100%;
+    font-size: 9px;
+  }
+
+  .lower-x-label::before {
+    width: 1.2vw;
+    height: 1.2vw;
+    bottom: 12px;
+    left: -13px;
+  }
+
+  .lower-x-label::after {
+    width: 7px;
+    height: 7px;
+    top: 11px;
+    left: -18px;
+  }
+
+  .lower-x-label {
+    width: 70px;
+    font-size: 8px;
+    bottom: -15px;
+    left: 1rem;
+    padding: 1px 1px;
+  }
+
+  .lower-x-Input {
+    width: 70px;
+    bottom: 13px;
+    left: 1rem;
+  }
+
+  .input-LowerLeft-X-inDD {
+    width: 100%;
+    font-size: 9px;
+  }
+
+  .Lower-y-label {
+    width: 70px;
+    font-size: 8px;
+    bottom: -15px;
+    left: 9rem;
+    padding: 1px 3px;
+  }
+
+  .Lower-y-Input {
+    width: 70px;
+    bottom: 13px;
+    left: 9rem;
+  }
+
+  .input-LowerLeft-Y-inDD {
+    width: 100%;
+    font-size: 9px;
+  }
+
+  .upper-y-label {
+    width: 70px;
+    top: -16px;
+    font-size: 8px;
+    right: 1rem;
+    padding: 0px 3px;
+  }
+
+  .upper-y-Input {
+    width: 70px;
+    top: 7px;
+    right: 1rem;
+  }
+
+  .input-UpperRight-Y-inDD {
+    width: 100%;
+    font-size: 9px;
+  }
+
+  .the-fieldset-Bounds {
+    height: 10rem;
+  }
+
+  .Product-div,
+  .Period-search-container,
+  .Other-para-row {
+    padding: 3px 0px;
+  }
+
+  .DrawOn-File-Name-Input::placeholder {
+    font-size: 10px;
+  }
+
+  .arrow-span {
+    right: 16px;
+  }
+
+  .dropdown-item label {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  .dropdown-item input[type="checkbox"] {
+    /* margin: 0; */
+    margin: 0px;
+    margin-right: 5px;
+  }
+
+  .DrawOnMap-UploadIcon {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+
+  .Draw-on-fileName-Input-div input {
+    padding-left: 2px;
+  }
+
+  .buff-unit-input {
+    max-width: 58%;
+  }
+
+  .startDateperiodSearch,
+  .endDateperiodSearch {
+    margin-right: 0;
+  }
+
+  .DropDown-List-UL {
+    width: 89.2%;
+  }
+
+  .uploaded-file-list {
+    font-size: 10px;
+  }
+
+  .Search-RemoveButton {
+    margin-top: 2px;
+    padding: 2px 3px 0px 3px;
+    border-radius: 15px;
+    font-size: 9px;
+  }
+
+  .invalid-feedback {
+    position: absolute;
+  }
+
+  .invalid-feedback {
+    /* position: relative; */
+    font-size: 7px;
+    font-weight: 500;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.4px;
+  }
+
+  .invalid-feedbackbolefx,
+  .invalid-feedbackbolefy {
+    font-size: 7px;
+    font-weight: 500;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.4px;
+  }
+
+  .search-table-heading {
+    font-size: min(4vw, 13px);
+    font-weight: 400;
+  }
+
+  .search-table-font {
+    font-size: 10px;
+  }
+
+  #searchMap .leaflet-control-layers-toggle {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  #searchMap1 .leaflet-control-layers-toggle {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  #searchMap .leaflet-pm-toolbar .leaflet-buttons-control-button {
+    width: 35px;
+    height: 25px;
+  }
+
+  #searchMap1 .leaflet-pm-toolbar .leaflet-buttons-control-button {
+    width: 35px;
+    height: 25px;
+  }
+
+  .startDateINputFiled::placeholder,
+  .ENDDateINputFiled::placeholder {
+    /* text-align: start; */
+    padding-left: 2px;
+    font-size: 10px;
+    /* Adjust the size as needed */
+    /* color: #999;  */
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1750px) {
+  #SearchCoordinate {
+    font-size: 9px;
+    width: auto;
+    max-width: 30%;
+    padding: 2px 4px;
+  }
+
+  .Search-box-1 {
+    padding: 5px;
+  }
+
+  .Head-Field-set {
+    padding: 0;
+  }
+
+  .Head-Search-fieldset {
+    padding: 3px;
+    border-radius: 5px;
+  }
+
+  .Head-Search-legend {
+    padding: 1px 3px;
+    font-size: min(4vw, 14px);
+  }
+
+  .spatialSearch-fieldset-DIV {
+    padding: 4px;
+    margin: 4px 0px 8px 0px;
+  }
+
+  .spatialSearch-fieldset {
+    padding: 4px;
+  }
+
+  .spatialSearch-legend {
+    font-size: min(4vw, 12px);
+    padding: 0px 3px;
+    box-shadow: 3px 2px 2px #262626;
+  }
+
+  .search-buttons-boxs {
+    display: flex;
+    row-gap: 2px;
+    /* flex-direction: column;
+  padding: .5rem 3rem; */
+  }
+
+  .search-buttons-boxs {
+    padding: 4px 3px 2px;
+  }
+
+  .spec-search-btn {
+    font-size: min(2vh, 10px);
+    /* padding: 2px; */
+    padding: 3px 1px 3px 1px;
+  }
+
+  .None-btn {
+    margin-top: 0;
+    padding: 4px 4px;
+  }
+
+  .spatial-Aoi-label {
+    font-size: 9px;
+    margin-left: 0;
+  }
+
+  .Aoi-custom-file-upload {
+    padding: 0 4px;
+  }
+
+  .Aoi-File-path {
+    font-size: min(2vh, 10px);
+    padding: 0;
+  }
+
+  .Aoi-custom-file-div {
+    margin-left: -5px;
+  }
+
+  .arrow-span {
+    padding-top: 0;
+  }
+
+  .iconfaChevronDown {
+    font-size: 10px;
+  }
+
+  .View-on-map-btn {
+    font-size: min(2vh, 10px);
+    padding: 0.4rem 2rem;
+    border: 1px outset #aa762926;
+  }
+
+  .Upload-btn {
+    padding: 0.3rem;
+  }
+
+  .xy-input-div {
+    /* flex-direction: column; */
+    margin-top: 0px;
+  }
+
+  .provide-x-div {
+    /* padding-right: 0; */
+  }
+
+  .provide-y-div {
+    padding-left: 0;
+  }
+
+  .inputxcoordinate,
+  .inputycoordinate {
+    font-size: 10px;
+    padding-left: 3;
+  }
+
+  .xyLocation-fieldset-div {
+    margin-top: 2rem;
+  }
+
+  .xyLocation-legend input {
+    width: 10px;
+    height: 10px;
+  }
+
+  .xyLocation-legend {
+    font-size: min(2vw, 10px);
+    margin-left: 0;
+  }
+
+  .Leg-square-input {
+    box-shadow: 2px 2px 3px #262626;
+  }
+
+  .Viewmap-btnDIv {
+    padding: 7px 0 0;
+  }
+
+  .xyLocation-fieldset {
+    padding: 0 6px 8px;
+    margin-bottom: 0.6rem;
+  }
+
+  .Buffer-div {
+    /* flex-direction: column; */
+    padding: 0;
+    padding-top: 8px;
+    gap: 8px;
+  }
+
+  .buffer-type-col {
+    width: 100%;
+  }
+
+  .Label-buffer-type {
+    width: 100%;
+    max-width: 30%;
+  }
+
+  .Buffer-inner-row {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+  }
+
+  .Buff-search-btn1,
+  .Buff-search-btn2 {
+    width: 100%;
+    font-size: 11px;
+    height: fit-content;
+    padding: 4px 10px;
+  }
+
+  .Buff-search-btn1.active,
+  .Buff-search-btn2.active {
+    width: 100%;
+    font-size: 11px;
+    height: fit-content;
+    padding: 4px 10px;
+  }
+
+  .buffer-Dist-unit-col {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .buff-dist-Input-div {
+    width: 100%;
+    max-width: 58%;
+    margin: 4px 0;
+  }
+
+  .Buffer-dist-input {
+    font-size: 10px;
+  }
+
+  .Buff-dist-row {
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .Buff-unit-row {
+    margin-top: 0.5rem !important;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .view-map2 {
+    font-size: min(2vh, 10px);
+    padding: 0.4rem 2rem;
+    border: 1px outset #aa762926;
+  }
+
+  .OptionsSearch {
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  .drawOn-map-Para {
+    padding: 0.3rem;
+    margin: 0rem 0.2rem 0 0.2rem;
+    border: 2px solid #172c51;
+    border-radius: 5px;
+    font-weight: 400;
+    text-shadow: 1px 2px 2px #000000;
+  }
+
+  .drawOn-map-Para p {
+    font-size: 10px;
+  }
+
+  .bullet-circle-icon {
+    font-size: 5px;
+    margin-right: 0px;
+  }
+
+  .LAbelOf-Buffer {
+    font-size: 10px;
+  }
+
+  .second-input-Y-on-mapBuffer {
+    padding: 4px;
+    margin-top: 8px;
+  }
+
+  .Selected-XY-on-map {
+    flex-direction: column;
+    padding: 2px 4px;
+    gap: 4px;
+  }
+
+  .second-input-Y-on-map {
+    width: 100%;
+  }
+
+  .Attribute-search-fieldset {
+    padding: 4px;
+  }
+
+  .Attribute-search-legend {
+    font-size: min(4vw, 12px);
+    padding: 1px 3px;
+    margin-left: 10px;
+  }
+
+  .Att-search-fieldset-div {
+    /* padding: 4px; */
+    padding: 4px 4px 0;
+    margin-top: 4px;
+  }
+
+  .productSearcInputBox {
+    /* flex-direction: column;
+  gap: 0; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: stretch;
+  }
+
+  .InpuSelectionOption {
+    font-size: 10px;
+  }
+
+  .InpuSelectionOption-DataType {
+    font-size: 10px;
+  }
+
+  .InpuSelectionOption-Mission-Drop {
+    font-size: 10px;
+    height: 20px;
+    padding-left: 4px;
+  }
+
+  .InpuSelectionOption-AcquisitionMode {
+    font-size: 10px;
+  }
+
+  .periodSearchInputBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: stretch;
+    gap: 8px;
+  }
+
+  .ENDDateINputFiled,
+  .startDateINputFiled {
+    font-size: 10px;
+  }
+
+  /* .Other-para-row{
+  flex-direction: column;
+} */
+
+  .ResoluationInputFiled {
+    font-size: 10px;
+  }
+
+  .Additional-attri-div {
+    /* flex-direction: column;
+  padding: 0; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: stretch;
+    padding: 4px 0;
+  }
+
+  .dataProcessingTypeINputFiled {
+    font-size: 10px;
+  }
+
+  .data-processing-div,
+  .data-incidence-div {
+    width: 100%;
+    max-width: 95%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .daInceAngleINputFiled {
+    font-size: 10px;
+  }
+
+  .button-search {
+    /* flex-direction: column; */
+    gap: 1rem;
+  }
+
+  .reset-quit-btn-div {
+    /* gap: 2px; */
+  }
+
+  .resetbtn-div {
+    padding-left: 0;
+    padding-right: 2px;
+  }
+
+  .quitbtn-div {
+    padding-left: 2px;
+    padding-right: 0;
+  }
+
+  .Get-save-querybtn-div {
+    width: 55%;
+  }
+
+  .applyQuery-btn-div {
+    width: 100%;
+  }
+
+  .save-query-btn {
+    font-size: 12px;
+    border: 2px outset #e7d9d969;
+  }
+
+  .get-query-btn {
+    font-size: 12px;
+    border: 2px outset #dbe2e824;
+  }
+
+  .apply-query-btn {
+    font-size: 12px;
+    border: 2px outset #b9c2b345;
+  }
+
+  .rest-btn {
+    font-size: 12px;
+    border: 2px outset #fffbf740;
+  }
+
+  .quit-btn {
+    font-size: 12px;
+    border: 2px outset #ffeded54;
+  }
+
+  .GEOMETRY-map-btn {
+    font-size: min(2vh, 10px);
+    padding: 0.4rem 2rem;
+    border: 1px outset #718f5c;
+  }
+
+  .Save-Geo-btn-div {
+    padding: 1rem 0.4rem;
+  }
+
+  .selectedexlongitudeindegreedecimal_label {
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  .selectedylatitudeindegreedecimal_label {
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  /* Bounds */
+  .view-map3 {
+    font-size: min(2vh, 10px);
+    padding: 0.4rem 2rem;
+    border: 1px outset #aa762926;
+  }
+
+  .the-fieldset-Bounds::before {
+    width: 1.2vw;
+    height: 1.2vw;
+    right: -2px;
+    top: -2px;
+  }
+
+  .the-fieldset-Bounds::after {
+    width: 7px;
+    height: 7px;
+    right: -7px;
+    bottom: 116px;
+  }
+
+  .upper-x-label {
+    width: 90px;
+    top: -16px;
+    right: 12rem;
+    font-size: 10px;
+    padding: 1px 2px;
+  }
+
+  .upper-x-Input {
+    width: 89px;
+    position: absolute;
+    top: 15px;
+    right: 12rem;
+  }
+
+  .input-UpperRight-X-inDD {
+    width: 100%;
+    font-size: 11px;
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  .lower-x-label::before {
+    width: 1.2vw;
+    height: 1.2vw;
+    bottom: 12px;
+    left: -23px;
+  }
+
+  .lower-x-label::after {
+    width: 7px;
+    height: 7px;
+    top: 16px;
+    left: -28px;
+  }
+
+  .lower-x-label {
+    width: 89px;
+    font-size: 10px;
+    bottom: -15px;
+    left: 2rem;
+    padding: 1px 1px;
+  }
+
+  .lower-x-Input {
+    width: 89px;
+    bottom: 17px;
+    left: 2rem;
+  }
+
+  .input-LowerLeft-X-inDD {
+    width: 100%;
+    font-size: 11px;
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  .Lower-y-label {
+    width: 89px;
+    font-size: 10px;
+    bottom: -15px;
+    left: 12rem;
+    padding: 1px 3px;
+  }
+
+  .Lower-y-Input {
+    width: 89px;
+    bottom: 17px;
+    left: 12rem;
+  }
+
+  .input-LowerLeft-Y-inDD {
+    width: 100%;
+    font-size: 11px;
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  .upper-y-label {
+    width: 89px;
+    top: -16px;
+    font-size: 10px;
+    right: 2rem;
+    padding: 1px 3px;
+  }
+
+  .upper-y-Input {
+    width: 89px;
+    top: 15px;
+    right: 2rem;
+  }
+
+  .input-UpperRight-Y-inDD {
+    width: 100%;
+    font-size: 11px;
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  .the-fieldset-Bounds {
+    height: 12rem;
+  }
+
+  .Product-div {
+    padding: 4px 0;
+  }
+
+  .Period-search-container {
+    padding: 4px 0;
+  }
+
+  .Other-para-row {
+    padding: 6px 0;
+  }
+
+  .DrawOn-File-Name-Input::placeholder {
+    font-size: 10px;
+  }
+
+  .arrow-span {
+    right: 16px;
+  }
+
+  .dropdown-item label {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  .dropdown-item input[type="checkbox"] {
+    margin: 0;
+  }
+
+  .DrawOnMap-UploadIcon {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+
+  .Draw-on-fileName-Input-div input {
+    padding-left: 2px;
+  }
+
+  .buff-unit-input {
+    max-width: 58%;
+  }
+
+  .startDateperiodSearch,
+  .endDateperiodSearch {
+    margin-right: 0;
+  }
+
+  .DropDown-List-UL {
+    width: 91.9%;
+  }
+
+  .uploaded-file-list {
+    font-size: 10px;
+  }
+
+  .Search-RemoveButton {
+    margin-top: 2px;
+    padding: 2px 3px 0px 3px;
+    border-radius: 15px;
+    font-size: 9px;
+  }
+
+  .invalid-feedback {
+    /* position: absolute; */
+    font-size: 8px;
+    font-weight: 500;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.4px;
+  }
+
+  .invalid-feedbackbolefy,
+  .invalid-feedbackbolefx {
+    font-size: 8px;
+    font-weight: 500;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    letter-spacing: 0.4px;
+  }
+
+  .search-table-heading {
+    font-size: min(4vw, 14px);
+    font-weight: 400;
+  }
+
+  .search-table-font {
+    font-size: 12px;
+  }
+
+  #searchMap .leaflet-control-layers-toggle {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  #searchMap1 .leaflet-control-layers-toggle {
+    width: 3.5rem;
+    height: 2.5rem;
+  }
+
+  #searchMap .leaflet-pm-toolbar .leaflet-buttons-control-button {
+    width: 35px;
+    height: 25px;
+  }
+
+  #searchMap1 .leaflet-pm-toolbar .leaflet-buttons-control-button {
+    width: 35px;
+    height: 25px;
+  }
+
+  .startDateINputFiled::placeholder,
+  .ENDDateINputFiled::placeholder {
+    /* text-align: start; */
+    padding-left: 2px;
+    font-size: 10px;
+    /* Adjust the size as needed */
+  }
+
+  .date-icon {
+    top: 0;
+    right: 15px;
+    width: 22px;
+  }
+
+  .productsearchlable,
+  .addiAttriSearchlable {
+    margin-left: 0;
+  }
+}
+
+.date-container .react-datepicker__year-read-view--selected-year {
+  display: none;
+}
+
+.date-container
+  .react-datepicker
+  .react-datepicker__year-read-view--down-arrow {
+  position: absolute;
+  top: -17px;
+  left: 38px;
+}
+
+.react-datepicker__navigation-icon {
+  margin-left: 24px;
+}
+
+.react-datepicker__navigation-icon--previous {
+  margin-right: 45px;
+}
+
+/* Style the year dropdown with a grid for rows and columns by chhayas*/
+.react-datepicker__year-dropdown {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Adjust '3' to the number of columns you want */
+  gap: 5px; /* Space between the year items */
+  max-height: 128px; /* Adjust based on how many rows you want visible */
+  overflow-y: scroll; /* Scroll vertically if years overflow */
+  padding: 10px;
+  width: fit-content;
+  left: 0;
+}
+.react-datepicker__month-dropdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
+  gap: 5px; /* Space between the month items */
+  max-height: 128px; /* Adjust based on how many rows you want visible */
+  overflow-y: scroll; /* Scroll vertically if months overflow */
+  padding: 10px;
+  /* width: fit-content; */
+  left: 0;
+}
+
+.react-datepicker__year-dropdown
+
+ {
+  background-color: #f0f0f0;
+  position: absolute;
+  width: 100% !important;
+  left: -1% !important;
+  /* left: -139%; */
+  top: 30px;
+  z-index: 1;
+  text-align: center;
+  border-radius: 0.3rem;
+  border: 1px solid #aeaeae;
+}
+
+.react-datepicker__year-option {
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.react-datepicker__year-option:hover {
+  background-color: #ebd8d8;
+}
+/*End Style the year dropdown with a grid for rows and columns by chhayas*/
+
+/* scrollable year bar */
+.react-datepicker__year-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.react-datepicker__year-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.react-datepicker__year-dropdown::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px; /* Optional: Round the scrollbar edges */
+  border: 2px solid #f1f1f1;
+  width: 5px;
+}
+
+.react-datepicker__year-dropdown::-webkit-scrollbar-thumb:hover {
+  background-color: green; /* Darker yellow on hover */
+}
+.date-container .react-datepicker .react-datepicker__year-read-view--down-arrow {
+  position: absolute;
+  top: -30px;
+    left: 9px;
+    width: 22px;
+    height: 25px;
+  font-size: 35px;
+  border-style: none;
+}
+/* .react-datepicker__month-dropdown-container--scroll {
+  position: absolute;
+  top: 7px;
+  left: 21px;
+  color: transparent;
+} */
+.date-container .react-datepicker .react-datepicker__year-read-view--down-arrow:hover{
+  cursor: pointer;
+}
+.react-datepicker__month-dropdown-container--scroll{
+  display: inline-block;
+  margin: 0 15px;
+  position: absolute;
+  top: 6px;
+  /* left: 22px; */
+  left: 14px;
+    
+}
+.react-datepicker__month-read-view--down-arrow{
+  
+ 
+}
+.react-datepicker__month-read-view--selected-month{
+color: transparent;
+}
+/* .react-datepicker__month-read-view--down-arrow{
+border-style: none;
+} */
+/* .react-datepicker__month-dropdown */
+.react-datepicker__month-dropdown{
+  background-color: #f0f0f0;
+      position: absolute!important;
+      width: auto!important;
+      /* width: 176%; */
+      left: -31px!important;
+      top: 30px!important;
+      z-index: 1!important;
+      text-align: center;
+      border-radius: 0.3rem;
+      border: 1px solid #aeaeae;
+  }
+  .react-datepicker__month-read-view--down-arrow{
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 3px 3px 0 0;
+    content: "";
+    display: block;
+    height: 9px;
+    position: absolute;
+    top: 6px;
+    width: 9px;
+    border-style: none!important;
+  }
+/* datepicker dropdown */
+/* .date-container .react-datepicker .react-datepicker__year-read-view--down-arrow {
+  position: absolute;
+  top: -17px;
+  left: 15px!important;
+} */
+/* .react-datepicker__year-read-view--down-arrow {
+ 
+  border-style: none!important;
+  border-width: 3px 3px 0 0;
+  content: "";
+  display: block;
+  height: 9px;
+  position: absolute;
+  top: 6px;
+  width: 9px;
+} */
+/* .react-datepicker__month-read-view{
+  border: 1px solid transparent;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 8px;
+    left: 49px;
+    color: transparent;
+
+} */
+.ant-tooltip .ant-tooltip-inner {
+  margin: 0px !important;
+  min-width: 0.5em !important;
+  min-height: 10px !important;
+  padding: 0px 5px !important;
+  color: #fff !important;
+  text-align: start !important;
+  text-decoration: none !important;
+  word-wrap: break-word !important;
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  border-radius: 6px !important;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05) !important;
+  box-sizing: border-box !important;
+  margin-top: 0px !important;
+  font-size: 10px !important;
+}

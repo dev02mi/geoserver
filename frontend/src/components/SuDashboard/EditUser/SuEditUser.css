@@ -1,0 +1,777 @@
+.ED-MainText {
+  /* position: relative; */
+  font-size: min(4vw, 20px);
+}
+
+.Main-text {
+  text-align: left;
+  font-weight: bold;
+  margin-top: -0.5vw;
+}
+
+.AdminEditForm-HeadingText {
+  font-weight: bold;
+  font-size: min(4vw, 22px);
+}
+
+.Main-LableName {
+  font-size: 18px;
+}
+
+.Label-Input {
+  margin-left: -272px;
+}
+
+/* Table tags */
+
+.Table {
+  margin-top: -25px;
+  cursor: pointer;
+}
+
+.WC-Btn {
+  background-color: rgb(139, 179, 112) !important;
+  /* Additional styling if needed */
+}
+
+.UD-Btn {
+  background-color: rgb(139, 179, 112) !important;
+  /* Additional styling if needed */
+}
+
+.SU-General-Btn {
+  background-color: rgb(139, 179, 112) !important;
+  /* Additional styling if needed */
+}
+
+.S-UU-Table {
+  margin-top: -5px;
+  /* border-collapse: separate; */
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  /* border: 1px solid rgb(131 119 76); */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+}
+
+th,
+td {
+  border: 1px solid #444;
+  padding: 1px 5px 1px 5px;
+  white-space: nowrap;
+  font-size: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  top: 0;
+  position: sticky;
+  background: white;
+  font-size: 13px;
+  height: 20px;
+}
+
+tr {
+  background-color: whitesmoke;
+  border: 1px solid #444;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#Edit-Card-Body {
+  /* position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; */
+  /* min-width: 63px; */
+  /* word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0px solid rgba(0, 0, 0, .125);
+  border-radius: 0.25rem;
+  width: 74%;
+  margin-left: -432px; */
+}
+
+.SubmitBtn {
+  position: relative;
+  top: 15px;
+  left: 50px;
+}
+
+.CreateAdminBtn {
+  position: absolute;
+  top: 0px;
+  left: 288px;
+}
+
+.small-option {
+  font-size: 12px;
+  /* Adjust the font size as needed */
+  font: bold;
+}
+
+#Time-Timer {
+  /* position: absolute; */
+  top: 5px;
+  left: 580px;
+  font-size: 13px;
+  color: rgb(81, 121, 6);
+}
+
+
+.DateOfGEneral {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: #2b6e5b;
+  position: relative;
+  right: 4px;
+}
+
+.the-fieldsetGeneral {
+  border: 2px solid #e0e0e0;
+  /* padding: 10px;  */
+}
+
+.Admin-Table-heading {
+  position: relative;
+  /* top: 265px; */
+  top: -20px;
+}
+
+.UU-Table-heading {
+  position: relative;
+  /* top: 265px; */
+  top: 0px;
+}
+
+.table-container {
+  max-height: 300px;
+  /* Set the max height as needed */
+  overflow-x: auto;
+  /* Enable horizontal scrollbar if needed */
+  overflow-y: auto;
+  /* Enable vertical scrollbar if needed */
+}
+
+/* start */
+
+.AU-Table {
+  /* border-collapse: separate; */
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(131 119 76);
+}
+
+.AU-TD {
+  /* border: 1px solid #444; */
+  padding: 1px 5px 1px 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  text-align: center;
+}
+
+.Block-Btn {
+  /* border: 1px solid #444; */
+  padding: 1px 5px 1px 5px;
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: center;
+}
+
+.CR-Date {
+  /* padding: auto; */
+  width: 230px;
+  /* position: relative; */
+  font-size: 12px;
+}
+
+.AU-Space {
+  padding: auto;
+  width: 82px;
+  /* position: relative; */
+  font-size: 14px;
+}
+
+/* End */
+
+
+/* palash code */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 99px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* overflow: scroll; */
+}
+
+.EditBtn {
+  position: relative;
+  top: 15px;
+  left: 50px;
+}
+
+.DeleteBtn {
+  position: relative;
+  top: 0px;
+  left: -360px;
+}
+
+.EditBtn,
+.DeleteBtn {
+  flex: 1;
+  margin-right: 5px;
+  /* Adjust the spacing between buttons */
+}
+
+.CancelBtn {
+  position: absolute;
+  left: 500px;
+}
+
+.SaveGeneralBtn {
+  left: 400px;
+  position: relative;
+}
+
+#Hrline {
+  /* margin-top: -18px;
+  margin-bottom: 20px; */
+  border: 0;
+  border: 1px solid #eee;
+}
+
+.Heading-Details {
+  position: relative;
+  top: -11px;
+  left: -360px;
+  color: #490830;
+  font-weight: bold;
+}
+
+.custom-outline {
+  border: 2px solid #22ac22;
+  /* Change color as needed */
+  padding: 7px 10px;
+  /* Adjust padding as needed */
+  margin: 0;
+  /* Optional: Remove default margin */
+  background-color: rgb(9, 31, 30);
+}
+
+.success-outline {
+  border: 2px solid #094309;
+  /* Change color as needed */
+  padding: 7px 10px;
+  /* Adjust padding as needed */
+  margin: 0;
+  /* Optional: Remove default margin */
+  background-color: rgb(255, 0, 238);
+}
+
+.Unclicked-Btn {
+  border: 1px solid #000;
+  /* Set your desired border styles */
+  padding: 8px 16px;
+  /* Set your desired padding values */
+  font-weight: bold;
+  /* Make the text bold if needed */
+}
+
+.Manage-AU {
+  /* position: relative; */
+  margin-left: 30px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Manage-UU {
+  /* position: relative; */
+  margin-left: 35px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Manage-GU {
+  margin-left: 30px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Close {
+  color: #421d1d;
+  float: right;
+  /* font-size: 30px; */
+  font-weight: bold;
+  cursor: pointer;
+  /* top: -4px; */
+  margin-top: -17px;
+  /* margin-left: 0px; */
+  /* left: 3px; */
+  position: relative;
+}
+
+
+.Close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Close:hover {
+  color: rgb(247, 15, 15);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Clicked {
+  background-color: #ffcc00;
+  /* or any color you prefer */
+  /* Add any other styles for the clicked state */
+}
+
+.UnClicked {
+  background-color: #d8e0e8;
+  width: 20px;
+}
+
+.TD-DATA {
+  width: 12%;
+}
+
+.Edit-Horizontal-Line {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-left: 14px;
+  width: 538px;
+}
+
+.AUU-Popup-Content {
+  /* background-color: #fefefe; */
+  /* margin: 2.5% auto; */
+  /* margin: 6.8% auto; */
+  margin: 5.8% auto;
+  padding: 6px;
+  /* border: 1px solid #888; */
+  width: 60%;
+  max-width: 900px;
+  cursor: pointer;
+  /* margin-top: 9rem; */
+  border-radius: 1rem;
+}
+
+.General-Popup-Content {
+  /* background-color: #fefefe; */
+  margin: 2.5% auto;
+  /* padding: 10px; */
+  /* border: 1px solid #888; */
+  width: 80%;
+  max-width: 900px;
+  top: 46px;
+  margin-top: 100px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.General-EditForm {
+  position: relative;
+}
+
+.Edit-BtnColor {
+  color: rgb(140, 0, 255);
+  font-size: 14px;
+}
+
+.SelectedValue {
+  /* background-color: rgb(123, 219, 214); */
+  color: white;
+}
+
+/* .col-md-4, .col-md-3 {
+    text-align: left;
+    top: -12px;
+} */
+
+/* .Remark-Text {
+  height: 50px;
+} */
+
+/* .Remark-Text {
+  height: 50px;
+} */
+
+.last-line-hr-UU {
+  margin-top: 0rem;
+}
+
+/* .last-line-hr-AU {
+  margin-top: 0rem;
+} */
+
+.SU-Row {
+  margin-top: 50px;
+}
+
+/* .Su-ProfileModal {
+  display: none;
+  position: fixed;
+  top: -1rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.Popup-Content-Profile {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 300px; 
+  left: 77rem;
+  top: 8rem;
+  display: flex;
+  flex-direction: column;
+} */
+
+
+/* .Su-ProfileModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .Content-Profile {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: auto;
+  left: 77rem;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 290px) {
+  .Content-Profile h5 {
+    white-space: initial;
+    overflow: initial;
+    text-overflow: initial;
+    word-wrap: break-word;
+  }
+}
+
+.Content-Profile h5 {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  margin-bottom: 1px;
+} */
+
+
+.Closed-Button {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #e51313;
+}
+
+/* Add this CSS to your stylesheet or style block */
+.hoverable-image {
+  /* position: relative; */
+  cursor: pointer;
+}
+
+.hoverable-image:hover::after {
+  content: "Unblock user";
+  position: absolute;
+  background-color: #fff;
+  /* Adjust the background color */
+  color: #000;
+  /* Adjust the text color */
+  padding: 5px;
+  /* Adjust the padding */
+  border: 1px solid #ccc;
+  /* Adjust the border */
+  border-radius: 5px;
+  /* Adjust the border radius */
+  top: 100%;
+  /* Position below the image */
+  left: 50%;
+  /* Center horizontally */
+  transform: translateX(-50%);
+  /* Center horizontally */
+  z-index: 1;
+  /* Ensure the tooltip appears above other elements */
+}
+
+.SU-Module-Label {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.S-SelectModuleBoxMain {
+  width: 100%;
+}
+
+.SS-SelectModuleBox {
+  height: 140px;
+  /* overflow: auto;
+    overflow-x: visible;
+    overflow-y: auto; */
+  width: 83rem;
+  margin-left: 15px;
+}
+
+.S-SelectModuleBoxItems {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #444;
+}
+
+.s-unique-module-row {
+  width: calc(33% - -140px);
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.SU-EditCheckBox {
+  margin-bottom: 0;
+  left: 8px;
+  width: 0px;
+}
+
+.SU-ModuleLabel {
+  appearance: checkbox;
+  /* display: inline-block; */
+  height: -12px;
+  width: 250px;
+  /* margin-left: -43px; */
+  text-align: left;
+}
+
+.SU-Module {
+  margin-top: -10px;
+}
+
+.Bold-text {
+  font-weight: bold;
+}
+
+.SU-Col-Class-1 {
+  /* margin-top: -25px; */
+}
+
+.SU-Col-Class-2 {
+  /* margin-top: -15px; */
+}
+
+/* .SU-Col-Class-3 {
+  margin-top: 0px;
+} */
+
+.fontSize16 {
+  font-size: 12px;
+}
+
+.Mobile-field {
+  width: 10rem;
+}
+
+.s-unique-module-row input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+/* akshay */
+
+.selected-row {
+  color: white;
+}
+
+.selected-row .AU-Space,
+.selected-row .AU-TD,
+.selected-row .TD-DATA,
+.selected-row .CR-Date {
+  color: white;
+}
+
+/* Ensure other classes are overridden */
+.selected-row .AU-TD .Bold-text {
+  color: white;
+}
+
+.selected-row .AU-TD .SelectedValue {
+  color: white;
+}
+
+.selected-row .AU-TD .UnClicked {
+  color: white;
+
+}
+
+.SUEditUser-form ::placeholder {
+  font-size: 12px;
+}
+
+.su_Edit {
+  height: 86vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.the-legendSuEditUse {
+  border-style: none;
+  border-width: 0;
+  /* font-size: 14px; */
+  /* line-height: 20px; */
+  text-align: left;
+  margin-bottom: 0;
+  color: white;
+  width: auto;
+  padding: 2px 10px;
+  font-weight: 500;
+  background-color: #402588bd;
+  /* border-radius: 5px; */
+  /* background-color: #40258847; */
+  border: 1px solid #e0e0e0;
+  font-size: min(4vw, 14px);
+  font-family: "open sans", sans-serif;
+  /* font-weight: bold; */
+}
+
+
+
+.AUU-Popup-Content {
+  height: 82vh;
+  overflow-y: none;
+}
+
+
+.button_wraper{
+  display: flex;
+  justify-content: space-around !important;
+ 
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .AUU-Popup-Content {
+    height: 82vh;
+    overflow-y: scroll;
+  }
+
+  .AUU-Popup-Content {
+    padding: 6px;
+    width: 85%;
+
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .AUU-Popup-Content {
+    padding: 6px;
+    width: 85%;
+
+  }
+
+  .AUU-Popup-Content {
+    height: 82vh;
+    overflow-y: scroll;
+  }
+
+  /* Your styles here */
+}
+
+.btn.activebut.activebut {
+  color: white;
+}
+
+.btn.activebut.Nactive {
+  color: black;
+}
+
+.Unblocked:hover {
+  color: white;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .AUU-Popup-Content {
+    padding: 6px;
+    width: 90%;
+
+  }
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your styles here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Your styles here */
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Your styles here */
+}
+@media (min-width: 320px) and (max-width: 425px){
+  .ResponsiveButtonEdituser {
+    font-size: 11px!important;
+  }
+}
+.SuEdit-Time {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  color: #2b6e5b;
+  position: relative;
+  top: 10px;
+  right: 6px;
+}

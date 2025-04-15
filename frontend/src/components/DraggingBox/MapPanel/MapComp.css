@@ -1,0 +1,367 @@
+#LayoutMap .leaflet-pm-toolbar .leaflet-buttons-control-button {
+  padding: 4px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+
+.Layout-mapbox .leaflet-control-zoom {
+  /* top: -6px; */
+  display: none;
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-FixedZoomIn {
+  /* background-image: url("../../asset/SVG_ICONS_128/NAFixed_Zoom_In128.svg"); */
+  background-image: url("../../../asset/SVG_ICONS_128/NAFixed_Zoom_In128.svg");
+}
+
+#LayoutMap .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+  background-image: url("../../../asset/SVG_ICONS_128/LYBase_Layers128.svg");
+  /* display: none; */
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-marker {
+  background-image: url("../../../asset/SVG_ICONS_128/DWDraw_Point128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-polyline {
+  background-image: url("../../../asset/SVG_ICONS_128/DWDraw_Line128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-rectangle {
+  background-image: url("../../../asset/SVG_ICONS_128/DWDraw_Box_Poly128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-polygon {
+  background-image: url("../../../asset/SVG_ICONS_128/DWDraw_Poly128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-edit {
+  background-image: url("../../../asset/SVG_ICONS_128/DWEdit_Move_Feature128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-fullextent {
+  background-image: url("../../../asset/SVG_ICONS_128/NAFull_Extent128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-MapPan {
+  background-image: url("../../../asset/SVG_ICONS_128/NAPan128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-FixedZoomOut {
+  background-image: url("../../../asset/SVG_ICONS_128/NAFixed_Zoom_Out128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-FixedZoomIn {
+  background-image: url("../../../asset/SVG_ICONS_128/NAFixed_Zoom_In128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-GoToPreviousExtent {
+  background-image: url("../../../asset/SVG_ICONS_128/NAGo_To_Previous_Extent128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-GoToNextExtent {
+  background-image: url("../../../asset/SVG_ICONS_128/NAGo_To_Next_Extent128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-ZoomSelected {
+  background-image: url("../../../asset/SVG_ICONS_128/NAZoom_Select128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-SelectedZoomIn {
+  background-image: url("../../../asset/SVG_ICONS_128/NAZoom_In128.svg");
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-pm-icon-SelectedZoomOut {
+  background-image: url("../../../asset/SVG_ICONS_128/NAZoom_Out128.svg");
+}
+
+/*  */
+
+#LayoutMap .leaflet-control-custom-zoom .ZoomInIcon {
+  background-image: url("../../../asset/SVG_ICONS_128/NAZoom_In128.svg");
+}
+
+#LayoutMap .leaflet-control-custom-zoom .ZoomOutIcon {
+  background-image: url("../../../asset/SVG_ICONS_128/NAZoom_Out128.svg");
+}
+
+#LayoutMap .OurTool {
+  top: 5.5rem;
+  position: absolute;
+}
+
+#LayoutMap .leaflet-control-layers-toggle {
+  background-image: url("../../../asset/SVG_ICONS_128/LYBase_Layers128.svg");
+  width: 30px;
+  height: 25px;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  box-shadow: 1px 1px 3px black, inset -1px -1px 3px #545454,
+    inset 1px 1px 3px #fff;
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-buttons-control-button {
+  background-color: #ededed;
+  border-bottom: 1px solid #ccc;
+  width: 30px;
+  height: 25px;
+  line-height: 30px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+
+  box-shadow: 1px 1px 5px rgb(151, 149, 149), inset -1px -1px 5px #dddada,
+    inset 1px 1px 5px #fff;
+}
+
+#LayoutMap .leaflet-pm-toolbar .leaflet-buttons-control-button {
+  padding: 4px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+
+.map-button-alignment {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.map-tool-btn {
+  border: none;
+}
+
+#map-tool-btn .leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  border: none;
+}
+
+.Main-div-of-map {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  position: relative;
+}
+
+.ordinate-div{
+  display: flex;
+  gap: 6px;
+}
+
+.co-ordinate-select{
+  width: 19rem;
+  height: 100%;
+}
+
+.Lod-div{
+  width: 8rem;
+  height: 100%;
+}
+
+.Layout-mapbox {
+  flex: 1; 
+  position: relative;
+}
+
+.map-footer {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  position: relative;
+  padding: 1px;
+  border-top: 1.5px solid #9b9b9b;
+}
+
+.int-feature-div{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
+  padding: 0 2px;
+}
+
+.input-feature-selected{
+  font-size: 11px;
+}
+.input-feature-selected::placeholder{
+  font-size: 12px;
+}
+
+.font-10{
+  font-size: 10px;
+  font-weight: 600;
+}
+.vr-line{
+  border: 1px solid #9b9b9b;
+  /* margin: 0 4px; */
+}
+
+.int-feature-div .rotedbtn-map{
+  padding: 3px;
+    color: #ffffff;
+    background-color: #297bdf;
+    border-radius: 10px;
+    rotate: 35deg;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* --------------------DROPDOWN------------ */
+
+/* 
+.scale-dropdown-container {
+  position: relative;
+  width: 200px;
+}
+
+.scale-dropdown-header {
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.scale-dropdown-list {
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  z-index: 10;
+}
+
+.scale-dropdown-item {
+  cursor: pointer;
+}
+
+.scale-dropdown-item.hidden {
+  display: none;
+}
+
+.scale-dropdown-item:hover {
+  background: #f0f0f0;
+}
+
+.scale-dropdown-item.disabled {
+  color: #aaa;
+  cursor: not-allowed;
+} */
+
+.triangle-marker {
+  transform: translate(-50%, -50%);
+}
+
+.box-marker {
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* Dropdown Container */
+
+
+.dropdown-container {
+  position: relative;
+  width: 100px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+/* Dropdown Header */
+.dropdown-header {
+  border: 1px solid #ccc;
+  /* padding: 10px; */
+  padding: 3px 6px;
+  font-size: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-header:hover {
+  border-color: #007bff;
+}
+
+/* Arrow Indicator */
+.dropdown-arrow {
+  font-size: 10px;
+  color: #333;
+}
+
+/* Dropdown List */
+.dropdown-list {
+  position: absolute;
+  width: 100%;
+  /* max-height: 200px; */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+/* Open Downwards */
+.dropdown-list {
+  top: 100%; /* Opens below the header */
+  left: 0;
+}
+
+/* Open Upwards */
+.dropdown-up {
+  bottom: 100%; /* Opens above the header */
+  top: auto;
+}
+
+/* Dropdown Item */
+.dropdown-item {
+  /* padding: 10px; */
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.hidden-item {
+  display: none;
+}
+
+.dropdown-item.disabled {
+  text-align: center;
+  color: #666;
+  cursor: default;
+}
+
+/* Scrollbar Styling */
+.dropdown-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+ .SVG-TAZoom-size img{
+  width: 15px;
+  height: 15px;
+}

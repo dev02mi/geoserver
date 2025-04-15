@@ -1,0 +1,97 @@
+/* UserModal.css */
+.user-modal {
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  /* background: white; */
+  padding: 20px;
+  outline: none;
+}
+
+
+.usermoder_wrap {
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  /* background: white; */
+  padding: 20px;
+  outline: none;
+}
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  /* text-align: center; */
+  margin-left: 35px;
+  font-size: 12px;
+}
+
+
+
+.Row-height {
+  margin-top: 10px;
+}
+
+/* .xyz{
+    margin-top: -15px;
+  } */
+
+.ValueClass {
+  margin-top: -12px;
+}
+
+.Row-1 {
+  margin-top: 0px;
+
+}
+
+.Pop-Heading {
+  color: rgb(61, 143, 190);
+  text-align: center;
+}
+
+.SU-submitbutton {
+  position: relative;
+  left: 170px;
+}
+
+.close_icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close_icon svg {
+  color: #000;
+  /* Icon color */
+}
+
+.verify_text {
+  font-size: 1.4rem !important;
+  /* color: black; */
+  font-weight: 400;
+}
+
+p.ValueClass {
+  font-size: 13px;
+  /* color: gray; */
+  font-weight: 600;
+}

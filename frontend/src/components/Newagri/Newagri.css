@@ -1,0 +1,86 @@
+
+.Agriform{
+    width: 1100px;
+    background: #8080801f;
+}
+.AgriClose{
+    text-align: end;
+    color: #ff0000ab;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.Agri-Heading{
+font-size: 16px;
+}
+.Project_info{
+ border: 1px solid gray;
+}
+.AgriLabel{
+    font-size: 15px;
+}
+
+.scrollable-input {
+    height: 100px; /* Set desired height */
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  .AgriCancel{
+    background: #bb2525;
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    border: 1px red;
+  }
+  .AgriNext{
+    font-size: 19px;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 5px;
+    border: none;
+  }
+  .agrilogo{
+    height: 50px;
+    padding: 0px!important;
+  }
+  .SidebarMenu{
+    height: 795px;
+  }
+  .Agrihedingnav{
+    font-size: 22px;
+    font-weight: 600;
+    color: #2e7b2c;
+  }
+  .agrilogoSidebar{
+    height: 80px;
+    
+  }
+  .AgriRow{
+    background-color: #ffffff;
+  }
+  .SidebarMenu {
+    transition: width 0.5s;
+  }
+  
+  .collapsed {
+    width: 100px; /* Adjust the width as needed */
+  }
+  
+  .expanded {
+    width: 200px; /* Adjust the width as needed */
+  }
+   
+  .AgriBack{
+    left: 355px;
+    position: fixed;
+  }
+  .activeAgri{
+    background-color: #2d8530; 
+    color: white;
+  }
+  .Iconnextandprevious{
+    font-size: 12px;
+  }
+
+  .ndvi-menu{
+    position: relative;
+    margin-top: 10%;
+  }

@@ -1,0 +1,99 @@
+.main-containOfPolicies{
+    height: 86vh;
+}
+
+.Disclaimer{
+    background:linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/public/privacy.jpeg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   background-attachment: fixed;
+   
+  /* background-color: aliceblue; */
+    /* background-color: #b7bde0; */
+    /* margin-bottom: 30px; */
+}
+
+.paragraphOfDisclaimer {
+    font-family: MATH;
+    color: black;
+    /* padding: 0 150px; */
+    /* margin-left: 50px;
+    margin-right: 25px; */
+    /* padding-top: 50px; */
+    font-size: 15px;
+    line-height: 1.3em;
+    font-weight: 500;
+    text-shadow: 1px rgb(56, 54, 54)!important;
+}
+.primary-heading {
+    text-align: center;
+    font-family: josefin sans;
+    color: cornflowerblue;
+    /* color: rgb(28, 172, 88); */
+    /* padding-top: 50px ; */
+    font-size: 4em;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.headingOfCondition{
+    text-align: center;
+    padding-top: 35px;
+    position: sticky;
+    top: 0;
+    height: 23vh;
+    /* background:linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/public/privacy.jpeg);  */
+    /* background-color: cadetblue; */
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.fiitjeelogin.com/policies/privacy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    /* background-color: #bbb; */
+
+}
+.Disclaimer{
+    padding: 20px 8.5vw 20px 10vw;
+}
+.privacypoliecisheading{
+    font-size: 35px;
+    /* font-size: 25px; */
+    margin-top: 1px;
+    font-weight: 400;
+    color: white;
+    margin-left: 7px;
+    font-family: 'Eras ITC', sans-serif;
+    text-shadow: 3px 1px 3px #a557cd;
+}
+.LinksOfPdT {
+    color: #a557cd;
+    font-weight: 100!important;
+}
+
+@media (max-width: 991px) { /* Medium screens (tablets) */
+    .headingOfCondition {
+      padding-top: 0; /* Remove padding */
+    }
+    .privacypoliecisheading{
+        font-size: 25px;
+    }
+    .Disclaimer{
+        padding: 20px ;
+    }
+  }
+  
+  @media (max-width: 576px) { /* Small screens (phones) */
+    .headingOfCondition {
+      padding-top: 0; /* Remove padding */
+    }
+  }

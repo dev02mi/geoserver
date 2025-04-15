@@ -1,0 +1,247 @@
+/* styles.css */
+.logoutUserprofile {
+  font-size: 10px;
+  margin-bottom: -2px;
+}
+
+.Card-Modal {
+  background-color: #fff;
+  padding: 5px;
+  border: 3px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: absolute;
+  border-radius: 14px;
+  margin-left: -140px;
+  height: 134px;
+  width: 189px;
+}
+
+
+.Close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Close:hover {
+  color: black;
+}
+
+
+
+
+/* .Close {
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+  } */
+
+
+
+.logout-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 20px; */
+  /* Adjust the margin-top as needed */
+}
+
+********** .user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-image img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* Optional: Make the user image circular */
+  margin-right: 10px;
+}
+
+.user-details {
+  margin-left: 35px;
+  margin-top: -27px;
+}
+
+.logout-button {
+  margin-left: 10px;
+}
+
+.Label-Name {
+  color: black;
+}
+
+.updateButton {
+  font-size: 11px;
+  width: 92px;
+  margin-left: -10px;
+  padding: 4px;
+}
+
+.Heading-Name {
+  color: black;
+  text-align: center;
+}
+
+.Card-Modal {
+  background-color: #fff;
+  padding: 5px;
+  border: 3px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 14px;
+  height: auto;
+  width: 189px;
+}
+
+@media (max-width: 1760px) {
+  .Card-Modal {
+    background-color: #fff;
+    padding: 5px;
+    border: 3px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    position: absolute;
+    border-radius: 14px;
+    margin-left: -250px;
+    height: auto;
+    width: 189px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Card-Modal {
+    width: 100%;
+    /* Make the modal full width on small screens */
+    height: auto;
+    /* Allow the modal's height to adjust to content */
+    margin: 0;
+    /* Remove any margin */
+  }
+}
+
+@media (max-width: 576px) {
+  .Card-Modal {
+    height: auto;
+    /* Allow the modal's height to adjust to content */
+    max-width: 90%;
+    /* Limit the modal's width on extra small screens */
+    margin: 0 auto;
+    /* Center the modal horizontally */
+  }
+
+  .user-profile {
+    flex-direction: column;
+    /* Stack user profile vertically on extra small screens */
+    text-align: center;
+    /* Center user profile content */
+  }
+
+  .user-image img {
+    margin: 0 auto;
+    /* Center user image horizontally */
+  }
+
+  .user-details {
+    margin-top: 10px;
+    /* Add some space between user image and details */
+  }
+
+  /* .logout-button {
+    margin-top: 20px; 
+  } */
+}
+
+
+
+/* pradumm  profile csss */
+
+
+.card_waper {
+  position: absolute;
+  top: 23px;
+  right: -23px;
+  width: 17rem;
+  /* max-width: 350px; */
+  margin: 14px auto;
+  /* border-radius: 10px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card_waper .card-body {
+  text-align: center;
+  /* padding: 10px; */
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.other-profiles {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card_waper .close-btn {
+  position: absolute;
+  top: -9px;
+  right: -4px;
+  background: none;
+  border: none;
+  font-size: 23px !important;
+  cursor: pointer;
+  color: white !important;
+}
+.card_waper .close-btn:hover{
+  color: red !important;
+}
+
+.card_waper .card-header {
+  background-color: #17a2b8 !important;
+  /* border-top-left-radius: 10px !important; */
+  /* border-top-right-radius: 10px !important; */
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  color: white;
+}
+.userNane_text{
+  font-size: 12px;
+}
+
+.profile_list_text {
+  color: black;
+  font-size: 13px;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.profile_list_text:hover {
+  color: #553988;
+}
+
+
+.logout_text {
+  font-size: 13px;
+  font-weight: 400;
+}

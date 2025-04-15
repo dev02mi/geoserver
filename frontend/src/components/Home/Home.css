@@ -1,0 +1,1185 @@
+.HomeContainer {
+  background: white;
+  height: 87.5vh;
+  /* margin-top: 272px; */
+  /* margin-bottom: -34vw; */
+  /* height: 89vh; */
+  /* margin-top: 35px; */
+  /* margin-bottom: 10px; */
+}
+
+/* _____ */
+
+/* .carousel-indicators{
+    margin-left: 20vw;
+} */
+/* .text-warning{
+    text-align: center;
+} */
+/* .carousel-indicators.button{
+    list-style: none;
+} */
+
+/* .scrollable-container {
+    width: 500px; 
+    height: 500px; 
+    overflow: auto;
+    overflow-x: hidden;
+  } */
+
+/* .carouselExample{
+  height: 87vh;
+} */
+
+.visually-hidden {
+  opacity: 0;
+}
+
+.carousel {
+  position: relative;
+  /* height: 87vh; */
+  top: -34px;
+}
+
+.cara-head {
+  position: relative;
+  top: 0px;
+}
+
+.carousel-indicators .active {
+  height: 0;
+}
+
+.text-primary {
+  font-family: "open sans", sans-serif;
+  color: #f9fbfd !important;
+}
+
+.carousel-indicators {
+  bottom: 0px !important;
+  display: none !important;
+}
+
+.cara-desc {
+  color: #f4f7f7 !important;
+  font-family: "open sans", sans-serif;
+}
+
+.cara-cap {
+  /* background: linear-gradient(to right, #2e3192d1, #2b7b7b); */
+
+  /* padding-bottom: 18rem; */
+  margin: 0rem 54rem 30rem -32rem;
+}
+
+/* ___________ */
+/* ________________ NEw Carouse CSS __________________*/
+
+/* .bcontent {
+  margin-top: 10px;
+} */
+
+.carousel-inner .cara-Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ______________________________________ */
+
+/* Additional CSS for Text Animation */
+
+/* Animate the color of the text */
+@keyframes colorChange {
+  from {
+    color: #fff;
+    /* Initial color */
+  }
+
+  to {
+    color: #ffcc00;
+    /* Target color */
+  }
+}
+
+/* Animate the font size */
+@keyframes fontSizeChange {
+  from {
+    font-size: 18px;
+    /* Initial font size */
+  }
+
+  to {
+    font-size: 24px;
+    /* Target font size */
+  }
+}
+
+/* Apply the animations to specific elements */
+
+/* Apply colorChange animation to h3 elements */
+.caption h3 {
+  animation: colorChange 1s ease-in-out infinite alternate;
+}
+
+/* Apply fontSizeChange animation to p elements */
+.caption p {
+  animation: fontSizeChange 1s ease-in-out infinite alternate;
+}
+
+.HomeAboutPage {
+  background-color: aliceblue;
+}
+
+.HomeServicesPage {
+  background-color: #93c5721f;
+}
+
+.HomeProduct {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  /* background-color:#e6e6fa99 */
+}
+
+.Drone {
+  position: absolute;
+  top: 40px;
+}
+
+.AboutUSHome {
+  text-align: center;
+  font-family: "open sans", sans-serif;
+  /* font-size: 27px; */
+  font-size: min(4vw, 40px);
+  /* margin-bottom: 33px; */
+  font-weight: 700;
+  /* font-family: math; */
+  /* margin-left: -240px; */
+  /* margin-left:820px; */
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #148506 0%,
+    #2f332fa8 29%,
+    #27020e 67%,
+    #7e02cf 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+}
+.Testimonial {
+  text-align: center;
+  font-family: "open sans", sans-serif;
+  /* font-size: 27px; */
+  font-size: min(4vw, 25px);
+  /* margin-bottom: 33px; */
+  font-weight: 700;
+  /* font-family: math; */
+  /* margin-left: -240px; */
+  /* margin-left:820px; */
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #148506 0%,
+    #2f332fa8 29%,
+    #27020e 67%,
+    #7e02cf 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  /* display: inline-block; */
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* _______________ Responsive Code_________________________ */
+
+/* .CopyRightFooter {
+  margin-bottom: 75px;
+} */
+
+/* Carouser Img  */
+/* .crimg{
+    display: flex; 
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+
+  } */
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+  /* .HomeContainer {background: red;} */
+  /* .carousel-img {  width: 100%;
+    max-width: 600px;
+    height: auto;} */
+  /* .carousel-img{width: auto;
+    height: auto;} */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  .body-container-card {background: green;}
+
+
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  .HomeContainer {background: blue;}
+}  */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  .HomeContainer {background: orange;}
+}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  .HomeContainer {background: pink;}
+} */
+
+.content-inside-home {
+  /* margin: 0 8vw; */
+
+  background-color: #d6dbdb;
+}
+
+/* __________________________ */
+.text-bloc {
+  margin: 0px 100px 0px 100px;
+  /* margin: 0; */
+  padding: 0;
+  font-family: "Bruno Ace SC", cursive;
+}
+.img_heading {
+  margin: 5px 20rem 5px 20rem;
+  background-color: #626b7b85;
+}
+
+.section-background {
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  height: 89vh;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  /* justify-content: end; */
+  /* align-items: center; */
+}
+
+.ParaForProduct {
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-family: "open sans", sans-serif; */
+  font-family: 'Mukta', sans-serif;
+  word-spacing: 3px;
+  /* line-height: normal;
+  letter-spacing: normal; */
+  padding: 20px;
+  font-weight: 100;
+}
+.prod-para {
+  margin: 2px 14rem 10px 14rem;
+  font-family: 'Mukta', sans-serif;
+  word-spacing: 3px;
+  color: black !important;
+  /* font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif; */
+  font-weight: 200;
+}
+/* .prod-para{
+  margin: 2px 10rem 10px 10rem;
+  font-size: 16px;
+  
+} */
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 80px; /* Adjust font size for smaller screens */
+  }
+  .section-background {
+    background-size: contain;
+    background-size: cover;
+    height: 38vh;
+    background-repeat: no-repeat !important; /* Prevent background image from repeating */
+  }
+  .ParaForProduct {
+    padding: 5px;
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+  .img_heading {
+    margin: 1px 2rem 1px 2rem;
+  }
+  .prod-para {
+    margin: 0px 5rem 1px 5rem;
+    font-size: 16px;
+  }
+  .cara-desc {
+    font-size: 12px;
+  }
+  .cara-cap {
+    padding-bottom: 1rem;
+  }
+
+  /* .card-res{
+    margin: 20px;
+  } */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .prod-para {
+    margin: 2px 10rem 10px 10rem;
+    font-size: 16px;
+  }
+  .img_heading {
+    margin: 2px 2rem 2px 2rem;
+  }
+  .ParaForProduct {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .cara-cap {
+    padding-bottom: 12rem;
+  }
+
+  /* .HomeSlideSow {
+    height: 82.5vh;
+  } */
+}
+
+/* Responsive styles for even smaller screens */
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 60px; /* Adjust font size for even smaller screens */
+  }
+  .section-background {
+    height: 40vh; /* Adjust height for even smaller screens */
+  }
+
+  .ParaForProduct {
+    font-size: 12px; /* Adjust font size for even smaller screens */
+    height: 18vh;
+    overflow: scroll;
+  }
+  .prod-para {
+    font-size: 12px;
+    margin: 0px 2rem 0px 2rem;
+  }
+
+  /* .products-cards{
+    margin: 2px 4rem 10px 3rem;
+
+  } */
+}
+
+/* ____ About Us Page_______ */
+
+.aboutUS {
+  padding: 30px 0;
+  background-color: #f2f1f3;
+  background-attachment: fixed;
+}
+
+.aboutUS .heading h2 {
+  font-size: min(4vw, 45px);
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.aboutUS .heading h2 span {
+  color: #f24259;
+}
+
+.aboutUS .heading p {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.7;
+  color: #3d3434;
+  /* margin: 20px 0 60px; */
+  padding: 0;
+  color: #ffffff;
+}
+
+.aboutUS h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutUS p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #ffffff;
+  margin: 20px 0 15px;
+  padding: 0;
+}
+
+.aboutUS h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.aboutUS h4 i {
+  color: #f24259;
+  margin-right: 10px;
+}
+
+.aboutUS h4 a {
+  color: #ffffff;
+}
+
+/* Button  */
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 18px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 12px;
+  /* background-color: ; */
+  border-radius: 100px;
+  font-weight: 600;
+  color: #ffffff;
+  box-shadow: 0 0 0 2px #ccc;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 15px;
+  fill: #ffffff;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #c5e5e4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #1f387e;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+.animated-button {
+  width: 118px; /* Set width to 100% */
+  max-width: 100%; /* Optional: set max-width to 100% for flexibility */
+}
+
+.services-link {
+  /* position: relative; */
+  z-index: 1;
+  /* transform: translateX(); */
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+
+.service-lnk:hover .services-link {
+  transform: translateX(12px);
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  .animated-button {
+    width: 90px; /* Adjust width for smaller screens */
+  }
+
+  .aboutUS p {
+    font-size: 12px;
+  }
+}
+
+/* Additional media queries for other screen sizes if needed */
+@media only screen and (max-width: 480px) {
+  .animated-button {
+    width: 80px; /* Adjust width for even smaller screens */
+  }
+}
+
+/*mmmmmmmmmmmmmmmmmmmmm home slider new mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/
+.slider--container {
+  position: relative; /* "relative", so that h1 and images can be set absolutely */
+  height: 90vh; /* Adjust the height to your needs here */
+  width: 100vw; /* Adjust the width to your needs here */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0.125rem;
+  /* box-shadow: 0 0 .1rem .125rem rgba(0, 0, 0, 0.25); */
+}
+/*  */
+.slider--heading {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 29%;
+  height: 100%;
+  padding: 1rem;
+  z-index: 99;
+  font: 300 1.25rem / 1.25 Verdana, sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(-6%, -50%, 0);
+  /* position: absolute;
+	top: 50%;
+	left: 17%;
+	width:50%;
+	height:100%;
+	padding: 1rem;
+	z-index: 99;
+	font: 300 1.25rem/1.25 Verdana, sans-serif;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.5);
+	transform: translate3d(-50%, -50%, 0); */
+}
+.slider--heading h1 {
+  font: 300 1.25rem/1.25 Verdana, sans-serif;
+  text-transform: uppercase;
+  color: rgb(72 6 173 / 50%);
+  /* color: rgba(0,0,0,.5); */
+}
+/* Responsive styles for the heading */
+/* ===== == = === 30em (480px) === = == ===== */
+@media only screen and (min-width: 30em) {
+  .slider--heading h1 {
+    font-size: 1.5rem;
+  }
+}
+/* ===== == = === 48em (768px) === = == ===== */
+@media only screen and (min-width: 48em) {
+  .slider--heading h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Responsive styles for the button */
+/* ===== == = === 30em (480px) === = == ===== */
+/* @media only screen and (min-width : 30em) {
+		.btn {
+			font-size: 1rem;
+		}
+	} */
+/* ===== == = === 48em (768px) === = == ===== */
+/* @media only screen and (min-width : 48em) {
+		.btn {
+			font-size: 1.25rem;
+		}
+	} */
+
+.Textaofcraousel-Container {
+  display: flex;
+  justify-content: center;
+  align-items: "center";
+  font-weight: 100;
+  color: #c2f1f3;
+  text-shadow: 2px 2px black;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.slider--image {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  animation: 45s ease-in-out infinite;
+}
+/* Name of animations and selection of images */
+.slider--image:nth-of-type(1) {
+  animation-name: slide-01;
+}
+.slider--image:nth-of-type(2) {
+  animation-name: slide-02;
+}
+.slider--image:nth-of-type(3) {
+  animation-name: slide-03;
+}
+.slider--image:nth-of-type(4) {
+  animation-name: slide-04;
+}
+.slider--image:nth-of-type(5) {
+  animation-name: slide-05;
+}
+.HeadingOfcarousel {
+  display: flex;
+  /* width: 160px; */
+  /* padding: 0 10px; */
+  color: #aaa;
+  font-family: "Rowdies", sans-serif;
+  font-size: 40px !important;
+  /* background: #222; */
+  justify-content: center !important;
+  align-items: center !important;
+  text-shadow: 2px 2px 0 #e693f7, 4px 4px 0 #666, 6px 6px 0 #333,
+    10px 10px 0 #111;
+}
+
+/* Images are overlaid and visible or invisible due to different transparency */
+/* Moving the images with transform: scale & translate */
+/* Styles for webkit browsers */
+@-webkit-keyframes slide-01 {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+  16% {
+    opacity: 1;
+    -webkit-transform: scale(1.2) translate(-20px, -10px);
+  }
+  33% {
+    opacity: 0;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+}
+@-webkit-keyframes slide-02 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+    -webkit-transform: scale(1.2) translate(-20px, -10px);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.2) translate(-20px, 10px);
+  }
+  67% {
+    opacity: 0;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+  84% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slide-03 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+  67% {
+    opacity: 1;
+    -webkit-transform: scale(1.4) translate(-20px, 10px);
+  }
+  84% {
+    opacity: 1;
+    -webkit-transform: scale(1.2) translate(20px, -10px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+}
+
+@-webkit-keyframes slide-04 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+  67% {
+    opacity: 1;
+    -webkit-transform: scale(1.4) translate(-20px, 10px);
+  }
+  84% {
+    opacity: 1;
+    -webkit-transform: scale(1.2) translate(20px, -10px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+}
+@-webkit-keyframes slide-05 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+  67% {
+    opacity: 1;
+    -webkit-transform: scale(1.4) translate(-20px, 10px);
+  }
+  84% {
+    opacity: 1;
+    -webkit-transform: scale(1.2) translate(20px, -10px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.4) translate(0, 0);
+  }
+}
+/* Styles for all other browsers */
+@keyframes slide-01 {
+  0% {
+    opacity: 1;
+    transform: scale(1.4) translate(0, 0);
+  }
+  16% {
+    opacity: 1;
+    transform: scale(1.2) translate(-20px, -10px);
+  }
+  33% {
+    opacity: 0;
+    transform: scale(1.4) translate(0, 0);
+  }
+  50% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  84% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.4) translate(0, 0);
+  }
+}
+@keyframes slide-02 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+    transform: scale(1.2) translate(-20px, -10px);
+  }
+  33% {
+    opacity: 1;
+    transform: scale(1.4) translate(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) translate(-20px, 10px);
+  }
+  67% {
+    opacity: 0;
+    transform: scale(1.4) translate(0, 0);
+  }
+  84% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slide-03 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.4) translate(0, 0);
+  }
+  67% {
+    opacity: 1;
+    transform: scale(1.4) translate(-20px, 10px);
+  }
+  84% {
+    opacity: 1;
+    transform: scale(1.2) translate(20px, -10px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4) translate(0, 0);
+  }
+}
+@keyframes slide-04 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.4) translate(0, 0);
+  }
+  67% {
+    opacity: 1;
+    transform: scale(1.4) translate(-20px, 10px);
+  }
+  84% {
+    opacity: 1;
+    transform: scale(1.2) translate(20px, -10px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4) translate(0, 0);
+  }
+}
+@keyframes slide-05 {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.4) translate(0, 0);
+  }
+  67% {
+    opacity: 1;
+    transform: scale(1.4) translate(-20px, 10px);
+  }
+  84% {
+    opacity: 1;
+    transform: scale(1.2) translate(20px, -10px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4) translate(0, 0);
+  }
+}
+/* ______________________________________________________ */
+
+#galleryOfHome {
+  max-height: 100vh !important; /* Limit the height to the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding: 10px; /* Optional: add padding to make the content more readable */
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+  position: relative;
+  width: 35%;
+  background: linear-gradient(
+        45deg,
+        #15151600 0%,
+        #01181573 14%,
+        #041e33bd 26%,
+        #0527213d 49%,
+        #207cca70 72%,
+        #737d7b66 88%,
+        #485763 100%
+      )
+      fixed,
+    url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTMzNzkzMC1pbWFnZS1rd3Z4eGlydC5qcGc.jpg)
+      no-repeat center center fixed;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  scrollbar-width: none;
+}
+#galleryOfHome::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+#galleryOfHome::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light background for scrollbar track */
+}
+
+#galleryOfHome::-webkit-scrollbar-thumb {
+  background-color: #379ea1; /* Blue color for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#galleryOfHome::-webkit-scrollbar-thumb:hover {
+  background: #207cca; /* Darker blue when hovering over the scrollbar */
+}
+.WelcomHome {
+  color: #ffd5a9;
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: 100;
+  /* font-size: 17px; */
+  /* font-size: 20px; */
+}
+.Gateway {
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #ffff92;
+  font-weight: 100;
+  text-shadow: 1px 0.5px black;
+}
+.HomeSlideSow {
+  display: flex;
+  /* margin-top: 25px; */
+  /* margin: 50px auto; */
+  width: 100%;
+  height: 86.5vh;
+  /* width: 1200px; */
+  /* max-height: fit-content; */
+  /* height: 525px; */
+}
+.HighlighthomeSpan {
+  /* color: lightgoldenrodyellow; */
+  color: #ffd5a9;
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: 100;
+}
+.BlowSpan {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.custom-slideh .contentHome {
+  bottom: 0; /* Ensure .contentAp is positioned at the bottom of the slide */
+  opacity: 1; /* Make sure it's fully visible */
+  transition: opacity 0.5s ease, bottom 0.5s ease; /* Optional smooth transition */
+}
+
+/* Hover effect can adjust opacity or other properties */
+/* .custom-slide:hover .contentHome {
+  opacity: 0.8; 
+  bottom: 0; 
+} */
+.custom-slideh .contentHome {
+  position: absolute;
+  right: 0;
+  bottom: 85px;
+  width: 92%; /*newly added width */
+
+  border-radius: 15px 0 0 15px;
+
+  /* left: 0; */
+  /* bottom: -999px; */
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: bottom 0.4s ease;
+}
+.custom-slideh .titleHome {
+  font-weight: bold;
+  color: #fafac4;
+}
+.custom-slideh .descriptionHome {
+  font-size: 13px;
+  text-shadow: 1px solid rgb(146, 144, 144);
+  font-weight: 100;
+}
+@media (max-width: 768px) {
+  #galleryOfHome {
+    width: 100%; /* Ensure the container takes full width on smaller screens */
+  }
+  .custom-slideh img {
+    width: 100%; /* Maintain full width of the container */
+    height: auto; /* Keep the aspect ratio intact */
+  }
+  .cara-Img {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+@media (max-width: 480px) {
+  /* Ensure image maintains minimum width/height */
+  .custom-slideh img,
+  .cara-Img {
+    overflow: hidden;
+    width: 100%; /* Keep image full width */
+    max-width: 100%; /* Prevent image from exceeding the container */
+    height: auto; /* Maintain aspect ratio */
+    min-width: 300px; /* Prevent image from shrinking below 300px in width */
+  }
+
+  /* Adjust text container for small screens */
+
+  /* Ensure the #galleryOfHome adjusts height and remains scrollable */
+  #galleryOfHome {
+    max-height: 60vh; /* Adjust to fit even smaller screens */
+  }
+
+  /* Adjust any other container to avoid too much shrinkage */
+  #slides {
+    width: 100%; /* Full width on small screens */
+  }
+
+  /* .GeopicsHeading, */
+  .Gateway,
+  .descriptionHome {
+    font-size: 0.85rem; /* Adjust for readability on smaller screens */
+  }
+}
+@media screen and (max-width: 768px) {
+  #galleryOfHome {
+    display: none;
+  }
+}
+.Home-geopics {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.GeopicsHeadingInsideCrausel {
+  font-size: 50px;
+  margin: 0;
+  font-weight: 400;
+  color: white;
+  margin-left: 7px;
+  font-family: "Eras ITC", sans-serif;
+  text-shadow: 3px 1px 3px #a557cd;
+}
+
+@media (min-width: 1300px) and (max-width: 1750px) {
+  .HomeSlideSow {
+    height: 82.5vh;
+  }
+}
+
+.custom-slideh {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+
+.custom-slideh.show {
+  opacity: 1;
+  z-index: -1;
+}
+.custom-slideh.show {
+  display: block !important; /* Only show the active slide */
+  /* The contentAp inside will automatically be visible as part of the active slide */
+}

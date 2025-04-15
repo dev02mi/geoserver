@@ -1,0 +1,81 @@
+#Profile {
+
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Profile-Popup-Content {
+  /* background-color: #fefefe; */
+  margin: 2.5% auto;
+  /* padding: 10px; */
+  /* border: 1px solid #888; */
+  width: 80%;
+  max-width: 900px;
+  /* top: 46px; */
+  margin-top: 13rem;
+  /* border-radius: 1rem; */
+  padding-right: 0rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .Profile-Popup-Content {
+    height: 82vh;
+    overflow-y: scroll;
+  }
+
+}
+
+/* 
+
+  label {
+    margin-bottom: 0px;
+    margin-top: 8px;
+    font-weight: 500;
+    color: black;
+} */
+
+.Profile-HeadingText {
+  margin-bottom: 0px;
+  margin-top: 8px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+.Col-Class-1 {
+  margin-top: -45px;
+}
+
+/* .Col-Class-2{
+  margin-top: -17px;
+} */
+
+.Profile-SaveBtn {
+  text-align: center;
+}
+
+.Manage-UserProfile {
+  margin-left: 30px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card_waper {
+    position: absolute;
+    top: 80px;
+    right: 6px;
+    width: 17rem;
+    /* max-width: 350px; */
+    margin: 14px auto;
+    /* border-radius: 10px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}

@@ -1,0 +1,47 @@
+
+.Agriform{
+    width: 1100px;
+    background: #8080801f;
+}
+.AgriClose{
+    text-align: end;
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.Agri-Heading{
+font-size: 16px;
+}
+.Project_info{
+ border: 1px solid gray;
+}
+.AgriLabel{
+    font-size: 15px;
+}
+
+.scrollable-input {
+    height: 100px; /* Set desired height */
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  .AgriCancel{
+    background: #bb2525;
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    border: 1px red;
+  }
+  .AgriNext{
+    font-size: 19px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 5px;
+    border: 1px solid darkblue;
+  }
+  .agrilogo{
+    height: 50px;
+    padding: 0px!important;
+  }
+  .iconForCreateproject{
+    color: darkslategray;
+    font-size: 33px;
+  }

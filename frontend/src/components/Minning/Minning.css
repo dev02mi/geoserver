@@ -1,0 +1,42 @@
+.HeadingForMinning{
+    background-color: rgb(139, 5, 0);
+    color: white;
+   font-size: min(18vh, 30px);
+    margin: 20px 800px 5px 800px;
+    border-radius: 12px;
+    border: 2px solid black;   
+}
+.MinningHome{
+  height: 86.5vh
+    /* margin-bottom: -309px */
+
+}
+.HeadingOfMinningCard{
+    background-color:slategrey ;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: white;
+   margin: 0;
+   padding: 10px;
+}
+/* ol, ul{
+    color: black;
+    margin-top: 20px;
+    font-weight: 500;
+
+  } */
+  .cardsTextsOfMinning{
+    height:100px;  
+   overflow-y: auto;
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 13px; */
+    font-size: max(12px, 8px);
+    text-align: center;
+    font-weight: 600;
+    background-color:silver;
+  }
+  @media (min-width: 1200px) and (max-width: 1600px) {
+    .cardsTextsOfMinning{
+      font-size: 10px;
+    }
+  }

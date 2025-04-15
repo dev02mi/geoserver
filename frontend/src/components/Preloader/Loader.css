@@ -1,0 +1,415 @@
+/* .loader-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.loader-overlay.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.loader-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+}
+
+.loader-body {
+  margin-bottom: 20px;
+}
+
+.extract-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.loading-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.action-btn {
+  padding: 8px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+.complete-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.ok-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ok-btn:hover {
+  background-color: #45a049;
+} */
+
+
+
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-content {
+  background-color: #fff;
+  /* padding: 10px; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  /* max-width: 500px; */
+  width: 100%;
+  /* border: 2px solid #212529d6; */
+}
+
+.loader-header {
+  display: flex;
+  align-self: center;
+  align-items: inherit;
+  background-color: #402588;
+  /* height: 40px; */
+  padding: 2px;
+  /* padding: 4px; */
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.Loaderlogo {
+  width: 30px;
+  height: 30px;
+  /* margin-top: -3px; */
+}
+
+.LoaderHeadingBox {
+  color: white;
+  display: grid;
+  margin-top: -9px;
+  margin-left: -5px;
+}
+
+.LoaderGeopicsHeading {
+  font-size: 20px;
+  font-weight: 600;
+  /* font-size: 30px; */
+  /* margin-top: -2px; */
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: inherit;
+  /* font-family: "Glyphicons Halflings"; */
+}
+
+.LoaderTextGeopicx {
+  color: #ffffff;
+  font-size: 8px;
+  font-style: italic;
+  margin-left: 10px;
+
+}
+
+.header-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.Loadernewclosebox {
+  padding: 2px;
+  margin-top: 2px;
+}
+
+.Loadernewclose {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, .15);
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+.Loadernewclose:hover {
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #999;
+}
+
+.loader-body {
+  /* margin-top: 10px; */
+  /* border: 2px solid #777; */
+  padding: 10px;
+}
+
+.LoaderBodyBox {
+  display: grid;
+  justify-content: space-around;
+}
+
+.loaderEfficet {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
+  clip-path: inset(0 100% 0 0);
+  animation: l5 2s steps(11) infinite;
+  margin-left: 39px;
+  color: #116D6E;
+}
+
+.loaderEfficet:before {
+  content: "Loading..."
+}
+
+@keyframes l5 {
+  to {
+    clip-path: inset(0 -1ch 0 0)
+  }
+}
+
+
+
+.checkmark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #4bb71b;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #4bb71b;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  position: relative;
+  /* top: -6px; */
+  right: 5px;
+  margin: 0 auto;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #4bb71b;
+  fill: #fff;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #4bb71b;
+  }
+}
+
+
+
+
+.loader-progress {
+  height: 14px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 20px;
+  color: #28a745d6;
+  border: 2px solid;
+  position: relative;
+  padding: 2px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #28a745d6;
+  border-radius: 10px;
+}
+
+
+.loader-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pause-btn,
+.resume-btn,
+.ok-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pause-btn {
+  background-color: #f44336;
+}
+
+.resume-btn {
+  background-color: #4caf50;
+}
+
+.ok-btn {
+  background-color: #2196f3;
+}
+
+.pause-btn:hover,
+.resume-btn:hover,
+.ok-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.cancel-btn {
+  background-color: #ff4d4f;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 17px;
+}
+
+.cancel-btn:hover {
+  background-color: #ff7875;
+}
+.ExtractData{
+  font-size: 1.9rem;
+    font-weight: bold;
+}
+.ok-btn:disabled{
+  cursor: not-allowed;    /* Show not-allowed cursor on hover */
+   /* Prevent any hover or click actions */
+}

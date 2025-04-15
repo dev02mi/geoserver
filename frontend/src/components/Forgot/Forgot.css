@@ -1,0 +1,332 @@
+
+
+
+/* ----------------------- ForgotPassword CSS -------------------- */
+.otpPage{
+  margin-top: 120px;
+}
+
+.Input-Field-Label {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.Input-Field:disabled {
+  cursor: not-allowed;
+  border: solid 1px #eee;
+}
+
+.uforms {
+  /* box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+max-width: 600px;
+  /* max-width: 536px;  */
+  height: auto;
+  width: 100%;
+  /* margin: 12px auto !important; */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.03);
+  /* backdrop-filter: blur(15px); */
+  padding: 20px;
+  /* padding: 5px 20px 20px 20px; */
+  margin-left: auto; /* Centering the element horizontally */
+  margin-right: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 120px!important;
+}
+
+.uforgotforms{
+  /* box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  max-width: 536px; 
+  height: auto;
+  width: 100%;
+  /* margin: 12px auto !important; */
+  border-radius: 12px;
+  /* background-color: rgba(255, 255, 255, 0.03); */
+  /* padding: 5px 9px 5px 9px; */
+  margin-left: auto; /* Centering the element horizontally */
+  margin-right: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 120px!important;
+
+}
+
+.Input-Field:disabled {
+  cursor: not-allowed;
+  border: solid 1px #eee;
+}
+
+.formTitlechange{
+  font-weight: 600;
+  margin-top: 0px;
+  color: #2F2D3B;
+  text-align: center;
+  font-size:min(4vw,28px)
+  
+}
+
+
+
+/* --------------------------Two Form Used  Forgot & GenerateOTP ---------------*/
+
+.inputDiv {
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  margin: 14px;
+}
+.EnterOtp-div{
+  display: flex;
+  flex-direction: column;
+  margin: 0 14px 14px 14px;
+}
+
+/* --------------------------Two Form Used Forgot & Update --------------------*/
+.formTitle{
+  font-weight: 600;
+  /* margin-top: 20px; */
+  color: #2F2D3B;
+  text-align: center;
+  font-size: min(5vw, 24px);
+}
+
+.LogoForgot{
+  /* position: absolute; */
+  /* left: 75px; */
+  background: transparent;
+  /* top: min(8vw,22px); */
+  text-align: center;
+  color: white;
+  font-size: min(10vw, 48px);
+}
+
+.mainDiv {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* .resetForm {
+  background: repeating-radial-gradient(#df8c8c24, #d5a5d41c 100px);
+} */
+
+.cardStyle {
+  width: 100%;
+  border-color: white;
+  /* background: #fff; */
+  padding: 16px 18px;
+  border-radius: 4px;
+  margin: 0px 0;
+  box-shadow: 0px 0 2px 0 rgba(0,0,0,0.25);
+  /* background: repeating-radial-gradient(#df8c8c24, #d5a5d41c 100px); */
+}
+
+/* --------------------------ALL THREE Form Used ----------------------------------*/
+
+.submitButton {
+  width: 50%;
+  height: 25%;
+  margin: auto; 
+  display: block;
+  color: #fff;
+  background-color: #065492;
+  border-color: #065492;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.035);
+  border-radius: 4px;
+  font-size: min(3vw,15px);
+  cursor: pointer;
+}
+
+.submitButton:disabled,
+button[disabled] {
+  border: 1px solid #cccccc;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.buttonWrapper {
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* -------------------------------- Generate OTP CSS ------------------------------*/
+
+.OTPFORm{
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  max-width: 536px;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  /* padding: 0 0px 30px; */
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 120px!important;
+}
+
+.LogoForgotOTP{
+  /* position: absolute; */
+  left: 55px;
+  background: transparent;
+  top: 6px;
+  color: white;
+}
+
+.Otptime{
+  font-size:min(4vw,12px)
+}
+
+.Otpbutton{
+  font-size: min(4vw,14px);
+  width: auto;
+}
+
+.Otp-Input-Box{
+  justify-content: space-around;
+  display: flex;
+  /* align-items: center; */
+}
+.Otp-Label{
+  font-size: 20px;
+}
+.Otp-input-field{
+  /* border: solid; */
+  /* border-color: #065492; */
+  /* border-radius: 0.1em; */
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  margin: 13px;
+  text-align: center;
+}
+
+.Otp-input-field:disabled {
+  color: #89888b;
+} 
+
+.Otp-input-field:focus {
+  border: 3px solid #5786ad;
+}
+
+/* .Otp-Input-Field{
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  margin: 14px;
+} */
+
+/* ------------------- UpdatePassword CSS ---------------------*/
+
+.text-center-size{
+  font-size: min(4vw,14px);
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .cardStyle {
+    padding: 16px 4px;
+  }
+  .uforgotforms{
+    margin-top: 10rem !important;
+  }
+  .buttonWrapper {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .uforgotforms{
+    border-radius: 6px;
+  }
+  .submitButton{
+    width: 60%;
+    font-size: 1.1rem;
+  }
+  .Input-Field-Label {
+    font-size: min(4vw,12px);
+    color: #555;
+}
+
+/* ________________________ */
+.Otp-Label {
+  font-size: 14px;
+}
+.OTPFORm{
+  max-width: 40rem;
+}
+.Otpbutton {
+  font-size: 1.2rem;
+}
+.Input-Field-Label {
+  font-size: 1.3rem;
+}
+.Otp-input-field{
+  width: 34px;
+  height: 34px;
+  font-size: 14px;
+  text-align: center;
+  margin: 8px;
+}
+.EnterOtp-div {
+  margin: 0 10px 10px 10px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Input-Field-Label {
+    font-size: 1.3rem;
+  }
+
+  .OTPFORm{
+    max-width: 45rem;
+  }
+
+  .Otp-input-field{
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .Otp-Label {
+    font-size: 1.8rem;
+  }
+  .Otpbutton {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .Input-Field-Label {
+    font-size: 1.4rem;
+  }
+
+}
+@media (min-width: 320px) and (max-width: 420px) {
+.Otp-input-field {
+  width: 27px;
+  height: 27px;
+}
+.OtpButtonMobileView{
+  padding: 5px;
+}
+}

@@ -1,0 +1,85 @@
+.download-report-modal {
+  position: fixed;
+  top: 160px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+
+.download-report-modal-dialog {
+  background-color: white;
+  border-radius: 5px;
+  width: 207px;
+  position: relative;
+  left: 208px;
+  top: 5px;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.download-report-modal-content {
+  /* padding: 20px; */
+  padding: 5px 7px 10px 7px;
+}
+
+/* .file-upload-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+} */
+
+.Exportabutton {
+  border-radius: 4px;
+  color: white;
+  background-color: darkgreen;
+  padding: 4px;
+  border: none;
+}
+
+.ExportCancel {
+  border-radius: 4px;
+  color: white;
+  background-color: #cb0202d4;
+  padding: 4px;
+  border: none;
+}
+
+.DownloadReport {
+  margin: 0px;
+  text-align: center;
+  color: navy;
+  font-weight: 600;
+}
+
+.SelectReport {
+  width: 90%;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.LAbelToSElectFile {
+  margin-top: 0;
+}
+
+.buttonExportFile {
+  margin-top: 20px;
+}
+
+.report-cancel-btn {
+  position: absolute;
+  left: 190px;
+  top: 5px;
+  font-weight: bolder;
+  color: red;
+  cursor: pointer;
+}

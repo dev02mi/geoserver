@@ -1,0 +1,31 @@
+/* CentralizedHeading.css */
+
+.centralized-heading {
+    /* Global styles for all headings */
+    /* Add common styles here */
+    text-align: center; /* Center align text horizontally */
+    display: flex;
+    justify-content: center; /* Center align text vertically */
+    align-items: center; 
+    font-family: 'Roboto', sans-serif!important;/* Center align text vertically */
+    /* Ensure the heading takes full height */
+}
+
+.centralized-heading.h1 {
+    font-size: 2.5rem; /* Example font size for h1 */
+    font-weight: bold; 
+    font-family: 'Roboto', sans-serif!important;/* Example font weight for h1 */
+    /* Additional styles for h1 */
+}
+
+.centralized-heading.h2 {
+    font-size: 2rem; /* Example font size for h2 */
+    font-weight: bold; /* Example font weight for h2 */
+    /* Additional styles for h2 */
+}
+
+.centralized-heading .centered-text {
+    font-family: 'Roboto', sans-serif !important; 
+    /* Styles for the centered text inside headings */
+    /* Adjust as needed */
+}

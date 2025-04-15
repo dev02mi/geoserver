@@ -1,0 +1,114 @@
+.image {
+    /* padding-top: 15px !important; */
+    display: flex;
+    align-items: center;
+    /* background-color: #553988; */
+    background-color: #54008b;
+    height: 55px;
+    border-radius: 0px 0px 0 0;
+    /* background: url(/GEOPICX_Banner.jpg); */
+    
+}
+
+.GeopicsHeading {
+    /* font-size: 30px;
+    margin-top: -11px;
+    color: white;
+    font-style: italic;
+    margin-left: 4px;
+    font-family: "Glyphicons Halflings"; */
+    font-size: 37px;
+    margin-top: 1px;
+    font-weight: 400;
+    color: white;
+    margin-left: 7px;
+    font-family: 'Eras ITC', sans-serif;
+    text-shadow: 3px 1px 3px #a557cd;
+}
+
+.text-geopicx {
+    position: absolute;
+    color: #ffffff;
+    left: 62px;
+    top: 30px;
+    font-weight: 300;
+    font-size: 10px;
+    text-shadow: 1px 2px 1px black;
+    color: antiquewhite;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.4px;
+}
+
+.LogoOfMicronet.hovered {
+    background-color: #f0f0f0;
+}
+
+.LogoOfMicronet.open {
+    transform: scale(1.1);
+}
+
+.LogoOfMicronet {
+    position: absolute;
+    right: 9px;
+    /* right: 95px; */
+    /* top: 13px; */
+    top: 8px;
+}
+
+.LogoMicronet {
+    width: 40PX;
+    height: 40px;
+}
+
+.header-micronet-popup {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    position: absolute;
+    border-radius: 14px;
+    text-align: justify;
+    right: 20px;
+    width: 170px
+}
+
+
+
+
+.PopUpAboveMicronetLogo {
+    font-size: 11px;
+    color: darkorchid;
+    font-weight: 700;
+    font-family: system-ui;
+}
+
+
+@media (max-width: 584px) {
+    /* .GeopicsHeading {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 12px;
+        font-family: "Glyphicons Halflings";
+    } */
+
+    /* .LogoOfMicronet {
+        position: absolute;
+        right: 32px !important;
+        top: 15px !important;
+
+    } */
+
+    .text-geopicx {
+        /* font-size: 5px;
+        display: none; */
+        text-wrap: wrap;
+    }
+
+    /* .LogoMicronet {
+        width: 70%
+    } */
+
+
+}
+

@@ -1,0 +1,139 @@
+.aboutmain{
+  /* height: 89vh; */
+  height: 86.5vh
+  
+}
+
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border: 3px solid rgba(245, 240, 240, 0.26);
+}
+
+
+.hero {
+  /* background-image: url('https://s3.divcom.com/www.geoweeknews.com/images/70d69a0f0972c83cfe3754cea2f0321f.jpg'); */
+  /* background: linear-gradient(rgba(2,2,2,0.5), rgba(0,0,0,0.5)), url('https://s3.divcom.com/www.geoweeknews.com/images/70d69a0f0972c83cfe3754cea2f0321f.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  align-items: end;
+  /* display: flex;
+  justify-content: end; */
+  text-align: center;
+  padding: 100px 10px;
+  /* height: 60vh; */
+}
+
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding: 5px;
+  color: palegoldenrod;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-family: math;
+  color: #ccc;
+}
+
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+
+/* Responsive styles for smaller screens */
+/* _____ Media Quiry */
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .about-container {
+    padding: 6px 10px;
+  }
+  .hero{
+    padding: 70px 10px;
+  }
+  .hero h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+  .hero p {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+  .hero{
+    padding: 50px 10px;
+  }
+  .about-container {
+    padding: 5px 8px;
+  }
+  .hero h1 {
+    font-size: 28px;
+    margin-bottom: 7px;
+  }
+  
+
+}
+
+@media only screen and (max-width: 480px){
+  .hero p {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .hero{
+    padding: 30px 5px;
+  }
+  .about-container {
+    padding: 5px 5px;
+  }
+
+    .hero h1 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+}
+
+
+/* styles.css */
+
+/* Styling for the bordered text container */
+/* styles.css */
+
+/* Styling for the main container */
+/* styles.css */
+
+/* Container styling */
+/* styles.css */
+
+/* Styling for the form container */
+/* FormWithBorder.css */
+
+/* Styling for the form container */
+
+
+
+

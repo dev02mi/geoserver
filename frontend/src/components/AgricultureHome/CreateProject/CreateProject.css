@@ -1,0 +1,182 @@
+
+.Agriform{
+    width: 1100px;
+    background: lightgray;
+    /* background: #8080801f; */
+}
+.AgriClose{
+    text-align: end;
+    color: #ff0000ab;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.Agri-Heading{
+font-size: 16px;
+}
+.Project_info{
+ border: 1px solid gray;
+}
+.AgriLabel{
+    font-size: 15px;
+}
+
+.scrollable-input {
+    height: 100px; /* Set desired height */
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  .AgriCancel{
+    background: #bb2525;
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    border: 1px red;
+  }
+  .AgriNext{
+    font-size: 19px;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 5px;
+    border: none;
+  }
+  .agrilogo{
+    height: 50px;
+    padding: 0px!important;
+  }
+  .SidebarMenu{
+    height: 822px;
+  }
+  .Agrihedingnav{
+    font-size: 22px;
+    font-weight: 600;
+    color: #2e7b2c;
+  }
+  .agrilogoSidebar{
+    height: 55px;
+    
+  }
+  .AgriRow{
+        background-color:#e9ecef ;
+    /* background-color: #ffffff; */
+  }
+  .SidebarMenu {
+    transition: width 0.5s;
+    width: 250px;
+  }
+  
+  .collapsed {
+    width: 100px; /* Adjust the width as needed */
+  }
+  
+  .expanded {
+    width: 200px; /* Adjust the width as needed */
+  }
+   
+  .AgriBack{
+    left: 355px;
+    position: fixed;
+  }
+  .activeAgri{
+    background-color: #2d8530; 
+    color: white;
+  }
+  .Iconnextandprevious{
+    font-size: 12px;
+  }
+  .Asign_Autherise{
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    background-color: #ffffff;
+  }
+  .Section_ThreeManagement{
+    border: 0.5px solid gray;
+    margin: auto;
+  }
+  .Section_TwoMAnagement{
+    background-color: gray;
+  }
+
+  .Agrihr{
+    background-color:#80808057; /* or black */
+    height: 0.5px;
+    border: none;
+  }
+ 
+  /* .BackgroundAgriimage{
+    width: 83.35%;
+    height: 100vh; 
+    object-fit: cover;
+   
+  } */
+  .BackgroundAgricontainer {
+    position: relative;
+  }
+  
+  .backgroundAgriimage {
+    width: 100%;
+    filter: brightness(0.5);
+    height: 100vh;
+    object-fit: cover;
+  }
+  .overlay-text {
+    color: #ffffff;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.iconForCreateproject{
+  width: 25px;
+}
+.buttons.active {
+  background-color: #2d8530;
+  color: #ffffff;
+}
+.sectionOfAgrisidebar:hover{
+background-color: antiquewhite;
+}
+.ButtonOfCreateProject{
+  border: none;
+  background-color: transparent;
+  color:darkslategray ;
+  font-weight: 600;
+}
+
+/* ghhgg */
+.maincontent {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.SidebarContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.SidebarMenu {
+ height: 830px;
+}
+
+.SidebarMenu.expanded {
+  width: 250px;
+}
+
+.SidebarMenu.collapsed {
+  width: 60px;
+}
+
+
+.SidebarMenu {
+  transition: width 0.3s;
+}
+.errores {
+  border:0.1px solid #dc3545 !important;
+}
+input:focus {
+  outline: none; /* Remove the outline when the input is focused */
+}
+

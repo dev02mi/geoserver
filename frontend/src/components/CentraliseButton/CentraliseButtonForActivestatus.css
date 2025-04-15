@@ -1,0 +1,26 @@
+.Active-button {
+    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: var(--padding);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    font-size: var(--fontSize);
+}
+
+.Active-button.clickeds {
+    background-color: var(--hover-bg-color) !important;
+    color: var(--hover-text-color) !important;
+}
+
+.Active-button.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+@media (min-width: 575.98px) {
+    .AU_Toogle_btn{
+        width: 100px!important; /* Fit to content */
+        min-width: 0!important; /* Prevent button from stretching too wide if content is small */
+      
+        font-size: 12px!important;
+    }
+  }

@@ -1,0 +1,64 @@
+/* ScrollToTop.css */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: none;
+    /* to show tempary display it */
+  }
+  
+  .scroll-to-top-icon {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+  .Scrolltotop:hover {
+    background-color: #8458B3;
+    color: white;
+  }
+  
+  .Scrolltotop:hover .faRocket {
+    color: white;
+  }
+  /* button */
+  .Scrolltotop{
+    /* position: fixed; */
+    position: absolute;
+    top: 59%;
+    left: 49%;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .Scrolltotop:hover {
+    background-color: #0056b3;
+  }
+  .AppContain{
+    position: absolute;
+    top: 69%;
+    left: 49%;
+    /* position: sticky; */
+    /* position: absolute;
+    top: 78%;
+    left: 700px; */
+    /* right: 50% !important; */
+    /* left: 255px; */
+    /* height: 100%; */
+}
+  

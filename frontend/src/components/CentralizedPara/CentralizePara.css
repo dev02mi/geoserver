@@ -1,0 +1,17 @@
+/* CentralizedParagraph.css */
+.centralized-paragraph {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Arial, sans-serif'; /* Set your desired font family here */
+    font-size: 16px; /* Set your desired font size here */
+}
+
+.custom-paragraph {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.another-custom-paragraph {
+    font-size: 1em;
+    font-style: italic;
+}

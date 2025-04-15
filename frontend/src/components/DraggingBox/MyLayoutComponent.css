@@ -1,0 +1,634 @@
+.MyLayout-DropBox-container {
+  height: 100%;
+  margin: 4px;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+}
+
+/* 
+.draggable {
+  background-color: lightblue;
+}
+
+.draggable--active {
+  background-color: lightgreen;
+} */
+
+.drop-zones {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.drop-zone {
+  /* width: 100%; 
+    height: 100%;  */
+  border: 1px solid gray;
+  margin: 2px;
+}
+.dropZoneTwo {
+  width: 100%;
+  height: 100%;
+}
+.dropZoneOne,
+.dropZoneThree {
+  width: 20%;
+}
+
+.drop-zone--col2 {
+  width: 100%; /* 60% width for the middle box */
+}
+
+.drop-zone--active {
+  border-color: green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.console {
+  margin-top: 20px;
+}
+.Layout-head-heading {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.Layout-Box-header {
+  position: relative;
+  background: rgb(255, 255, 255);
+  cursor: grab;
+  border-bottom: 1px dashed black;
+}
+
+/* ________________________________ */
+/* */
+
+.dock-panel {
+  border: 1.5px solid #9b9b9b;
+}
+
+.Layout-main-div {
+  height: 82.3vh;
+  padding: 4px;
+  position: relative;
+}
+
+.Layout-Header {
+  display: flex;
+  padding: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 2px;
+}
+
+.Layout-main-div .dock-top .dock-bar {
+  flex: 0 0 auto;
+  background: #fafafd;
+  border-bottom: 1px dashed #8f8f8f;
+  padding-left: 4px;
+}
+
+.Layout-main-div .dock-panel[data-dockid="panel2"] .dock-top .dock-bar {
+  border-bottom: 2px solid #a8a7a7;
+}
+.Layout-main-div .dock-panel[data-dockid="panel2-bottom"] .dock-top .dock-bar {
+  border-bottom: 2px solid #a8a7a7;
+}
+/* Prevent dragging for panel2 */
+
+/* Prevent dragging for panel2 */
+/* .dock-panel[data-dockid="panel2"] .dock-tab-active {
+  pointer-events: none; 
+  cursor: default; 
+} */
+
+/* Optional: Ensure panel does not float */
+/* .dock-panel[data-dockid="panel2"] {
+  pointer-events: none; 
+} */
+
+/* .Layout-main-div .dock-top .dock-bar[data-dockid="panel2"]{
+  cursor: default;
+  pointer-events: none
+} */
+
+/* .Layout-main-div .dock-top .dock-bar {
+  padding-left:0;
+} */
+
+.dock-tab-title,
+.map-middle-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dock-tab-title,
+.map-middle-part span {
+  font-size: 14px;
+  font-family: "Eras Medium ITC", Arial, sans-serif;
+}
+
+.dock-panel-max-btn,
+.dock-panel-min-btn {
+  display: none !important;
+}
+
+.Layout-main-div .dock-extra-content {
+  align-items: center;
+  height: 22px;
+  font-size: 10px;
+}
+
+.Layout-main-div .dock-extra-content .custom-down-btn {
+  padding: 4px;
+}
+
+.Layout-main-div .dock-extra-content .custom-pin-btn {
+  padding: 4px;
+}
+
+.Layout-main-div .dock-extra-content .custom-close-btn {
+  font-weight: 600;
+  font-family: "Fredoka One", sans-serif;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  outline: none;
+  -webkit-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+/* .dock-bar {
+  cursor: move;
+} */
+
+[data-dockid="panel2"] .dock-bar {
+  cursor: default;
+  pointer-events: none;
+}
+
+.Layout-main-div [data-dockid="panel2"] .dock-bar {
+  padding-left: 0;
+  /* height: 3.5rem; */
+}
+
+[data-dockid="panel2"] .dock-tab {
+  background-color: #aaa7a7;
+  padding: 2px 8px 0px 8px;
+  /* color: white; */
+  height: 100%;
+}
+
+[data-dockid="panel2"] .dock-nav {
+  height: 100%;
+}
+
+.Layout-main-div [data-dockid="panel2-bottom"] .dock-bar {
+  padding-left: 0;
+  /* height: 3.5rem; */
+}
+
+[data-dockid="panel2-bottom"] .dock-tab {
+  background-color: #aaa7a7;
+  padding: 2px 8px 0px 8px;
+  /* color: white; */
+  height: 100%;
+}
+
+[data-dockid="panel2-bottom"] .dock-nav {
+  height: 100%;
+}
+
+.table-tab-title span {
+  font-size: 14px;
+  font-family: "Eras Medium ITC", Arial, sans-serif;
+}
+
+/* Close button style */
+.close-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 300;
+  color: #535353;
+}
+
+.map-middle-name {
+  margin-left: 5px;
+  color: #fdf8f8;
+}
+.tble-name {
+  margin-left: 5px;
+  color: #fdf8f8;
+}
+
+.fa-table,
+.fa-earth {
+  color: #000;
+}
+
+/* Optional hover effect for the close button */
+.close-btn:hover {
+  color: darkred;
+}
+/* #LayoutMap {
+  height: 100%;
+  width: 100%;
+} */
+/* .dock-tab-title{
+  cursor: default;
+  pointer-events: none
+} */
+
+.dock-tab {
+  border-bottom: 0;
+  margin-right: 2px;
+  height: 22px;
+}
+
+.dock-tab .dock-tab-btn {
+  padding: 0px 0px;
+}
+
+.reopen-btn {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.reopen-btn {
+  background-color: green;
+}
+/* General layout for the main div */
+
+/* Flexbox to align title and close button */
+/* .tab-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+} */
+
+.dock-top .dock-ink-bar {
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.custom-down-btn {
+  transition: max-height 0.3s ease;
+}
+
+/* Styles for tab titles */
+
+/* Additional styles */
+
+/* Optional hover effect for the close button */
+
+/* Optional: Add more styles as needed */
+
+/* _____________________________ */
+
+/* .Layout-main-div .dock-tab-btn{
+  background-color: #8f8f8f;
+} */
+
+/* .dock-panel .dock-panel-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.dock-panel .dock-panel-tab span {
+  display: flex; 
+  align-items: center;
+}
+
+.dock-panel .dock-panel-tab .close-btn {
+  cursor: pointer;
+  margin-left: 10px;
+} */
+
+.Layout-Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 2px 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-btn:hover {
+  background-color: #3e8e41;
+}
+
+.reopen-dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  /* min-width: 100px; */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reopen-dropdown-menu li {
+  padding: 2px 7px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.reopen-dropdown-menu li:hover {
+  background-color: #978989;
+  color: white;
+}
+
+/* Show the dropdown menu on button click */
+.dropdown:hover .reopen-dropdown-menu {
+  display: block;
+}
+
+/* Arrow Override CSS */
+
+.Layout-main-div .dock-drop-layer .dock-drop-left {
+  left: calc(49% - 48px);
+}
+
+.Layout-main-div .dock-drop-layer .dock-drop-right {
+  left: calc(51% + 16px);
+}
+
+.Layout-main-div .dock-drop-layer .dock-drop-top {
+  top: calc(48% - 48px);
+}
+
+.Layout-main-div .dock-drop-layer .dock-drop-bottom {
+  top: calc(52% + 16px);
+}
+
+.Layout-main-div .dock-drop-layer .dock-drop-top.dock-drop-deep {
+  top: calc(40% - 64px);
+}
+
+.Layout-main-div .dock-drop-layer .dock-drop-bottom.dock-drop-deep {
+  top: calc(60% + 48px);
+}
+
+.Layout-main-div .dock-drop-layer .dock-drop-right.dock-drop-deep {
+  /* left: calc(87% + 43px); */
+  left: calc(55% + 16px);
+  width: 16px;
+}
+
+.Layout-main-div .dock-drop-layer .dock-drop-left.dock-drop-deep {
+  left: calc(46% - 48px);
+  width: 16px;
+}
+
+/* .Layout-main-div .dock-drop-square.dock-drop-middle {
+  display: none;
+} */
+
+/* .Layout-main-div .dock-panel[data-dockid="panel2"] .dock-drop-square.dock-drop-middle {
+  display: none;
+} */
+
+.Layout-main-div .dock-drop-square.dock-drop-middle {
+  display: none;
+}
+
+.dock-drop-layer .dock-drop-square {
+  background: #8fabdd;
+}
+
+/* .Layout-main-div .dock-drop-layer .custom-drag-border {
+  border: 2px solid red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+} */
+
+/* .Layout-main-div .custom-drag-border {
+  position: absolute;
+  box-sizing: border-box;
+  pointer-events: visible;
+  z-index: 250;
+  top: calc(37% - 45px);
+  left: calc(39% - 13px);
+  bottom: calc(24% + 50px);
+  border: 2px dashed #a8a7a7;
+  width: calc(32% - 11px);
+} */
+
+/* .Layout-main-div .custom-drag-border {
+  position: absolute;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 250;
+  top: calc(50% - 50px); 
+  left: calc(50% - 100px); 
+  width: calc(50% - 100px); 
+  height: calc(50% - 100px); 
+  border: 2px dashed #a8a7a7;
+} */
+
+/* .custom-drag-border {
+  border: 2px dashed #a8a7a7; 
+  padding: 10px; 
+  position: relative; 
+  display: flex; 
+  flex-wrap: wrap; 
+} */
+
+/* .dock-drop-layer .Dock-drop-box-border{
+  z-index: 100;
+  left: 30%;
+  top: 33%;
+  width: 40%;
+  height: 35%;
+  opacity: 0.01;
+  border: 2px dashed black;
+} */
+
+/* .Layout-main-div .dock-drop-layer .dock-drop-squre{
+  background: #7b7777;
+} */
+
+/* .dock-drop-layer .dock-drop-square .dock-drop-square-box {} */
+
+/* .dock-drop-layer .dock-drop-square .dock-drop-square-box {
+  box-sizing: border-box;
+  border: 1px solid #110808;
+  width: 100%;
+  height: 100%;
+  background: #7b7777;
+} */
+
+/* Button Border */
+
+/* .dock-drop-layer .dock-drop-square .dock-drop-square-box {
+  box-sizing: border-box;
+  border: 1px dashed #110909;
+  width: 100%;
+  height: 100%;
+} */
+
+/* 
+.Layout-main-div #panel1{
+  min-width: 200px;
+} */
+
+/* #panel2.dock-panel {
+  min-width: 100px !important;
+} */
+
+.dock-panel[data-dockid="panel1"],
+.dock-panel[data-dockid="panel2-bottom"],
+.dock-panel[data-dockid="panel3"] {
+  flex-basis: auto;
+  min-width: 10px !important;
+  min-height: 28px !important;
+}
+
+/* .dock-panel[data-dockid="panel2"] {
+  flex-basis: auto;
+  min-height: 40px !important;
+}
+.dock-panel[data-dockid="panel3"] {
+  flex-basis: auto;
+  min-height: 40px !important;
+} */
+
+.dock-panel-drag-size-b-r {
+  /* background-image: url(data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2717%27 height=%2717%27 viewBox=%270 0 17 17%27%3E%3Cpath fill=%27rgba%280, 0, 0, 0.1%29%27 d=%27M2 12 L12 2 L12 12z%27/%3E%3C/svg%3E); */
+  background-image: none;
+  bottom: -4px;
+  right: -4px;
+  width: 17px;
+  height: 17px;
+  cursor: nwse-resize;
+}
+
+/* .left-unpin-container, .right-unpin-container {
+  position: fixed;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.left-unpin-container {
+  left: 10px;
+}
+
+.right-unpin-container {
+  right: 10px;
+} */
+
+.unpin-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  /* rotate: -90deg; */
+}
+
+/* Divider Cursor Change */
+
+.dock-hbox > .dock-divider {
+  cursor: col-resize;
+}
+
+.dock-vbox > .dock-divider {
+  cursor: row-resize;
+}
+
+/* 
+.dock-drop-top,
+.dock-drop-bottom {
+  display: none !important;
+}
+
+.dock-drop-deep {
+  display: block !important;
+} */
+
+/* Target panel2 and panel3 to show only left and right deep buttons */
+
+/* [data-dockid="panel2"] .dock-drop-square:not(.Layout-main-div .dock-drop-layer .dock-drop-left.dock-drop-deep):not(.Layout-main-div .dock-drop-layer .dock-drop-right.dock-drop-deep),
+[data-dockid="panel3"] .dock-drop-square:not(.Layout-main-div .dock-drop-layer .dock-drop-left.dock-drop-deep):not(.Layout-main-div .dock-drop-layer .dock-drop-right.dock-drop-deep) {
+  display: none !important;
+} */
+
+/* Ensure left and right deep buttons are visible */
+
+/* [data-dockid="panel2"] .Layout-main-div .dock-drop-layer .dock-drop-left.dock-drop-deep,
+[data-dockid="panel2"] .Layout-main-div .dock-drop-layer .dock-drop-right.dock-drop-deep,
+[data-dockid="panel3"] .Layout-main-div .dock-drop-layer .dock-drop-left.dock-drop-deep,
+[data-dockid="panel3"] .Layout-main-div .dock-drop-layer .dock-drop-right.dock-drop-deep {
+  display: block !important;
+} */
+
+.custom-point-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3388ff;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* screen Media Query  */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Layout-main-div {
+    height: 79vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .Layout-main-div {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1750px) {
+  .Layout-main-div {
+    height: 80vh;
+  }
+}

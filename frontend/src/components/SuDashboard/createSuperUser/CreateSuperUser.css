@@ -1,0 +1,224 @@
+.user_Modal-wraper .modal-overlay {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.model_condent {
+    font-size: 12px;
+    width: 338px;
+    margin: 0px;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open.user-modal.user_Modal-wraper {
+    top: 35% !important;
+    left: 48%;
+}
+
+
+
+
+.HorizontalLine {
+    border: 1px solid gray;
+}
+
+.heading_h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 1px !important;
+}
+
+.heading_top {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.Super-Card-Body {
+    width: 919px !important;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* min-width: 63px; */
+    word-wrap: break-word;
+    background-color: #f2f2f2;
+    background-clip: border-box;
+    border: 0px solid rgba(0, 0, 0, .125);
+    border-radius: 8px;
+
+    /* box-shadow: 2px 3px 4px 3px #ddd; */
+    /* max-width: 800px; */
+    padding: 15px;
+    /* align-items: center; */
+    /* margin: 12px auto !important; */
+    top: -25px;
+}
+
+.password-icon {
+    font-size: 12px;
+}
+
+.Super-Card-Body .col-md-4,
+.col-md-3 {
+    /* padding: 5px 7px; */
+}
+
+.is-invalid {
+    border-color: #f44336;
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 11px;
+    padding-left: 1px;
+}
+
+
+.Super-Card-Body .small-option {
+
+    font-size: 1.5rem;
+}
+
+
+
+.Super-Card-Body .form-control {
+    display: block;
+    /* width: 85%; */
+    /* padding: 0px 8px; */
+    font-weight: 400;
+    line-height: 1.5;
+    /* color: #495057b8; */
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+}
+
+
+.user_Modal-wrapper {
+    width: 22%;
+    position: absolute;
+    top: 34% !important;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    /* background: white; */
+
+
+}
+
+.user_Modal-wrapper .modal-content-custom {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+
+.user_Modal-wrapper label {
+    margin-right: 10px !important;
+    font-size: 1.3rem;
+}
+
+.user_Modal-wrapper .form-control {
+    width: 230px;
+    flex-grow: 0;
+    /* Prevents growing */
+}
+
+
+
+.btn_success {
+    margin-top: 10px;
+    background-color: #2b6e5b !important;
+    outline: none !important;
+    color: white;
+}
+
+.btn_success:focus {
+    outline: none;
+}
+
+
+.super_user_bg {
+    /* background-color: rgba(0, 0, 0, 0.3);  */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../asset/modelImg/CreateSuperUserBackGroundImg.PNG");
+    background-blend-mode: overlay;
+}
+
+
+.Super-Card-Body label {
+    margin-bottom: 0px;
+    margin-top: 0px !important;
+    font-weight: 500;
+    color: black;
+}
+
+.popup-overlay-su-create {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+
+}
+
+.popup-content-su-create {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 15%;
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+
+.CSU-Timer {
+    color: #f44336;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.StartRow {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 5px;
+}
+
+.CreateSuTime {
+    position: relative;
+    left: 60px;
+    top: 63px;
+}
+
+.Cre-SU-Time {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2b6e5b;
+    font-weight: bold;
+}
+
+.text-su {
+    color: rgb(5, 159, 249);
+}

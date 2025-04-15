@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="300" height="170" xmlns="http://www.w3.org/2000/svg">
+  <rect width="150" height="140" x="10" y="10" rx="5" ry="5" style="fill:#70d9e8;stroke:black;stroke-width:1;" />
+  
+  <!-- Define the rows, filling 3 with #70d9e8 -->
+  <rect x="10" y="30" width="150" height="20" fill="#70d9e8" stroke="black" stroke-width="1"/>
+  <rect x="10" y="50" width="150" height="20" fill="#70d9e8" stroke="black" stroke-width="1"/>
+  <rect x="10" y="70" width="150" height="20" fill="#70d9e8" stroke="black" stroke-width="1"/>
+  <rect x="10" y="90" width="150" height="20" fill="#70d9e8" stroke="black" stroke-width="1"/>
+  <rect x="10" y="110" width="150" height="20" fill="#70d9e8" stroke="black" stroke-width="1"/>
+</svg>
